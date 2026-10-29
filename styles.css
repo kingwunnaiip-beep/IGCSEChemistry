@@ -1,0 +1,1676 @@
+
+		:root {
+			color-scheme: light;
+			--ink: #193b34;
+			--muted: #61766c;
+			--green: #1e654f;
+			--green-dark: #174a3b;
+			--paper: #f4f6ef;
+			--line: #dce4d8;
+			--white: #fffefa;
+			--red-pale: #fff0ed;
+			--green-pale: #eaf4e8;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			padding-bottom: 88px;
+			color: var(--ink);
+			background:
+				radial-gradient(ellipse at 93% 8%, rgba(216, 233, 120, .28), transparent 26rem),
+				linear-gradient(135deg, #f4f6ef 0%, #edf2e8 100%);
+			font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+		}
+
+		.page {
+			width: min(100% - 24px, 1600px);
+			margin: 0 auto;
+			padding: 30px 0 48px;
+		}
+
+		.topbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			padding-bottom: 22px;
+			border-bottom: 1px solid rgba(25, 59, 52, .15);
+		}
+
+		.brand {
+			display: flex;
+			align-items: center;
+			gap: 11px;
+			min-height: 96px;
+			padding-left: 107px;
+			font-size: 14px;
+			font-weight: 750;
+		}
+
+		.brand-logo {
+			position: fixed;
+			top: 30px;
+			left: max(12px, calc((100% - 1600px) / 2));
+			z-index: 30;
+			pointer-events: none;
+			display: block;
+			width: 96px;
+			height: 96px;
+			flex: 0 0 96px;
+			border-radius: 50%;
+			background: white;
+			object-fit: contain;
+		}
+
+		.teacher-badge {
+			position: fixed;
+			right: max(14px, env(safe-area-inset-right));
+			bottom: max(14px, env(safe-area-inset-bottom));
+			z-index: 20;
+			display: flex;
+			align-items: center;
+			gap: 11px;
+			padding: 10px 18px;
+			border: 2px solid #078b9a;
+			border-radius: 999px;
+			color: #164f56;
+			background: #effcff;
+			box-shadow: 0 8px 24px rgba(7, 139, 154, .15);
+			font-size: 20px;
+			font-weight: 750;
+			transform: scale(.7);
+			transform-origin: bottom right;
+		}
+
+		.teacher-badge-dot {
+			width: 20px;
+			height: 20px;
+			flex: 0 0 20px;
+			border-radius: 50%;
+			background: #4edcf0;
+			box-shadow: 0 0 0 0 rgba(78, 220, 240, .55);
+			animation: badge-pulse 1.2s ease-in-out infinite;
+		}
+
+		@keyframes badge-pulse {
+			0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(78, 220, 240, .45); }
+			50% { opacity: .55; transform: scale(.88); box-shadow: 0 0 0 8px rgba(78, 220, 240, 0); }
+		}
+
+		.topic {
+			color: var(--muted);
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: .08em;
+			text-transform: uppercase;
+		}
+
+		main {
+			padding: 20px 0 0;
+		}
+
+		.quiz-layout {
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) 136px;
+			grid-template-areas: "quiz navigator";
+			gap: clamp(18px, 2.5vw, 32px);
+			align-items: start;
+		}
+
+		.question-navigator {
+			grid-area: navigator;
+			position: sticky;
+			top: 24px;
+			padding-left: 10px;
+			border-left: 1px solid var(--line);
+		}
+
+		.question-nav-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+
+		.question-nav-item {
+			display: grid;
+			width: 100%;
+			min-height: 54px;
+			place-items: center;
+			padding: 7px;
+			border: 1px solid transparent;
+			border-radius: 6px;
+			color: var(--ink);
+			background: transparent;
+			text-align: center;
+			font-size: 13px;
+		}
+
+		.question-nav-item:not(:disabled):hover { border-color: var(--line); color: var(--ink); background: rgba(255, 254, 250, .7); transform: none; }
+		.question-nav-item[aria-current="step"] { border-color: #bdd0be; background: #eaf2e7; }
+		.question-nav-item.is-correct { border-color: #c6dfc9; background: #eaf4e8; }
+		.question-nav-item.is-wrong { border-color: #e8c4be; background: #fff0ed; }
+		.question-nav-number { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 6px; color: var(--green-dark); background: #e9eee1; font-weight: 800; }
+		.question-nav-item[aria-current="step"] .question-nav-number { color: white; background: var(--green); }
+		.question-nav-item.is-correct .question-nav-number { color: white; background: #24563c; }
+		.question-nav-item.is-wrong .question-nav-number { color: white; background: #a63d38; }
+		.quiz-layout.navigator-hidden { grid-template-columns: minmax(0, 1fr); grid-template-areas: "quiz"; }
+		.quiz-layout.navigator-hidden .question-navigator { display: none; }
+
+		.quiz {
+			grid-area: quiz;
+			width: 100%;
+			font-size: calc(16px * var(--quiz-scale, 1));
+		}
+
+		.question-meta {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 16px;
+			margin-bottom: 14px;
+			color: var(--muted);
+			font-size: .8125em;
+			font-weight: 700;
+		}
+
+		.question-paper {
+			display: flex;
+			align-items: baseline;
+			flex-wrap: wrap;
+			gap: 6px 12px;
+			width: fit-content;
+			max-width: min(100%, calc(100vw - 24px));
+			min-width: 0;
+			margin: 0 0 16px;
+			padding: 8px 12px;
+			border: 1px solid var(--line);
+			border-radius: 8px;
+			color: var(--green-dark);
+			background: rgba(255, 254, 250, .82);
+			font-size: .8125em;
+			line-height: 1.5;
+		}
+
+		.question-paper[hidden] { display: none; }
+		.paper-label { color: var(--muted); font-weight: 700; }
+		.paper-code { min-width: 0; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 1em; font-weight: 750; overflow-wrap: anywhere; }
+		.paper-session { min-width: 0; color: var(--muted); overflow-wrap: anywhere; }
+		.paper-session:empty { display: none; }
+
+		.panel-toggle {
+			display: grid;
+			width: 36px;
+			min-width: 36px;
+			min-height: 34px;
+			margin-left: auto;
+			place-items: center;
+			padding: 0;
+			border: 1px solid var(--line);
+			color: var(--green-dark);
+			background: var(--white);
+		}
+
+		.panel-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
+
+		.panel-toggle:not(:disabled):hover { color: white; background: var(--green-dark); }
+
+		.question-context:empty { display: none; }
+
+		.comparison-table {
+			width: 100%;
+			margin: 0 0 24px;
+			border-collapse: collapse;
+			background: rgba(255, 254, 250, .72);
+			font-size: .9em;
+			text-align: center;
+			table-layout: auto;
+		}
+
+		.comparison-table caption {
+			padding: 0 0 9px;
+			color: var(--muted);
+			text-align: left;
+		}
+
+		.comparison-table th,
+		.comparison-table td {
+			padding: 9px 7px;
+			border: 1px solid var(--line);
+			overflow-wrap: break-word;
+		}
+
+		.comparison-table thead th { color: var(--ink); font-weight: 700; }
+		.comparison-table tbody th { color: var(--green-dark); }
+		.comparison-table.leg-count-table th:first-child { width: 34%; }
+		.comparison-table.statement-table th:first-child { width: 30%; }
+		.comparison-table.answer-selection-table.statement-table th:first-child { width: 70px; }
+		.comparison-table.villus-choice-table th:first-child { width: 70px; }
+		.answer-selection-table tbody tr { cursor: pointer; transition: background-color 120ms ease; }
+		.answer-selection-table tbody tr:hover { background: #f0f4eb; }
+		.answer-selection-table tbody tr.is-selected { background: #eaf2e7; box-shadow: inset 3px 0 var(--green); }
+		.answer-table-choice { min-width: 34px; min-height: 34px; padding: 3px 8px; border: 1px solid var(--line); color: var(--green-dark); background: var(--white); }
+		.answer-table-choice[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+		.comparison-table.light-intensity-table th:first-child { width: 70px; }
+		.comparison-table.light-intensity-table th,
+		.comparison-table.light-intensity-table td { overflow-wrap: break-word; }
+		.key-table { text-align: left; }
+		.key-table th:first-child { width: 54px; }
+		.key-table td:last-child { text-align: right; white-space: nowrap; }
+		.table-key { margin: -14px 0 22px; color: var(--muted); font-size: .85em; }
+		.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+		.statement-list { display: grid; gap: 8px; margin: 0 0 20px; padding-left: 1.5em; }
+		.explanation-photo { margin: 16px 0; }
+		.explanation-photo img { display: block; width: min(100%, 700px); height: auto; border-radius: 6px; }
+		.quiz img { mix-blend-mode: multiply; }
+		.explanation-photo figcaption { margin-top: 6px; color: var(--muted); font-size: .8em; }
+		.explanation-photo a { color: inherit; }
+		.plant-diagram { max-width: 700px; margin: 0 auto 18px; }
+		.plant-diagram svg { display: block; width: 100%; height: auto; }
+		.plant-diagram figcaption { margin-top: 5px; color: var(--muted); font-size: .8em; }
+		.translocation-flow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.2fr) auto minmax(0, 1fr); gap: 10px; align-items: center; margin: 18px 0; }
+		.flow-step { display: grid; gap: 4px; min-width: 0; padding: 12px; border-top: 2px solid var(--green); background: rgba(255, 254, 250, .75); }
+		.flow-step span { color: var(--muted); font-size: .8em; }
+		.flow-arrow { color: var(--green); font-size: 1.5em; font-weight: 700; }
+		.interactive-graph { margin: 16px 0 20px; padding: 14px; border: 1px solid var(--line); border-radius: 7px; background: rgba(255, 254, 250, .82); }
+		.rate-chart { display: block; width: 100%; height: auto; }
+		.rate-chart text { fill: var(--muted); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 13px; }
+		.rate-chart .axis-label { fill: var(--ink); font-size: 14px; font-weight: 700; }
+		.rate-chart .gridline { stroke: #dce4d8; stroke-width: 1; }
+		.rate-chart .axis { stroke: #61766c; stroke-width: 1.5; }
+		.rate-chart .curve { fill: none; stroke: #1e654f; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+		.rate-chart .data-point { fill: #fffefa; stroke: #1e654f; stroke-width: 3; }
+		.rate-chart .plateau-zone { fill: #eaf4e8; }
+		.rate-chart .plateau-label { fill: #24563c; font-weight: 700; }
+		.rate-chart .active-line { stroke: #a63d38; stroke-width: 2; stroke-dasharray: 5 5; }
+		.rate-chart .active-point { fill: #a63d38; stroke: white; stroke-width: 3; }
+		.enzyme-chart { max-width: 680px; margin: 10px auto 20px; }
+		.enzyme-chart svg { display: block; width: 100%; height: auto; }
+		.enzyme-chart text { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 15px; }
+		.enzyme-chart .axis { stroke: #193b34; stroke-width: 2; }
+		.enzyme-chart .tick { stroke: #61766c; stroke-width: 1.5; }
+		.enzyme-chart .curve { fill: none; stroke: #1e654f; stroke-width: 4; stroke-linecap: round; }
+		.enzyme-chart .point-label { fill: #1e654f; font-weight: 800; }
+		.enzyme-stage-flow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: center; margin: 16px 0 22px; }
+		.enzyme-stage { min-width: 0; margin: 0; padding: 10px; border-top: 2px solid var(--green); background: rgba(255, 254, 250, .72); text-align: center; }
+		.enzyme-stage svg { display: block; width: 100%; height: 125px; }
+		.enzyme-stage figcaption { color: var(--ink); font-size: .82em; font-weight: 700; }
+		.enzyme-shape { fill: #a5a7a8; stroke: #4f5557; stroke-width: 3; stroke-linejoin: round; }
+		.substrate-shape { fill: #d9dcde; stroke: #4f5557; stroke-width: 2.5; }
+		.enzyme-stage-arrow { align-self: center; color: var(--green); font-size: 1.4em; font-weight: 800; }
+		.blood-components-figure,
+		.phagocytosis-figure { max-width: 760px; margin: 16px auto 20px; }
+		.blood-components-figure svg,
+		.phagocytosis-figure svg { display: block; width: 100%; height: auto; }
+		.blood-components-figure figcaption,
+		.phagocytosis-figure figcaption { margin-top: 5px; color: var(--muted); font-size: .8em; }
+		.blood-components-figure text,
+		.phagocytosis-figure text { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; }
+		.blood-cell-outline { stroke: #66736d; stroke-width: 2; }
+		.digestive-diagram { max-width: 700px; margin: 8px auto 20px; }
+		.digestive-diagram img { display: block; width: min(100%, 560px); height: auto; margin: 0 auto; }
+		.circulation-diagram { max-width: 860px; margin: 8px auto 20px; }
+		.circulation-diagram img { display: block; width: 100%; height: auto; }
+		.root-hair-diagram { max-width: 700px; margin: 12px auto 20px; }
+		.root-hair-diagram svg { display: block; width: 100%; height: auto; }
+		.root-hair-diagram figcaption { margin-top: 5px; color: var(--muted); font-size: .8em; }
+		.root-hair-diagram text { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 16px; }
+		.root-hair-diagram .cell { fill: #eaf2e7; stroke: #1e654f; stroke-width: 3; }
+		.root-hair-diagram .wall { stroke: #1e654f; stroke-width: 3; }
+		.root-hair-diagram .water { stroke: #4389ad; stroke-width: 4; }
+		.root-hair-diagram .ions { stroke: #b86b39; stroke-width: 4; }
+		.root-hair-diagram .leader { stroke: #61766c; stroke-width: 1.5; }
+		.comparison-table.root-uptake-table th:first-child { width: 30%; }
+		.comparison-table.transpiration-table th:first-child { width: 30%; }
+		.water-potential-diagram { max-width: 720px; margin: 14px auto 20px; }
+		.water-potential-diagram svg { display: block; width: 100%; height: auto; }
+		.water-potential-diagram figcaption { margin-top: 5px; color: var(--muted); font-size: .8em; }
+		.water-potential-diagram text { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; }
+		.water-potential-diagram .cell-box { fill: var(--white); stroke: #526c62; stroke-width: 2.5; }
+		.water-potential-diagram .cell-name { font-size: 20px; font-weight: 800; }
+		.water-potential-diagram .cell-value { font-size: 18px; }
+		.water-potential-diagram .water-flow-arrow { fill: none; stroke: #4389ad; stroke-width: 4; stroke-dasharray: 9 10; marker-end: url(#water-potential-arrow); animation: water-flow 1.2s linear infinite; }
+		@keyframes water-flow { to { stroke-dashoffset: -38; } }
+		.graph-controls { display: grid; gap: 8px; margin-top: 8px; }
+		.graph-controls label { color: var(--ink); font-size: .88em; font-weight: 700; }
+		.graph-controls input { width: 100%; accent-color: var(--green); }
+		.graph-output { display: block; min-height: 1.5em; color: var(--green-dark); font-size: .88em; font-weight: 750; }
+		.species-photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+		.species-photo { min-width: 0; margin: 0; }
+		.species-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 5px; background: var(--white); }
+		.species-photo figcaption { margin-top: 5px; color: var(--muted); font-size: .72em; line-height: 1.4; }
+		.species-photo a { color: inherit; }
+
+		.text-size-controls {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 8px;
+			margin: 14px 0 0;
+			color: var(--muted);
+			font-size: 13px;
+		}
+
+		.text-size-controls button {
+			min-width: 36px;
+			min-height: 34px;
+			padding: 0 9px;
+			border: 1px solid var(--line);
+			color: var(--green-dark);
+			background: var(--white);
+			font-size: 13px;
+		}
+
+		.text-size-controls button:not(:disabled):hover { color: white; background: var(--green-dark); }
+		.text-size-controls output { min-width: 42px; text-align: center; font-variant-numeric: tabular-nums; }
+		.question-navigator .text-size-controls {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-template-areas: "label label label" "decrease value increase" "reset reset reset";
+			gap: 6px;
+			justify-content: stretch;
+			margin-top: 12px;
+			padding-top: 12px;
+			border-top: 1px solid var(--line);
+			font-size: 11px;
+		}
+		.question-navigator .text-size-controls > span { grid-area: label; }
+		.question-navigator #decrease-text { grid-area: decrease; min-width: 0; padding: 0; }
+		.question-navigator #text-size-value { grid-area: value; min-width: 0; }
+		.question-navigator #increase-text { grid-area: increase; min-width: 0; padding: 0; }
+		.question-navigator #reset-text { grid-area: reset; width: 100%; min-width: 0; min-height: 32px; padding: 0 6px; }
+
+		.progress-track {
+			height: 4px;
+			overflow: hidden;
+			border-radius: 5px;
+			background: #dfe7da;
+		}
+
+		.progress-value {
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			background: var(--green);
+		}
+
+		h2 {
+			margin: 30px 0 25px;
+			font-size: 1.65em;
+			font-weight: 650;
+			line-height: 1.4;
+		}
+
+		fieldset { margin: 0; padding: 0; border: 0; }
+		.answer-options { display: grid; gap: 10px; }
+		.answer-options[hidden] { display: none; }
+		legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
+		.answer {
+			position: relative;
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			min-height: 62px;
+			padding: 11px 16px;
+			border: 1px solid var(--line);
+			border-radius: 8px;
+			background: rgba(255, 254, 250, .82);
+			cursor: pointer;
+			transition: border-color 150ms ease, background-color 150ms ease, transform 150ms ease;
+		}
+
+		.answer:hover { border-color: #8da99a; transform: translateY(-1px); }
+
+		.answer:has(input:checked) {
+			border-color: var(--green);
+			background: #edf4e9;
+			box-shadow: 0 0 0 1px var(--green);
+		}
+
+		.answer input {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			opacity: 0;
+		}
+
+		.answer:has(input:focus-visible) { outline: 3px solid #91a944; outline-offset: 3px; }
+
+		.letter {
+			display: grid;
+			flex: 0 0 32px;
+			width: 32px;
+			height: 32px;
+			place-items: center;
+			border-radius: 7px;
+			color: var(--green-dark);
+			background: #e9eee1;
+			font-size: .8125em;
+			font-weight: 800;
+		}
+
+		.answer-text { font-size: .9375em; font-weight: 600; }
+
+		.actions {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 16px;
+			margin-top: 20px;
+		}
+
+		button {
+			min-height: 46px;
+			padding: 0 21px;
+			border: 0;
+			border-radius: 7px;
+			color: white;
+			background: var(--green);
+			font: inherit;
+			font-size: .875em;
+			font-weight: 750;
+			cursor: pointer;
+			transition: background-color 150ms ease, transform 150ms ease;
+		}
+
+		button:not(:disabled):hover { background: var(--green-dark); transform: translateY(-1px); }
+		button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+		button:disabled { color: #8c9a90; background: #e0e6dd; cursor: not-allowed; }
+
+		.hint { color: var(--muted); font-size: .75em; }
+
+		.feedback {
+			display: none;
+			margin-top: 18px;
+			padding: 18px;
+			border-radius: 7px;
+			font-size: .875em;
+			line-height: 1.55;
+		}
+
+		.feedback.visible { display: block; animation: appear 180ms ease-out; }
+		.feedback.correct { color: #24563c; background: var(--green-pale); }
+		.feedback.incorrect { color: #873a34; background: var(--red-pale); }
+		.feedback-title { display: block; margin-bottom: 8px; font-size: 1.14em; }
+		.feedback p { margin: 0 0 12px; }
+		.feedback .definition { color: var(--ink); }
+		.feedback h3 { margin: 17px 0 8px; color: var(--ink); font-size: .93em; }
+		.option-explanations { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+		.option-explanations li { padding: 7px 0; border-top: 1px solid rgba(25, 59, 52, .12); color: var(--ink); }
+		.option-explanations strong { display: inline; }
+		.exam-tip { margin: 15px 0 0 !important; padding-top: 12px; border-top: 1px solid rgba(25, 59, 52, .18); color: var(--ink); }
+		.relationship { margin-top: 8px !important; font-weight: 800; }
+
+		@keyframes appear {
+			from { opacity: 0; transform: translateY(5px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+
+		@media (max-width: 680px) {
+			.page { width: min(100% - 20px, 760px); padding-top: 20px; }
+			.topbar { flex-wrap: wrap; gap: 12px; }
+			.brand-logo { top: 20px; left: 10px; }
+			.teacher-badge { right: max(10px, env(safe-area-inset-right)); bottom: max(10px, env(safe-area-inset-bottom)); gap: 8px; padding: 8px 13px; font-size: 16px; }
+			.teacher-badge-dot { width: 16px; height: 16px; flex-basis: 16px; }
+			.question-navigator .text-size-controls {
+				grid-template-columns: auto 36px 42px 36px auto;
+				grid-template-areas: "label decrease value increase reset";
+				align-items: center;
+			}
+			.question-navigator #reset-text { width: auto; }
+			.topbar { padding-bottom: 17px; }
+			.topic { max-width: 130px; text-align: right; line-height: 1.4; }
+			main { padding-top: 16px; }
+			.quiz-layout { grid-template-columns: 1fr; grid-template-areas: "navigator" "quiz"; gap: 22px; }
+			.species-photo-grid { grid-template-columns: 1fr; }
+			.species-photo img { aspect-ratio: 16 / 9; }
+			.question-navigator { position: static; padding: 0 0 14px; border-left: 0; border-bottom: 1px solid var(--line); }
+			.question-nav-list { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; }
+			.question-nav-item { min-height: 46px; padding: 4px 2px; }
+			.question-nav-number { width: 24px; height: 24px; }
+			.translocation-flow { grid-template-columns: 1fr; gap: 6px; }
+			.enzyme-stage-flow { grid-template-columns: 1fr; gap: 6px; }
+			.enzyme-stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 8px; text-align: left; }
+			.enzyme-stage svg { height: 95px; }
+			.enzyme-stage-arrow { transform: rotate(90deg); justify-self: center; }
+			.flow-arrow { transform: rotate(90deg); justify-self: center; }
+			h2 { margin-top: 24px; }
+			.quiz h2 { font-size: 1.3125em; }
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			*, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+			.water-potential-diagram .water-flow-arrow { animation: none; stroke-dashoffset: 0; }
+			.teacher-badge-dot { animation: none; }
+		}
+/* Question 25: all rules are scoped to the catalase infographic. */
+.catalase-data-table { table-layout: fixed; }
+.catalase-data-table th, .catalase-data-table td { overflow-wrap: anywhere; }
+.catalase-lab { min-width: 0; margin: 24px 0; padding: 20px; border: 1px solid #cbdcc3; border-radius: 12px; color: var(--ink); background: var(--white); overflow-wrap: anywhere; }
+.catalase-lab h3 { margin: 0 0 6px; font-size: 1.15em; }
+.catalase-lab .catalase-intro { margin-bottom: 18px; color: var(--muted); font-size: .9em; }
+.catalase-lab .catalase-axis-title { margin: 0 0 7px; font-size: .85em; font-weight: 750; }
+.catalase-chart { display: grid; grid-template-columns: 30px minmax(0,1fr); gap: 9px; padding-top: 26px; }
+.catalase-y-axis { display: flex; height: 180px; flex-direction: column; justify-content: space-between; color: var(--muted); font-size: 12px; line-height: 1; text-align: right; }
+.catalase-y-axis span:first-child { transform: translateY(-50%); }
+.catalase-y-axis span:last-child { transform: translateY(50%); }
+.catalase-columns { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 9px; min-width: 0; }
+.catalase-lab .catalase-column { display: grid; grid-template-rows: 180px auto; align-items: stretch; gap: 10px; min-width: 0; min-height: 0; padding: 0; border: 0; border-radius: 6px; color: var(--ink); background: transparent; font: inherit; cursor: pointer; transform: none; }
+.catalase-lab .catalase-column:not(:disabled):hover { color: var(--ink); background: transparent; transform: none; }
+.catalase-lab .catalase-column:focus-visible { outline: 3px solid #8e6715; outline-offset: 4px; }
+.catalase-bar-space { position: relative; display: block; height: 180px; border-top: 1px solid #dce4d8; border-bottom: 1px solid #85997c; background: #fafbf6; }
+.catalase-column.within-range .catalase-bar-space { background: #edf4e7; }
+.catalase-bar-space::before { position: absolute; top: 50%; right: 0; left: 0; content: ""; border-top: 1px dashed #dce4d8; }
+.catalase-bar { position: absolute; right: 16%; bottom: 0; left: 16%; height: calc(var(--bubbles) * 1%); min-height: 2px; border-radius: 5px 5px 0 0; background: #abc497; }
+.catalase-bar-value { position: absolute; bottom: calc(var(--bubbles) * 1% + 7px); left: 0; width: 100%; color: #3b5c34; font-size: 14px; font-weight: 750; line-height: 1; text-align: center; }
+.catalase-column[aria-pressed="true"] .catalase-bar { background: var(--green); box-shadow: inset 0 0 0 1px var(--green-dark); }
+.catalase-temperature-label { display: grid; min-height: 36px; place-items: center; padding: 4px 1px; border: 1px solid #dce4d8; border-radius: 6px; color: var(--green-dark); background: #f6f8f0; font-size: 13px; line-height: 1.2; white-space: nowrap; }
+.catalase-column[aria-pressed="true"] .catalase-temperature-label { border-color: var(--green); color: white; background: var(--green); }
+.catalase-lab .catalase-x-title { margin: 7px 0 16px 39px; color: var(--muted); font-size: .85em; text-align: center; }
+.catalase-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.catalase-badges span { padding: 7px 10px; border: 1px solid #dce4d8; border-radius: 6px; color: #355b32; background: #eef4e7; font-size: .82em; }
+.catalase-control { display: grid; gap: 7px; padding-top: 16px; border-top: 1px solid var(--line); }
+.catalase-control label { font-size: .9em; font-weight: 750; }
+.catalase-control input { width: 100%; min-width: 0; min-height: 40px; margin: 0; accent-color: var(--green); }
+.catalase-reading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px 16px; margin: 12px 0; color: var(--green-dark); font-size: 1em; }
+.catalase-reading strong { font-size: 1.8em; font-weight: 750; line-height: 1.2; }
+.catalase-reading span { font-size: .94em; }
+.catalase-rate-caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 5px 10px; margin-bottom: 7px; color: var(--muted); font-size: .8em; }
+.catalase-rate-track { height: 10px; overflow: hidden; border-radius: 10px; background: #e2eadb; }
+#catalase-rate-fill { height: 100%; border-radius: inherit; background: var(--green); transition: width 180ms ease; }
+.catalase-lab .catalase-stage { margin: 14px 0 0; color: var(--ink); font-size: .9em; }
+.catalase-lab .catalase-limit { margin: 16px 0 0; padding-top: 13px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85em; }
+@media (max-width: 520px) {
+    .catalase-lab { padding: 15px 12px; }
+    .catalase-chart { grid-template-columns: 25px minmax(0,1fr); gap: 6px; }
+    .catalase-columns { gap: 5px; }
+    .catalase-temperature-label { font-size: 11px; }
+    .catalase-lab .catalase-x-title { margin-left: 31px; }
+    .catalase-reading strong { font-size: 1.5em; }
+}
+@media (prefers-reduced-motion: reduce) {
+    #catalase-rate-fill { transition: none !important; }
+}
+
+/* Question 42: DNA comparison; every rule is scoped to this component. */
+.dna-lab { min-width: 0; margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); }
+.dna-lab h3 { margin: 0 0 12px; color: var(--ink); font-size: 1em; line-height: 1.4; }
+.dna-lab .dna-pair-controls { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 16px; }
+.dna-lab .dna-pair-controls button { min-width: 0; min-height: 44px; padding: 9px 6px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: #f2f6ed; font-size: .85em; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; transform: none; }
+.dna-lab .dna-pair-controls button:hover { border-color: var(--green); background: #e7f0e1; transform: none; }
+.dna-lab .dna-pair-controls button[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+.dna-lab .dna-pair-controls button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.dna-sequence-table, .dna-lab .dna-alignment { width: 100%; min-width: 0; margin: 0 0 12px; border-collapse: collapse; table-layout: fixed; color: var(--ink); background: var(--white); font-size: clamp(12px, .85em, 18px); text-align: center; }
+.dna-sequence-table th, .dna-sequence-table td, .dna-lab .dna-alignment th, .dna-lab .dna-alignment td { min-width: 0; padding: 8px 2px; border: 1px solid var(--line); line-height: 1.35; overflow-wrap: anywhere; }
+.dna-sequence-table th:first-child, .dna-lab .dna-alignment th:first-child { width: 6em; padding-right: 4px; padding-left: 4px; font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; }
+.dna-sequence-table thead th, .dna-lab .dna-alignment thead th { color: var(--green-dark); background: #eef4e8; font-weight: 750; }
+.dna-sequence-table td, .dna-lab .dna-alignment .dna-base { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-variant-numeric: tabular-nums; }
+.dna-lab .dna-base.is-match { color: var(--ink); background: #f5f8f0; }
+.dna-lab .dna-base.is-different { border-bottom: 3px solid #a63d38; color: #873a34; background: #fff0ed; font-weight: 850; }
+.dna-lab .dna-key { margin: 8px 0 14px; color: var(--muted); font-size: .8em; line-height: 1.6; }
+.dna-lab .dna-summary { display: block; margin: 16px 0 7px; color: var(--green-dark); font-size: 1em; font-weight: 750; line-height: 1.5; overflow-wrap: anywhere; }
+.dna-lab #dna-difference-positions { margin: 0 0 16px; color: var(--ink); font-size: .85em; line-height: 1.6; overflow-wrap: anywhere; }
+.dna-lab .dna-pair-chart { display: grid; gap: 10px; min-width: 0; margin: 16px 0 0; font-size: clamp(12px, .85em, 16px); }
+.dna-lab .dna-pair-bar { display: grid; grid-template-columns: 7em minmax(0, 1fr) 2.6em; align-items: center; gap: 8px; min-width: 0; }
+.dna-lab .dna-pair-label { min-width: 0; color: var(--muted); line-height: 1.4; overflow-wrap: anywhere; }
+.dna-lab .dna-pair-track { display: block; min-width: 0; height: 12px; overflow: hidden; border-radius: 5px; background: #e2e9dc; }
+.dna-lab .dna-pair-fill { display: block; height: 100%; border-radius: inherit; background: #91aa7e; transition: background-color 150ms ease; }
+.dna-lab .dna-pair-value { color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.dna-lab .dna-pair-bar.is-active .dna-pair-label { color: var(--green-dark); font-weight: 750; }
+.dna-lab .dna-pair-bar.is-active .dna-pair-fill { background: var(--green); }
+@media (max-width: 520px) {
+    .dna-lab { padding: 10px; }
+    .dna-lab .dna-pair-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .dna-lab .dna-pair-fill { transition: none !important; }
+}
+
+/* Question 44: all selectors are local to the DNA percentage comparison. */
+.dna44-lab { min-width: 0; margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); overflow-wrap: anywhere; }
+.dna44-lab h3 { margin: 0 0 12px; color: var(--ink); font-size: 1em; line-height: 1.4; }
+.dna44-lab .dna44-axis-caption { color: var(--muted); font-size: .85em; line-height: 1.6; }
+.dna44-lab .dna44-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 14px; }
+.dna44-lab .dna44-controls button { min-width: 0; min-height: 44px; padding: 9px 7px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: #f2f6ed; font-size: .85em; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; transform: none; }
+.dna44-lab .dna44-controls button:hover { border-color: var(--green); background: #e7f0e1; transform: none; }
+.dna44-lab .dna44-controls button[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+.dna44-lab .dna44-controls button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.dna44-lab .dna44-chart { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 9px; min-width: 0; padding-top: 10px; }
+.dna44-lab .dna44-y-axis { display: flex; height: 180px; flex-direction: column; justify-content: space-between; color: var(--muted); font-size: 12px; line-height: 1; text-align: right; }
+.dna44-lab .dna44-y-axis span:first-child { transform: translateY(-50%); }
+.dna44-lab .dna44-y-axis span:last-child { transform: translateY(50%); }
+.dna44-lab .dna44-columns { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; min-width: 0; }
+.dna44-lab .dna44-base-column { display: grid; grid-template-rows: 180px auto; gap: 8px; min-width: 0; }
+.dna44-lab .dna44-bar-space { position: relative; display: flex; height: 180px; flex-direction: column-reverse; align-items: center; justify-content: flex-start; border-top: 1px solid var(--line); border-bottom: 1px solid #85997c; background: #fafbf6; }
+.dna44-lab .dna44-bar-space::before { position: absolute; top: 50%; right: 0; left: 0; content: ""; border-top: 1px dashed var(--line); }
+.dna44-lab .dna44-bar { position: relative; z-index: 1; display: block; width: 68%; flex: 0 0 auto; border-radius: 5px 5px 0 0; transition: height 180ms ease; }
+.dna44-lab .dna44-at { background: #bb812f; }
+.dna44-lab .dna44-gc { background: var(--green); }
+.dna44-lab .dna44-value { position: relative; z-index: 1; display: block; flex: 0 0 auto; margin-bottom: 6px; padding: 2px 0; color: var(--ink); font-size: clamp(12px, .85em, 16px); font-weight: 750; line-height: 1; text-align: center; white-space: nowrap; }
+.dna44-lab .dna44-base-label { display: grid; min-width: 0; min-height: 32px; place-items: center; padding: 4px 1px; border: 1px solid var(--line); border-radius: 5px; color: var(--green-dark); background: #f2f6ed; font-size: clamp(13px, .9em, 18px); font-weight: 750; line-height: 1.3; }
+.dna44-lab .dna44-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 16px; margin: 14px 0; color: var(--ink); font-size: .8em; line-height: 1.6; }
+.dna44-lab .dna44-at-key, .dna44-lab .dna44-gc-key { display: inline-block; width: 12px; height: 12px; flex: 0 0 12px; margin-right: 4px; border-radius: 3px; vertical-align: -1px; }
+.dna44-lab .dna44-at-key { background: #bb812f; }
+.dna44-lab .dna44-gc-key { background: var(--green); }
+.dna44-lab .dna44-reading { display: flex; flex-direction: column; gap: 4px; margin: 16px 0 10px; color: var(--green-dark); line-height: 1.5; }
+.dna44-lab .dna44-reading strong { font-size: 1em; font-weight: 750; }
+.dna44-lab .dna44-reading span { font-size: .9em; }
+.dna44-lab #dna44-calculation { margin: 10px 0; color: var(--ink); font-size: .9em; line-height: 1.65; }
+.dna44-lab #dna44-reason { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--ink); font-size: .9em; line-height: 1.65; }
+.dna44-lab .dna44-gc-chart { display: grid; gap: 11px; min-width: 0; margin: 18px 0 0; font-size: clamp(12px, .85em, 16px); }
+.dna44-lab .dna44-gc-row { display: grid; grid-template-columns: 3.5em minmax(0, 1fr) 5em; align-items: center; gap: 8px; min-width: 0; }
+.dna44-lab .dna44-gc-label { min-width: 0; color: var(--muted); line-height: 1.4; }
+.dna44-lab .dna44-gc-track { display: block; min-width: 0; height: 12px; overflow: hidden; border-radius: 5px; background: #e2e9dc; }
+.dna44-lab .dna44-gc-fill { display: block; height: 100%; border-radius: inherit; background: #91aa7e; transition: background-color 150ms ease; }
+.dna44-lab .dna44-gc-row > strong { color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.dna44-lab .dna44-gc-row.is-active .dna44-gc-label { color: var(--green-dark); font-weight: 750; }
+.dna44-lab .dna44-gc-row.is-active .dna44-gc-fill { background: var(--green); }
+@media (max-width: 520px) {
+    .dna44-lab { padding: 10px; }
+    .dna44-lab .dna44-chart { grid-template-columns: 28px minmax(0, 1fr); gap: 6px; }
+    .dna44-lab .dna44-columns { gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .dna44-lab .dna44-bar, .dna44-lab .dna44-gc-fill { transition: none !important; }
+}
+
+/* Question 45: qualitative photosynthesis graphs and the factor explorer only. */
+.photo45-lab { min-width: 0; margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); overflow-wrap: anywhere; }
+.photo45-lab h3 { margin: 0 0 12px; color: var(--ink); font-size: 1em; line-height: 1.4; }
+.photo45-lab .photo45-controls { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 14px; }
+.photo45-lab .photo45-controls button { min-width: 0; min-height: 44px; padding: 9px 6px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: #f2f6ed; font-size: .85em; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; transform: none; }
+.photo45-lab .photo45-controls button:hover { border-color: var(--green); background: #e7f0e1; transform: none; }
+.photo45-lab .photo45-controls button[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+.photo45-lab .photo45-controls button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.photo45-lab svg, .photo45-context .photo45-context-plot { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 7px; background: #fafbf6; }
+.photo45-lab .photo45-y-label, .photo45-context .photo45-y-label { margin: 12px 0 7px; color: var(--ink); font-size: .85em; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+.photo45-lab #photo45-x-label { margin: 7px 0 14px; color: var(--ink); font-size: .9em; font-weight: 700; line-height: 1.5; text-align: center; }
+.photo45-lab .photo45-curve, .photo45-context .photo45-curve { fill: none; stroke: var(--green); stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
+.photo45-lab .photo45-point circle, .photo45-context .photo45-point circle { fill: var(--white); stroke: var(--green-dark); stroke-width: 3; }
+.photo45-lab .photo45-point text, .photo45-context .photo45-point text { fill: var(--green-dark); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 38px; font-weight: 750; }
+.photo45-lab .photo45-point.is-active circle { fill: #a63d38; stroke: var(--white); }
+.photo45-lab .photo45-point.is-active text { fill: #873a34; }
+.photo45-lab .photo45-reading { display: block; margin: 16px 0 10px; color: var(--green-dark); font-size: 1em; font-weight: 750; line-height: 1.5; }
+.photo45-lab #photo45-explanation { margin: 10px 0; color: var(--ink); font-size: .9em; line-height: 1.65; }
+.photo45-lab #photo45-next { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--ink); font-size: .9em; line-height: 1.65; }
+.photo45-context { min-width: 0; margin: 16px 0 22px; overflow-wrap: anywhere; }
+.photo45-context .photo45-context-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; min-width: 0; }
+.photo45-context .photo45-context-figure { min-width: 0; margin: 0; }
+.photo45-context .photo45-context-figure figcaption { margin-top: 8px; color: var(--ink); font-size: .9em; line-height: 1.5; text-align: center; }
+@media (max-width: 900px) {
+    .photo45-context .photo45-context-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 520px) {
+    .photo45-lab { padding: 10px; }
+    .photo45-lab .photo45-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .photo45-lab .photo45-controls button { transition: none !important; }
+}
+
+/* Transient result cue; persistent answer feedback remains the accessible result. */
+.answer-cue { --cue-ink: #24563c; --cue-wash: #eaf4e8; position: fixed; top: 50%; left: 50%; z-index: 100; display: grid; width: min(280px, calc(100vw - 32px)); max-width: calc(100vw - 32px); justify-items: center; gap: 12px; padding: 24px; border: 1px solid var(--cue-ink); border-radius: 22px; color: var(--cue-ink); background: #fffefa; box-shadow: 0 18px 58px rgba(25, 59, 52, .22); text-align: center; pointer-events: none; opacity: 1; transform: translate(-50%, -50%); }
+.answer-cue[hidden] { display: none !important; }
+.answer-cue.is-correct { --cue-ink: #24563c; --cue-wash: #eaf4e8; }
+.answer-cue.is-incorrect { --cue-ink: #873a34; --cue-wash: #fff0ed; }
+.answer-cue.is-correct, .answer-cue.is-incorrect { animation: answer-cue-pop 800ms ease both; }
+.answer-cue .answer-cue-icon { display: grid; width: 90px; height: 90px; place-items: center; border: 2px solid currentColor; border-radius: 50%; color: var(--cue-ink); background: var(--cue-wash); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 58px; font-weight: 750; line-height: 1; }
+.answer-cue #answer-cue-label { max-width: 100%; font-size: clamp(24px, 4vw, 34px); font-weight: 750; line-height: 1.2; overflow-wrap: anywhere; }
+.question-navigator .sound-toggle { width: 100%; min-height: 34px; margin-top: 12px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: var(--white); font-size: 12px; font-weight: 700; line-height: 1.4; white-space: normal; }
+.question-navigator .sound-toggle[aria-pressed="false"] { color: var(--muted); background: #f1f3ee; }
+.question-navigator .sound-toggle:not(:disabled):hover { border-color: var(--green); color: var(--green-dark); background: #eaf2e7; transform: none; }
+@keyframes answer-cue-pop {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(.82); }
+    16% { opacity: 1; transform: translate(-50%, -50%) scale(1.03); }
+    28%, 76% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(.98); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .answer-cue { animation: none !important; opacity: 1 !important; transform: translate(-50%, -50%) !important; }
+}
+
+/* Quiz layout and persistent, explicit answer results. */
+.brand-logo { background: transparent; mix-blend-mode: multiply; }
+.quiz { min-width: 0; }
+.question-context { position: relative; min-width: 0; max-width: 100%; overflow-x: auto; }
+.question-meta { margin-bottom: 8px; }
+.question-info-row { position: relative; display: flex; align-items: center; flex-wrap: nowrap; gap: 10px; min-width: 0; max-width: 100%; margin: 0 0 16px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); background: rgba(255, 254, 250, .82); font-size: .8125em; line-height: 1.5; white-space: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.question-info-row:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.answer-instruction { flex: 0 0 auto; font-weight: 700; }
+.question-info-row .question-paper { display: inline-flex; flex: 0 0 auto; align-items: baseline; flex-wrap: nowrap; gap: 10px; width: auto; min-width: 0; max-width: none; margin: 0; padding: 0 0 0 10px; border: 0; border-left: 1px solid var(--line); border-radius: 0; background: transparent; font-size: inherit; }
+.question-info-row .question-paper[hidden] { display: none; }
+.question-info-row .paper-code, .question-info-row .paper-session { flex: 0 0 auto; white-space: nowrap; overflow-wrap: normal; }
+.question-navigator .text-size-controls { margin: 0 0 10px; padding: 0 0 12px; border-top: 0; border-bottom: 1px solid var(--line); }
+.question-navigator .sound-toggle { margin-top: 0; margin-bottom: 14px; }
+.question-nav-item { position: relative; }
+.question-nav-status { position: absolute; top: 2px; right: 3px; display: grid; width: 17px; height: 17px; place-items: center; border-radius: 50%; color: white; font-size: 12px; font-weight: 850; line-height: 1; }
+.question-nav-item.is-correct .question-nav-status { background: #24563c; }
+.question-nav-item.is-wrong .question-nav-status { background: #a63d38; }
+.answer-body { display: grid; flex: 1 1 0; min-width: 0; gap: 6px; }
+.answer-text { min-width: 0; overflow-wrap: anywhere; }
+.answer-status { display: inline-flex; width: fit-content; max-width: 100%; padding: 4px 8px; border-radius: 5px; font-size: .75em; font-weight: 800; line-height: 1.4; overflow-wrap: anywhere; }
+.answer-status[hidden] { display: none; }
+.answer.answer-correct, .answer.answer-correct:has(input:checked) { border: 2px solid #1e654f; background: #eaf4e8; box-shadow: 0 0 0 1px #1e654f; }
+.answer.answer-incorrect, .answer.answer-incorrect:has(input:checked) { border: 2px solid #a63d38; background: #fff0ed; box-shadow: 0 0 0 1px #a63d38; }
+.answer-correct .letter { color: white; background: #1e654f; }
+.answer-incorrect .letter { color: white; background: #a63d38; }
+.answer-correct .answer-status { color: #174a3b; background: #d2e9cf; }
+.answer-incorrect .answer-status { color: #873a34; background: #fbd7d1; }
+.answer-selection-table tbody tr.answer-row-correct { background: #eaf4e8; box-shadow: inset 4px 0 #1e654f; }
+.answer-selection-table tbody tr.answer-row-incorrect { background: #fff0ed; box-shadow: inset 4px 0 #a63d38; }
+.answer-selection-table tr.answer-row-correct .answer-table-choice { border: 2px solid #1e654f; color: white; background: #1e654f; }
+.answer-selection-table tr.answer-row-incorrect .answer-table-choice { border: 2px solid #a63d38; color: white; background: #a63d38; }
+.answer-table-choice { position: relative; }
+.choice-result-mark { position: absolute; top: -7px; right: -7px; display: grid; width: 19px; height: 19px; place-items: center; border: 2px solid var(--white); border-radius: 50%; color: white; font-size: 12px; font-weight: 850; line-height: 1; }
+.choice-result-mark[hidden] { display: none; }
+.choice-result-mark.is-correct { background: #24563c; }
+.choice-result-mark.is-incorrect { background: #a63d38; }
+.hint.is-correct { color: #24563c; font-weight: 800; }
+.hint.is-incorrect { color: #a63d38; font-weight: 800; }
+.feedback.visible { animation: none; }
+.feedback.correct { border: 2px solid #1e654f; }
+.feedback.incorrect { border: 2px solid #a63d38; }
+.feedback-summary { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid rgba(25, 59, 52, .18); }
+.feedback-result-icon { display: grid; flex: 0 0 48px; width: 48px; height: 48px; place-items: center; border-radius: 50%; color: white; font-size: 30px; font-weight: 850; line-height: 1; }
+.feedback.correct .feedback-result-icon { background: #1e654f; }
+.feedback.incorrect .feedback-result-icon { background: #a63d38; }
+.feedback-summary-copy { flex: 1 1 0; min-width: 0; }
+.feedback-summary .feedback-title { margin: 0 0 5px; font-size: 1.4em; font-weight: 850; line-height: 1.3; }
+.feedback .feedback-answer-line { margin: 0; font-weight: 700; overflow-wrap: anywhere; }
+@media (max-width: 680px) {
+    .question-info-row .paper-session { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .question-nav-status { top: 0; right: 1px; width: 15px; height: 15px; font-size: 10px; }
+    .feedback-summary { gap: 10px; }
+    .feedback-result-icon { flex-basis: 40px; width: 40px; height: 40px; font-size: 26px; }
+}
+
+	
+/* Question 46: readable vaccination flow at every quiz text size. */
+.vaccine46-diagram { width: min(100%, 720px); margin: 18px auto 24px; padding: 20px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: rgba(255, 254, 250, .72); text-align: center; line-height: 1.5; }
+.vaccine46-diagram .vaccine46-number { display: block; font-size: 1.3em; font-weight: 800; }
+.vaccine46-diagram .vaccine46-arrow { display: block; color: var(--green); font-size: 1.7em; line-height: 1.2; }
+.vaccine46-diagram .vaccine46-diagonal { width: 1.25em; height: 1.25em; justify-self: center; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.vaccine46-diagram .vaccine46-response { display: block; margin: 6px 0; font-weight: 750; }
+.vaccine46-diagram .vaccine46-branches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.vaccine46-diagram .vaccine46-branch { display: grid; align-content: start; gap: 8px; min-width: 0; overflow-wrap: anywhere; }
+.vaccine46-diagram .vaccine46-outcome { display: block; font-size: .94em; }
+.vaccine46-diagram.vaccine46-explained { margin: 14px auto 20px; }
+.vaccine46-explained .vaccine46-number { font-size: 1em; }
+.vaccine46-explained small { display: block; margin-top: 5px; color: var(--muted); font-size: .9em; }
+.comparison-table.vaccine46-table { table-layout: fixed; }
+@media (max-width: 420px) {
+    .vaccine46-diagram { padding: 15px 8px; }
+    .vaccine46-diagram .vaccine46-branches { gap: 10px; }
+}
+
+	
+/* Question 47: apparatus labels stay readable when quiz text is enlarged. */
+.humidity47-apparatus { width: min(100%, 660px); margin: 14px auto 22px; }
+.humidity47-apparatus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.humidity47-tube { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 254, 250, .72); }
+.humidity47-tube h3 { margin: 0; color: var(--ink); font-size: 1em; line-height: 1.4; text-align: center; }
+.humidity47-tube h3 span { display: block; margin-top: 3px; color: var(--muted); font-size: .8em; font-weight: 600; }
+.humidity47-tube svg { display: block; width: 100%; height: auto; max-height: 350px; margin: 7px auto 0; }
+.humidity47-apparatus figcaption { margin: 12px 0 0; color: var(--muted); font-size: .85em; line-height: 1.5; }
+.humidity47-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 12px 0 0; font-size: .85em; }
+.humidity47-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.humidity47-legend i { display: block; width: 20px; height: 12px; flex: 0 0 20px; border: 1px solid #61766c; border-radius: 2px; }
+.humidity47-legend .humidity47-oil { background: #d7b16c; }
+.humidity47-legend .humidity47-water { background: #d0e7f0; }
+.comparison-table.humidity47-table { table-layout: fixed; }
+.humidity47-equation { margin: 12px 0; padding: 12px; border-left: 3px solid var(--green); color: var(--ink); background: rgba(255, 254, 250, .7); font-weight: 700; line-height: 1.6; }
+@media (max-width: 420px) {
+    .humidity47-apparatus-grid { gap: 8px; }
+    .humidity47-tube { padding: 10px 5px; }
+}
+
+/* Question 47: compare measured water loss and its daily average. */
+.humidity47-lab { min-width: 0; margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); overflow-wrap: anywhere; }
+.humidity47-lab h3 { margin: 0 0 10px; color: var(--ink); font-size: 1em; line-height: 1.4; }
+.humidity47-lab .humidity47-intro { margin: 0 0 14px; color: var(--muted); font-size: .9em; line-height: 1.6; }
+.humidity47-lab .humidity47-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 18px; }
+.humidity47-lab .humidity47-controls button { min-width: 0; min-height: 44px; padding: 10px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: #f2f6ed; font-size: .9em; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; transform: none; }
+.humidity47-lab .humidity47-controls button:hover { border-color: var(--green); background: #e7f0e1; transform: none; }
+.humidity47-lab .humidity47-controls button[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+.humidity47-lab .humidity47-controls button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.humidity47-lab .humidity47-axis-title { margin: 0 0 8px; color: var(--ink); font-size: .92em; font-weight: 750; line-height: 1.5; }
+.humidity47-lab .humidity47-axis { display: flex; justify-content: space-between; margin-bottom: 12px; padding: 0; border-bottom: 1px solid #85997c; color: var(--muted); font-size: .85em; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.humidity47-lab .humidity47-axis span { padding: 0 0 5px; }
+.humidity47-lab .humidity47-rows { display: grid; gap: 18px; min-width: 0; }
+.humidity47-lab .humidity47-row { min-width: 0; }
+.humidity47-lab .humidity47-row-label { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 5px 12px; margin: 0 0 8px; color: var(--ink); font-size: .95em; line-height: 1.5; }
+.humidity47-lab .humidity47-row-label > span { min-width: 0; }
+.humidity47-lab .humidity47-condition { display: block; color: var(--muted); font-size: .9em; }
+.humidity47-lab .humidity47-value { flex: 0 0 auto; font-weight: 800; font-variant-numeric: tabular-nums; }
+.humidity47-lab .humidity47-track { display: block; width: 100%; min-width: 0; height: 24px; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; background: linear-gradient(to right, transparent calc(50% - .5px), #bccbb7 calc(50% - .5px), #bccbb7 calc(50% + .5px), transparent calc(50% + .5px)), #eef3e9; }
+.humidity47-lab .humidity47-fill { display: block; height: 100%; border-radius: 4px; }
+.humidity47-lab .humidity47-fill-x { background: #1e654f; }
+.humidity47-lab .humidity47-fill-y { background: #4389ad; }
+.humidity47-lab .humidity47-reading { display: block; margin: 18px 0 10px; padding: 12px; border-left: 3px solid var(--green); color: var(--green-dark); background: #eaf4e8; font-size: 1em; font-weight: 750; line-height: 1.6; }
+.humidity47-lab .humidity47-calculation { margin: 10px 0; color: var(--ink); font-size: .9em; line-height: 1.7; }
+.humidity47-lab .humidity47-note { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88em; line-height: 1.7; }
+.humidity47-lab .humidity47-cause { margin: 14px 0 0; color: var(--ink); font-size: .9em; line-height: 1.7; }
+@media (max-width: 520px) {
+    .humidity47-lab { padding: 12px 10px; }
+}
+
+	
+/* Question 48: qualitative cycle graph with readable HTML axis labels. */
+.cycle48-context { width: min(100%, 780px); margin: 18px auto 24px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 254, 250, .72); }
+.cycle48-context .cycle48-axis-label { margin: 0 0 9px; color: var(--ink); font-size: .9em; font-weight: 700; line-height: 1.5; }
+.cycle48-context .cycle48-axis-label:last-child { margin: 10px 0 0; text-align: center; }
+.cycle48-context svg { display: block; width: 100%; height: auto; }
+.cycle48-context .cycle48-axis { fill: none; stroke: #526c62; stroke-width: 2; }
+.cycle48-context .cycle48-curve { fill: none; stroke: #1e654f; stroke-width: 4; stroke-linecap: round; }
+.cycle48-context text { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 28px; }
+.comparison-table.cycle48-table { table-layout: fixed; }
+@media (max-width: 420px) {
+    .cycle48-context { padding: 10px 5px; }
+}
+
+/* Question 48: qualitative menstrual-cycle graph, with the four answer days. */
+.cycle48-lab { min-width: 0; margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); overflow-wrap: anywhere; }
+.cycle48-lab h3 { margin: 0 0 10px; color: var(--ink); font-size: 1em; line-height: 1.4; }
+.cycle48-lab .cycle48-intro { margin: 0 0 14px; color: var(--muted); font-size: .9em; line-height: 1.6; }
+.cycle48-lab .cycle48-controls { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 16px; }
+.cycle48-lab .cycle48-controls button { min-width: 0; min-height: 44px; padding: 10px 6px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: #f2f6ed; font-size: .9em; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; transform: none; }
+.cycle48-lab .cycle48-controls button:hover { border-color: var(--green); background: #e7f0e1; transform: none; }
+.cycle48-lab .cycle48-controls button[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+.cycle48-lab .cycle48-controls button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.cycle48-lab .cycle48-y-label { margin: 0 0 8px; color: var(--ink); font-size: .9em; font-weight: 750; line-height: 1.5; }
+.cycle48-lab .cycle48-graph { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 7px; background: #fafbf6; }
+.cycle48-lab .cycle48-axis { fill: none; stroke: #61766c; stroke-width: 2; }
+.cycle48-lab .cycle48-curve { fill: none; stroke: var(--green); stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
+.cycle48-lab .cycle48-tick { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 28px; text-anchor: middle; }
+.cycle48-lab .cycle48-active-line { stroke: #a63d38; stroke-width: 2; stroke-dasharray: 6 6; }
+.cycle48-lab .cycle48-active-point { fill: #a63d38; stroke: var(--white); stroke-width: 3; }
+.cycle48-lab .cycle48-x-label { margin: 7px 0 14px; color: var(--ink); font-size: .9em; font-weight: 700; line-height: 1.5; text-align: center; }
+.cycle48-lab .cycle48-reading { display: block; margin: 14px 0 10px; padding: 12px; border-left: 3px solid var(--green); color: var(--green-dark); background: #eaf4e8; font-size: 1em; font-weight: 750; line-height: 1.6; }
+.cycle48-lab .cycle48-explanation { margin: 10px 0; color: var(--ink); font-size: .92em; line-height: 1.7; }
+.cycle48-lab .cycle48-note { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88em; line-height: 1.7; }
+@media (max-width: 520px) {
+    .cycle48-lab { padding: 12px 10px; }
+    .cycle48-lab .cycle48-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+	
+/* Question 49: neutral reaction and process-R diagrams. */
+.stomach49-diagrams { min-width: 0; margin: 16px 0 24px; }
+.stomach49-reaction { display: grid; grid-template-columns: minmax(0, 1fr) 32px minmax(0, 1fr) 32px minmax(0, 1fr); gap: 10px; align-items: center; }
+.stomach49-stage { min-width: 0; margin: 0; padding: 12px 8px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 254, 250, .72); }
+.stomach49-stage svg { display: block; width: 100%; height: auto; max-height: 220px; margin: 0 auto; }
+.stomach49-stage figcaption { margin-top: 8px; color: var(--muted); font-size: .85em; font-weight: 700; line-height: 1.5; text-align: center; }
+.stomach49-diagrams .stomach49-enzyme { fill: #b9bfbd; stroke: #4f5955; stroke-width: 2.5; stroke-linejoin: round; }
+.stomach49-diagrams .stomach49-triangle { fill: var(--white); stroke: #4f5955; stroke-width: 2.5; stroke-linejoin: round; }
+.stomach49-diagrams .stomach49-label { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 32px; text-anchor: middle; }
+.stomach49-flow-arrow { display: block; width: 32px; height: 32px; color: var(--green); justify-self: center; }
+.stomach49-flow-arrow path { fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.stomach49-process-intro { margin: 22px 0 12px; color: var(--ink); font-size: .95em; line-height: 1.5; }
+.stomach49-process { width: min(100%, 560px); margin: 0 auto; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 254, 250, .72); }
+.stomach49-process svg { display: block; width: 100%; height: auto; }
+.stomach49-process .stomach49-r-arrow { fill: none; stroke: var(--green); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 680px) {
+    .stomach49-reaction { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+    .stomach49-stage { width: min(100%, 360px); justify-self: center; }
+    .stomach49-flow-arrow { transform: rotate(90deg); }
+}
+
+	
+/* Question 50: qualitative hormone curves and a named hormone guide. */
+.hormone50-context, .hormone50-lab { min-width: 0; margin: 18px 0 24px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); overflow-wrap: anywhere; }
+.hormone50-context { width: min(100%, 860px); margin-left: auto; margin-right: auto; background: rgba(255, 254, 250, .72); }
+.hormone50-lab h3 { margin: 0 0 10px; color: var(--ink); font-size: 1em; line-height: 1.4; }
+.hormone50-lab .hormone50-intro { margin: 0 0 14px; color: var(--muted); font-size: .9em; line-height: 1.6; }
+.hormone50-axis-label { margin: 0 0 9px; color: var(--ink); font-size: .9em; font-weight: 750; line-height: 1.5; }
+.hormone50-x-label { margin: 8px 0 0; text-align: center; }
+.hormone50-graph { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 7px; background: #fafbf6; }
+.hormone50-graph .hormone50-axis { fill: none; stroke: #61766c; stroke-width: 2; }
+.hormone50-graph .hormone50-ticks { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 30px; text-anchor: middle; }
+.hormone50-graph .hormone50-letter { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 32px; font-weight: 750; text-anchor: middle; }
+.hormone50-graph .hormone50-leader { fill: none; stroke: #61766c; stroke-width: 2; }
+.hormone50-graph .hormone50-curve { fill: none; stroke: #244e43; stroke-width: 3.6; stroke-linecap: round; stroke-linejoin: round; }
+.hormone50-graph .hormone50-y { stroke-dasharray: 10 7; }
+.hormone50-graph .hormone50-progesterone { stroke-dasharray: 1 7; }
+.hormone50-graph .hormone50-fsh { stroke-dasharray: 14 6 2 6; }
+.hormone50-context figcaption { margin-top: 10px; color: var(--muted); font-size: .8em; line-height: 1.5; }
+.hormone50-lab .hormone50-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5em), 1fr)); gap: 8px; margin: 0 0 16px; }
+.hormone50-lab .hormone50-controls button { display: grid; min-width: 0; min-height: 54px; place-items: center; gap: 6px; padding: 10px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: #f2f6ed; font-size: .9em; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; transform: none; }
+.hormone50-lab .hormone50-controls button:hover { border-color: var(--green); background: #e7f0e1; transform: none; }
+.hormone50-lab .hormone50-controls button[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+.hormone50-lab .hormone50-controls button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.hormone50-controls svg { display: block; width: 52px; height: 10px; overflow: visible; }
+.hormone50-controls path { fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; }
+.hormone50-lab .hormone50-curve { opacity: .72; stroke-width: 3.4; }
+.hormone50-lab .hormone50-lh { stroke: #1e654f; }
+.hormone50-lab .hormone50-y { stroke: #2e6e9b; }
+.hormone50-lab .hormone50-progesterone { stroke: #77528b; }
+.hormone50-lab .hormone50-fsh { stroke: #9a6b2d; }
+.hormone50-lab .hormone50-curve.is-active { opacity: 1; stroke-width: 6; }
+.hormone50-lab .hormone50-reading { display: block; margin: 16px 0 10px; padding: 12px; border-left: 3px solid var(--green); color: var(--green-dark); background: #eaf4e8; font-size: 1em; font-weight: 750; line-height: 1.6; }
+.hormone50-lab .hormone50-pattern { margin: 10px 0; color: var(--ink); font-size: .92em; line-height: 1.7; }
+.hormone50-lab .hormone50-note { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88em; line-height: 1.7; }
+@media (max-width: 520px) {
+    .hormone50-context, .hormone50-lab { padding: 12px 10px; }
+}
+
+	
+/* Question 52: neutral numbered energy-flow diagram. */
+.energy52-diagram { width: min(100%, 1040px); min-width: 0; margin: 16px auto 24px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: rgba(255, 254, 250, .72); }
+.energy52-diagram svg { display: block; width: 100%; max-width: 100%; height: auto; }
+.energy52-diagram .energy52-arrows { fill: none; stroke: var(--green); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.energy52-diagram #energy52-arrow path { fill: var(--green); }
+.energy52-diagram .energy52-boxes { fill: var(--white); stroke: #526c62; stroke-width: 2.5; }
+.energy52-diagram .energy52-number,
+.energy52-diagram .energy52-arrow-number { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 40px; font-weight: 700; text-anchor: middle; }
+.energy52-diagram figcaption { margin: 12px 0 0; color: var(--muted); font-size: .85em; line-height: 1.5; }
+@media (max-width: 420px) {
+    .energy52-diagram { padding: 8px 4px; }
+}
+
+/* Question 52: keep the wide comparison table readable on small screens. */
+.energy52-options-scroll { position: relative; max-width: 100%; min-width: 0; margin: 0 0 22px; overflow-x: auto; border-radius: 7px; scrollbar-width: thin; overscroll-behavior-x: contain; }
+.energy52-options-scroll:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.comparison-table.energy52-answer-table { min-width: 48em; margin-bottom: 8px; table-layout: fixed; }
+.energy52-answer-table thead th:first-child { position: sticky; left: 0; z-index: 3; background: var(--white); }
+.energy52-answer-table tbody th:first-child { position: sticky; left: 0; z-index: 2; background: var(--white); }
+.energy52-answer-table tbody tr.is-selected th:first-child { background: #eaf2e7; }
+.energy52-answer-table tbody tr.answer-row-correct th:first-child { background: var(--green-pale); }
+.energy52-answer-table tbody tr.answer-row-incorrect th:first-child { background: var(--red-pale); }
+.energy52-scroll-hint { margin: 0 0 9px; color: var(--muted); font-size: .85em; line-height: 1.5; }
+.comparison-table.energy52-explanation-table { table-layout: fixed; }
+
+	
+/* Question 53: molecular shapes and a readable visual key. */
+.q53-question { width: min(100%, 860px); min-width: 0; margin: 16px auto 24px; }
+.q53-key { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 0 0 16px; padding: 12px; border: 1px solid var(--line); border-radius: 7px; background: rgba(255, 254, 250, .72); font-size: .9em; line-height: 1.5; }
+.q53-key > span { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+.q53-key svg { display: block; width: 32px; height: 26px; flex: 0 0 32px; }
+.q53-key .q53-unit, .q53-option-svg .q53-unit { fill: var(--green-dark); }
+.q53-key .q53-bond, .q53-option-svg .q53-bond { fill: none; stroke: var(--green-dark); stroke-width: 3; }
+.comparison-table.q53-answer-table { table-layout: fixed; }
+.q53-option-svg { display: block; width: min(100%, 320px); height: auto; margin: 0 auto; }
+.comparison-table.q53-explanation-table { table-layout: fixed; }
+
+/* Question 53: interactive molecular diagram, without invented rate data. */
+.protease53-lab { min-width: 0; margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); overflow-wrap: anywhere; }
+.protease53-lab h3 { margin: 0 0 10px; color: var(--ink); font-size: 1em; line-height: 1.4; }
+.protease53-lab .protease53-intro { margin: 0 0 14px; color: var(--muted); font-size: .9em; line-height: 1.6; }
+.protease53-lab .protease53-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10em), 1fr)); gap: 8px; margin-bottom: 16px; }
+.protease53-lab .protease53-choices button { min-width: 0; min-height: 46px; padding: 10px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--green-dark); background: #f2f6ed; font-size: .9em; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; transform: none; }
+.protease53-lab .protease53-choices button:hover { border-color: var(--green); background: #e7f0e1; transform: none; }
+.protease53-lab .protease53-choices button[aria-pressed="true"] { border-color: var(--green); color: white; background: var(--green); }
+.protease53-lab button:focus-visible { outline: 3px solid #91a944; outline-offset: 3px; }
+.protease53-lab .protease53-key { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0 0 14px; color: var(--muted); font-size: .85em; line-height: 1.5; }
+.protease53-key > span { display: inline-flex; align-items: center; gap: 7px; }
+.protease53-key i { display: inline-block; width: 16px; height: 16px; flex: 0 0 16px; }
+.protease53-key .protease53-key-amino { border: 2px solid var(--green); border-radius: 2px; background: #e1ecd6; }
+.protease53-key .protease53-key-glucose { border: 2px solid #2e6e9b; border-radius: 50%; background: #dcecf4; }
+.protease53-key .protease53-key-bond { width: 24px; height: 0; flex-basis: 24px; border-top: 3px solid #526c62; }
+.protease53-lab .protease53-stage { margin: 0 0 8px; color: var(--ink); font-size: 1em; font-weight: 750; line-height: 1.5; }
+.protease53-lab .protease53-graph { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 7px; background: #fafbf6; }
+.protease53-graph .protease53-bond { stroke: #526c62; stroke-width: 5; stroke-linecap: round; }
+.protease53-graph .protease53-amino { fill: #e1ecd6; stroke: var(--green); stroke-width: 3; }
+.protease53-graph .protease53-glucose { fill: #dcecf4; stroke: #2e6e9b; stroke-width: 3; }
+.protease53-lab .protease53-bond-summary { margin: 10px 0 14px; color: var(--muted); font-size: .9em; line-height: 1.6; }
+.protease53-lab .protease53-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.protease53-lab .protease53-actions button { min-width: 0; min-height: 44px; max-width: 100%; padding: 10px 14px; font-size: .9em; line-height: 1.4; white-space: normal; overflow-wrap: anywhere; }
+.protease53-lab .protease53-reset { border: 1px solid var(--line); color: var(--green-dark); background: #f2f6ed; }
+.protease53-lab .protease53-reset:hover { color: white; background: var(--green-dark); }
+.protease53-lab .protease53-reading { display: block; margin: 16px 0 10px; padding: 12px; border-left: 3px solid var(--green); color: var(--green-dark); background: #eaf4e8; font-size: 1em; font-weight: 750; line-height: 1.6; }
+.protease53-lab .protease53-note { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88em; line-height: 1.7; }
+@media (max-width: 520px) {
+    .protease53-lab { padding: 12px 10px; }
+}
+
+	
+/* Question 54: neutral agar setup and candidate shoot results. */
+.auxin54-setup { width: min(100%, 680px); min-width: 0; margin: 16px auto 22px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: rgba(255, 254, 250, .72); }
+.auxin54-setup svg { display: block; width: 100%; height: auto; }
+.auxin54-setup-key { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 8px; color: var(--ink); font-size: .9em; line-height: 1.5; }
+.auxin54-setup-key > span { display: inline-flex; align-items: center; gap: 8px; }
+.auxin54-setup-key i { display: inline-block; width: 22px; height: 24px; flex: 0 0 22px; border: 2px solid #526c62; }
+.auxin54-tip-key { border-radius: 50% 50% 0 0; background: #e1ecd6; }
+.auxin54-agar-key { background: #f3eedb; }
+.auxin54-setup .auxin54-shoot, .auxin54-option-svg .auxin54-stem { fill: #e1ecd6; stroke: var(--green-dark); stroke-width: 2.8; stroke-linejoin: round; }
+.auxin54-setup .auxin54-agar, .auxin54-option-svg .auxin54-agar { fill: #f3eedb; stroke: #526c62; stroke-width: 2.5; stroke-linejoin: round; }
+.auxin54-setup .auxin54-setup-letter { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 36px; font-weight: 750; text-anchor: middle; dominant-baseline: middle; }
+.auxin54-setup .auxin54-light-arrow { fill: none; stroke: var(--green); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.auxin54-setup .auxin54-light-label { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 30px; font-weight: 700; text-anchor: middle; }
+.auxin54-setup figcaption { margin-top: 8px; color: var(--muted); font-size: .85em; line-height: 1.5; }
+.auxin54-option-svg { display: block; width: min(100%, 340px); max-width: 100%; height: auto; margin: 0 auto; }
+.auxin54-option-svg .auxin54-baseline { fill: none; stroke: #526c62; stroke-width: 2.5; stroke-linecap: round; }
+.auxin54-option-svg .auxin54-block-letter { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 32px; font-weight: 750; text-anchor: middle; dominant-baseline: middle; }
+@media (max-width: 420px) {
+    .auxin54-setup { padding: 10px 6px; }
+}
+
+/* Question 54: picture answers retain the quiz's native radio selection and feedback. */
+.auxin54-question { min-width: 0; margin: 0 0 22px; line-height: 1.6; }
+.auxin54-question > p { margin: 12px 0; font-size: .95em; }
+.quiz:has(.auxin54-question) #answer-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.quiz:has(.auxin54-question) .answer { align-items: flex-start; }
+.quiz:has(.auxin54-question) .answer .letter { margin-top: 6px; }
+.quiz:has(.auxin54-question) .answer-text svg { display: block; width: min(100%, 340px); max-width: 100%; height: auto; margin: 0 auto; }
+.comparison-table.auxin54-explanation-table { table-layout: fixed; }
+@media (max-width: 680px) {
+    .quiz:has(.auxin54-question) #answer-options { grid-template-columns: minmax(0, 1fr); }
+}
+
+	
+/* Question 56: qualitative two-point airway graph with readable axis labels. */
+.airway56-context { width: min(100%, 740px); min-width: 0; margin: 18px auto 24px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: rgba(255, 254, 250, .72); }
+.airway56-context .airway56-axis-label { margin: 0 0 9px; color: var(--ink); font-size: .9em; font-weight: 750; line-height: 1.5; }
+.airway56-context .airway56-x-label { margin: 9px 0 0; text-align: center; }
+.airway56-context svg { display: block; width: 100%; max-width: 100%; height: auto; }
+.airway56-context .airway56-axis { fill: none; stroke: #61766c; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.airway56-context .airway56-point { fill: none; stroke: var(--green-dark); stroke-width: 4; stroke-linecap: round; }
+.airway56-context .airway56-number { fill: var(--ink); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 40px; font-weight: 750; text-anchor: middle; }
+@media (max-width: 420px) {
+    .airway56-context { padding: 10px 6px; }
+}
+
+	/* Question 58: four candidate responses to an adrenaline injection. */
+.adrenaline58-option { display: block; width: 100%; min-width: 0; color: var(--ink, #203e35); }
+.adrenaline58-option .adrenaline58-axis-labels { display: flex; flex-wrap: wrap; align-items: flex-end; gap: .2em .6em; width: 100%; max-width: 360px; margin: 0 auto .25em; font-size: .88em; font-weight: 600; line-height: 1.3; }
+.adrenaline58-option .adrenaline58-axis-labels > span { display: block; flex: 1 1 4.5em; min-width: 0; overflow-wrap: anywhere; text-align: left; }
+.adrenaline58-option .adrenaline58-axis-labels > span:last-child { flex-basis: 8.5em; text-align: right; }
+.adrenaline58-option .adrenaline58-option-svg { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; overflow: visible; }
+.adrenaline58-option .adrenaline58-axis, .adrenaline58-option .adrenaline58-ticks { fill: none; stroke: var(--ink, #203e35); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.adrenaline58-option .adrenaline58-tick-labels { fill: var(--ink, #203e35); font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif; font-size: 22px; font-weight: 500; text-anchor: middle; }
+.adrenaline58-option .adrenaline58-glucose, .adrenaline58-option .adrenaline58-pulse { fill: none; stroke: var(--green-dark, #184c37); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+.adrenaline58-option .adrenaline58-pulse { stroke-dasharray: 7 6; }
+.adrenaline58-option .adrenaline58-time-label { display: block; max-width: 360px; margin: 0 auto; overflow-wrap: anywhere; font-size: .88em; font-weight: 500; line-height: 1.3; text-align: center; }
+
+/* Question 58: graph choices use the quiz's native radio controls. */
+.adrenaline58-question { min-width: 0; margin: 0 0 22px; }
+.adrenaline58-key { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 12px 0 18px; color: var(--ink); font-size: .9em; line-height: 1.5; }
+.adrenaline58-key > span { display: inline-flex; align-items: center; gap: 9px; min-width: 0; }
+.adrenaline58-key svg { display: block; flex: 0 0 44px; width: 44px; height: 12px; fill: none; stroke: var(--green-dark); stroke-width: 3; }
+.quiz:has(.adrenaline58-question) #answer-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.quiz:has(.adrenaline58-question) .answer { align-items: flex-start; }
+.quiz:has(.adrenaline58-question) .answer .letter { margin-top: 6px; }
+@media (max-width: 980px) {
+    .quiz:has(.adrenaline58-question) #answer-options { grid-template-columns: minmax(0, 1fr); }
+}
+
+	
+/* Question 59: neutral gland location and the pupil comparison in feedback. */
+.adrenal59-context,
+.adrenal59-pupil-comparison {
+    box-sizing: border-box;
+    width: min(100%, 720px);
+    min-width: 0;
+    margin: 18px auto 24px;
+    padding: 14px;
+    border: 1px solid var(--line, #dce4d8);
+    border-radius: 8px;
+    color: var(--ink, #193b34);
+    background: rgba(255, 254, 250, .72);
+}
+
+.adrenal59-context .adrenal59-anatomy-label {
+    box-sizing: border-box;
+    width: 54%;
+    min-width: 0;
+    margin: 0 0 .15em 46%;
+    color: var(--ink, #193b34);
+    font-size: .875em;
+    font-weight: 700;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.adrenal59-context .adrenal59-kidneys-label { margin-top: .15em; margin-bottom: 0; }
+.adrenal59-context .adrenal59-anatomy-svg { display: block; width: 100%; max-width: 100%; height: auto; }
+.adrenal59-context .adrenal59-body { fill: #e3e9dc; stroke: #708171; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.adrenal59-context .adrenal59-kidney { fill: #dce6d2; stroke: var(--green-dark, #174a3b); stroke-width: 3; stroke-linejoin: round; }
+.adrenal59-context .adrenal59-gland { fill: #9eb993; stroke: var(--green-dark, #174a3b); stroke-width: 3; stroke-linejoin: round; }
+.adrenal59-context .adrenal59-location-ring { fill: none; stroke: var(--green-dark, #174a3b); stroke-width: 2.5; }
+.adrenal59-context .adrenal59-zoom-ring { fill: var(--white, #fffefa); stroke: #708171; stroke-width: 2.5; }
+.adrenal59-context .adrenal59-zoom-leader { fill: none; stroke: #708171; stroke-width: 2; }
+.adrenal59-context .adrenal59-label-leader { fill: none; stroke: var(--ink, #193b34); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.adrenal59-pupil-comparison > figcaption { margin: 0 0 16px; color: var(--ink, #193b34); font-size: .95em; font-weight: 700; line-height: 1.5; }
+.adrenal59-pupil-comparison .adrenal59-eye-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; }
+.adrenal59-pupil-comparison .adrenal59-eye-panel { min-width: 0; text-align: center; }
+.adrenal59-pupil-comparison .adrenal59-eye-label { margin: 0 0 6px; color: var(--ink, #193b34); font-size: .95em; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+.adrenal59-pupil-comparison .adrenal59-eye-svg { display: block; width: 100%; max-width: 280px; height: auto; margin: 0 auto; }
+.adrenal59-pupil-comparison .adrenal59-eye-white { fill: var(--white, #fffefa); stroke: var(--ink, #193b34); stroke-width: 3; stroke-linejoin: round; }
+.adrenal59-pupil-comparison .adrenal59-iris { fill: #9eb993; stroke: var(--green-dark, #174a3b); stroke-width: 2.5; }
+.adrenal59-pupil-comparison .adrenal59-pupil { fill: #101b18; }
+.adrenal59-pupil-comparison .adrenal59-eye-note { margin: 7px 0 0; color: var(--muted, #61766c); font-size: .85em; line-height: 1.5; overflow-wrap: anywhere; }
+
+@media (max-width: 480px) {
+    .adrenal59-context,
+    .adrenal59-pupil-comparison { padding: 10px 6px; }
+    .adrenal59-pupil-comparison .adrenal59-eye-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+}
+
+/* Keep the gland/hormone comparison readable with enlarged text on phones. */
+.adrenal59-hormone-guide { display: grid; gap: 10px; margin: 0; }
+.adrenal59-hormone-guide > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 12px; min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: rgba(255, 254, 250, .72); }
+.adrenal59-hormone-guide dt { min-width: 0; font-weight: 750; }
+.adrenal59-hormone-guide dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 680px) {
+    .adrenal59-hormone-guide > div { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+}
+
+/* All answer explanations include a locally bundled teaching image. */
+.explanation-photo.explanation-visual { width: min(100%, 760px); min-width: 0; margin: 18px auto 22px; }
+.explanation-photo.explanation-visual img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 7px; background: var(--white); }
+.explanation-photo.explanation-visual figcaption { margin-top: 8px; font-size: .9em; line-height: 1.5; overflow-wrap: anywhere; }
+.feedback .comparison-table th, .feedback .comparison-table td { overflow-wrap: anywhere; }
+.quiz #question-title { overflow-wrap: anywhere; }
+
+/* Question 60: a native, responsive Punnett table. */
+.punnett60 {
+    width: min(100%, 48em);
+    min-width: 0;
+    max-width: 100%;
+    margin: 1.3em auto;
+    padding: 1em;
+    border: 1px solid #c6d6c1;
+    border-radius: .65em;
+    color: var(--ink, #193b34);
+    background: var(--white, #fffefa);
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+.punnett60 > figcaption {
+    margin: 0 0 .7em;
+    color: var(--green-dark, #174a3b);
+    font-size: 1.08em;
+    font-weight: 800;
+    line-height: 1.4;
+}
+.punnett60 .punnett60-parents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .2em .7em;
+    margin: 0 0 .7em;
+}
+.punnett60 .punnett60-parents > span { min-width: 0; }
+.punnett60 .punnett60-key,
+.punnett60 .punnett60-axes {
+    margin: 0 0 .8em;
+    font-size: .94em;
+}
+.punnett60 .punnett60-scroll-hint {
+    display: block;
+    margin-top: .25em;
+    font-size: .88em;
+}
+.punnett60 .punnett60-scroll {
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 0 .8em;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+}
+.punnett60 .punnett60-scroll:focus-visible {
+    outline: 3px solid #8e6715;
+    outline-offset: 3px;
+}
+.punnett60 .punnett60-table {
+    width: 100%;
+    min-width: 16em;
+    margin: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: var(--ink, #193b34);
+    background: #f5f8f0;
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: center;
+    overflow-wrap: normal;
+}
+.punnett60 .punnett60-gamete-col { width: 20%; }
+.punnett60 .punnett60-table th,
+.punnett60 .punnett60-table td {
+    padding: .7em .35em;
+    border: 1px solid #91a88c;
+    vertical-align: middle;
+    text-align: center;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+.punnett60 .punnett60-table th {
+    color: var(--green-dark, #174a3b);
+    background: #e7efdf;
+    font-weight: 800;
+}
+.punnett60 .punnett60-table .punnett60-corner {
+    padding-inline: .2em;
+    font-size: .78em;
+    overflow-wrap: anywhere;
+}
+.punnett60 .punnett60-genotype {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.15em;
+    font-weight: 800;
+    line-height: 1.65;
+}
+.punnett60 .punnett60-genotype sup {
+    position: relative;
+    top: -.4em;
+    vertical-align: baseline;
+    font-size: .7em;
+    line-height: 0;
+}
+.punnett60 .punnett60-outcome {
+    display: block;
+    margin-top: .3em;
+    font-weight: 750;
+}
+.punnett60 .punnett60-cell-note {
+    display: block;
+    margin-top: .15em;
+    font-size: .88em;
+}
+.punnett60 .punnett60-probability {
+    display: block;
+    margin-top: .35em;
+    font-size: .92em;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+}
+.punnett60 .punnett60-table .punnett60-carrier {
+    color: #62450b;
+    background: #fff0c9;
+    box-shadow: inset 0 0 0 2px #ae8027;
+}
+.punnett60 .punnett60-table .punnett60-affected {
+    color: #87322d;
+    background: #ffe4de;
+    box-shadow: inset 0 0 0 2px #b4483e;
+}
+.punnett60 .punnett60-all {
+    margin: 0 0 .65em;
+    font-size: .94em;
+}
+.punnett60 .punnett60-sons {
+    margin: 0;
+    padding: .8em;
+    border-left: .25em solid var(--green, #1e654f);
+    color: var(--green-dark, #174a3b);
+    background: #eaf4e8;
+    font-size: .94em;
+}
+.punnett60 .punnett60-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+@media (max-width: 520px) {
+    .punnett60 { padding: .7em .5em; }
+}
+
+/* Question 61: original downloaded graph choices and mass-balance feedback. */
+.reaction61-question { min-width: 0; margin-bottom: 18px; }
+.reaction61-instruction { color: var(--muted); font-size: .9em; line-height: 1.5; }
+.reaction61-option { display: block; width: 100%; min-width: 0; }
+.reaction61-scroll { display: block; width: 100%; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; border-radius: 4px; }
+.reaction61-scroll:focus-visible { outline: 3px solid #91a944; outline-offset: -3px; }
+.reaction61-scroll img { display: block; width: 100%; min-width: calc(390px * var(--quiz-scale, 1)); max-width: none; height: auto; }
+.quiz:has(.reaction61-question) #answer-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.quiz:has(.reaction61-question) .answer { align-items: flex-start; min-width: 0; }
+.quiz:has(.reaction61-question) .answer .letter { margin-top: 6px; }
+.reaction61-analysis .reaction61-correct-row { background: var(--green-pale); }
+.reaction61-analysis .reaction61-correct-row th { color: var(--green-dark); }
+.reaction61-balance { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--green-pale); }
+.reaction61-balance p { flex: 1 1 6em; min-width: 0; margin: 0; text-align: center; overflow-wrap: anywhere; }
+.reaction61-balance strong { display: block; font-size: 1.3em; }
+.reaction61-balance p span { display: block; margin-top: 3px; font-size: .9em; }
+.reaction61-symbol { flex: 0 0 auto; font-size: 1.3em; font-weight: 700; }
+.reaction61-reading-note { font-size: .9em; color: var(--muted); }
+.explanation-photo.reaction61-enzyme-photo { max-width: 450px; }
+@media (max-width: 1100px) {
+    .quiz:has(.reaction61-question) #answer-options { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+    .quiz:has(.reaction61-question) .answer { flex-wrap: wrap; gap: 8px; }
+    .quiz:has(.reaction61-question) .answer-body { flex-basis: 100%; }
+    .reaction61-balance { flex-direction: column; }
+    .reaction61-balance p { flex-basis: auto; width: 100%; }
+}
+
+/* Question 62: ABO allele notation and native Punnett square. */
+.abo62-genotype { display: inline-block; white-space: nowrap; font-size: 1.08em; font-weight: 750; line-height: 1.65; }
+.abo62-genotype sup { position: relative; top: -.4em; vertical-align: baseline; font-size: .7em; line-height: 0; }
+.abo62-family { width: min(100%, 700px); min-width: 0; margin: 18px auto; }
+.abo62-family img { display: block; width: 100%; height: auto; }
+.abo62-family figcaption { font-size: .9em; line-height: 1.5; }
+.abo62-square { position: relative; width: min(100%, 48em); min-width: 0; max-width: 100%; margin: 1.3em auto; padding: 1em; border: 1px solid #c6d6c1; border-radius: .65em; color: var(--ink); background: var(--white); line-height: 1.55; overflow-wrap: anywhere; }
+.abo62-square > figcaption { margin: 0 0 .7em; color: var(--green-dark); font-size: 1.08em; font-weight: 800; line-height: 1.4; }
+.abo62-parents { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2em .7em; margin: 0 0 .7em; }
+.abo62-parents > span { min-width: 0; }
+.abo62-axes { margin: 0 0 .8em; font-size: .94em; }
+.abo62-scroll-hint { display: block; margin-top: .25em; font-size: .88em; }
+.abo62-scroll { min-width: 0; max-width: 100%; margin: 0 0 .8em; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.abo62-scroll:focus-visible { outline: 3px solid #8e6715; outline-offset: 3px; }
+.abo62-table { width: 100%; min-width: 16em; margin: 0; border-collapse: collapse; table-layout: fixed; color: var(--ink); background: #f5f8f0; font-size: 1em; line-height: 1.4; text-align: center; overflow-wrap: normal; }
+.abo62-table th, .abo62-table td { padding: .7em .35em; border: 1px solid #91a88c; vertical-align: middle; text-align: center; overflow-wrap: normal; word-break: normal; }
+.abo62-table th { color: var(--green-dark); background: #e7efdf; font-weight: 800; }
+.abo62-table .abo62-corner { padding-inline: .2em; font-size: .78em; overflow-wrap: anywhere; }
+.abo62-table .abo62-genotype { font-size: 1.15em; font-weight: 800; }
+.abo62-outcome { display: block; margin-top: .3em; font-weight: 750; }
+.abo62-probability { display: block; margin-top: .35em; font-size: .92em; font-weight: 800; font-variant-numeric: tabular-nums; }
+.abo62-table .abo62-ab { background: #eee8f7; }
+.abo62-table .abo62-a { background: #e8f1fa; }
+.abo62-table .abo62-b { background: #fff0cf; }
+.abo62-table .abo62-o { background: #e4f2df; box-shadow: inset 0 0 0 2px #527c43; }
+.abo62-per-child { margin: 0; padding: .75em; border-left: .25em solid var(--green); background: var(--green-pale); font-size: .94em; }
+@media (max-width: 520px) { .abo62-square { padding: .7em .5em; } }
+
+/* Question 63: measured protein production and a labelled synthesis pathway. */
+.protein63-question { min-width: 0; }
+.protein63-statements { padding-left: 1.8em; }
+.protein63-statements li { margin-bottom: .7em; }
+.protein63-results { min-width: 0; margin: 1.2em 0; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); }
+.protein63-results > figcaption { margin-bottom: .8em; color: var(--green-dark); font-weight: 800; }
+.protein63-result-row { min-width: 0; margin: 0 0 1em; }
+.protein63-result-row p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .2em 1em; margin: 0 0 .35em; }
+.protein63-result-row p span { font-weight: 750; font-variant-numeric: tabular-nums; }
+.protein63-track { width: 100%; height: 1.2em; overflow: hidden; border: 1px solid #c6d6c1; border-radius: .2em; background: #edf1e8; }
+.protein63-bar { display: block; height: 100%; }
+.protein63-no-drug { width: 100%; background: var(--green); }
+.protein63-with-drug { width: 20%; background: #79609d; }
+.protein63-scale-note { margin: .5em 0 0; color: var(--muted); font-size: .9em; }
+.protein63-reasons { padding-left: 1.6em; }
+.protein63-reasons > li { margin-bottom: 1em; padding-left: .2em; }
+.protein63-reasons > li::marker { color: var(--green-dark); font-weight: 800; }
+.protein63-reasons p { margin-top: .4em; }
+.protein63-pathway { min-width: 0; width: min(100%, 38em); margin: 1.2em auto; text-align: center; overflow-wrap: anywhere; }
+.protein63-pathway p { margin: 0; padding: .75em; }
+.protein63-pathway p > span:last-child { display: block; margin-top: .25em; font-size: .9em; }
+.protein63-molecule { border: 1px solid #b9cdb1; border-radius: .5em; background: var(--green-pale); }
+.protein63-process { color: #584377; }
+.protein63-process > span:first-child { font-size: 1.25em; font-weight: 800; }
+
+.protein63-question .comparison-table th, .protein63-question .comparison-table td { overflow-wrap: anywhere; }
+.explanation-photo.protein63-photo { max-width: 548px; }
+
+/* Independent question-navigation scrolling; controls remain at the panel top. */
+.question-navigator {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    max-height: calc(100vh - 190px);
+    max-height: calc(100dvh - 190px);
+}
+.question-navigator > .text-size-controls,
+.question-navigator > .sound-toggle { flex: 0 0 auto; }
+.question-navigator > nav {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+    scrollbar-gutter: stable;
+    padding: 2px 5px 40px 2px;
+    scroll-padding-block: 4px 40px;
+}
+.question-navigator > nav:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.question-navigator,
+.question-navigator > nav { scrollbar-width: thin; scrollbar-color: #809779 #edf2e8; }
+.question-navigator::-webkit-scrollbar,
+.question-navigator > nav::-webkit-scrollbar { width: 8px; }
+.question-navigator::-webkit-scrollbar-track,
+.question-navigator > nav::-webkit-scrollbar-track { background: #edf2e8; }
+.question-navigator::-webkit-scrollbar-thumb,
+.question-navigator > nav::-webkit-scrollbar-thumb { border: 2px solid #edf2e8; border-radius: 8px; background: #809779; }
+@media (max-width: 680px) {
+    .question-navigator { max-height: min(22rem, 45vh); max-height: min(22rem, 45dvh); }
+}
+/* On short screens, one panel scrollbar keeps every control reachable. */
+@media (max-height: 480px) {
+    .question-navigator { display: block; overflow-y: scroll; overflow-x: hidden; overscroll-behavior-y: contain; scrollbar-gutter: stable; }
+    .question-navigator > nav { overflow: visible; scrollbar-gutter: auto; padding-right: 2px; }
+}
+@media (max-width: 680px) and (max-height: 480px) {
+    .question-navigator { max-height: max(64px, calc(100vh - 220px)); max-height: max(64px, calc(100dvh - 220px)); }
+}
+
+/* Question 64: original raster graph and calculated initial-rate comparison. */
+.amylase64-question { min-width: 0; }
+.amylase64-graph { width: min(100%, 960px); min-width: 0; margin: 1.2em auto; }
+.amylase64-graph img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.amylase64-graph figcaption { margin-top: .5em; color: var(--muted); font-size: .9em; line-height: 1.5; overflow-wrap: anywhere; }
+.amylase64-graph a { color: inherit; }
+.amylase64-comparison { min-width: 0; margin: 1.2em 0; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); }
+.amylase64-comparison > figcaption { margin-bottom: .8em; color: var(--green-dark); font-weight: 800; }
+.amylase64-rate-row { min-width: 0; margin-bottom: .9em; }
+.amylase64-rate-row p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .2em 1em; margin: 0 0 .3em; }
+.amylase64-rate-row p span { font-weight: 750; font-variant-numeric: tabular-nums; }
+.amylase64-track { width: 100%; height: 1.2em; overflow: hidden; border: 1px solid #c6d6c1; border-radius: .2em; background: #edf1e8; }
+.amylase64-bar { display: block; height: 100%; background: var(--green); }
+.amylase64-p { width: 100%; }
+.amylase64-s { width: 75%; background: #79609d; }
+.amylase64-q { width: 73%; }
+.amylase64-r { width: 37.5%; }
+.amylase64-scale-note { margin: .5em 0 0; color: var(--muted); font-size: .9em; }
+
+/* Question 65: original thorax-volume graph and breathing mechanics. */
+.breath65-question { min-width: 0; }
+.breath65-graph { width: min(100%, 900px); min-width: 0; margin: 1.2em auto; }
+.breath65-graph img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.breath65-graph figcaption { margin-top: .5em; color: var(--muted); font-size: .9em; line-height: 1.5; overflow-wrap: anywhere; }
+.breath65-graph a { color: inherit; }
+.breath65-table-scroll { position: relative; min-width: 0; max-width: 100%; margin: 1em 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.breath65-table-scroll:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.breath65-table-scroll table { width: 100%; min-width: 20em; margin: 0; table-layout: fixed; }
+.breath65-table-scroll th, .breath65-table-scroll td { overflow-wrap: anywhere; }
+.breath65-options td { text-align: center; }
+.breath65-options .answer-table-choice { min-width: 42px; min-height: 44px; }
+.breath65-mechanics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; min-width: 0; margin: 1.2em 0; }
+.breath65-mechanics section { min-width: 0; padding: 1em; border: 1px solid #b9cdb1; border-radius: .6em; background: var(--green-pale); overflow-wrap: anywhere; }
+.breath65-mechanics .breath65-expiration { border-color: #d4c3a0; background: #fff3dc; }
+.breath65-mechanics h4 { margin: 0 0 .7em; color: var(--green-dark); font-size: 1.05em; line-height: 1.4; }
+.breath65-mechanics p { margin: .6em 0; }
+.breath65-mechanics .breath65-volume, .breath65-mechanics .breath65-air { font-weight: 800; }
+@media (max-width: 680px) { .breath65-mechanics { grid-template-columns: minmax(0, 1fr); } }
+
+.breath65-options .answer-table-choice:hover { color: white; background: var(--green); transform: none; }
+
+/* Question 66: urea-production/removal model and qualified table answer. */
+.urea66-question { min-width: 0; }
+.urea66-table-scroll { position: relative; min-width: 0; max-width: 100%; margin: 1em 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.urea66-table-scroll:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.urea66-table-scroll table { width: 100%; min-width: 20em; margin: 0; table-layout: fixed; }
+.urea66-table-scroll th, .urea66-table-scroll td { overflow-wrap: anywhere; }
+.urea66-options td { text-align: center; }
+.urea66-options .answer-table-choice { min-width: 42px; min-height: 44px; }
+.urea66-options .answer-table-choice:hover { color: white; background: var(--green); transform: none; }
+.urea66-organs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; min-width: 0; margin: 1.2em 0; }
+.urea66-organs section { min-width: 0; padding: 1em; border: 1px solid #b9cdb1; border-radius: .6em; background: var(--green-pale); overflow-wrap: anywhere; }
+.urea66-organs .urea66-kidney { border-color: #bacbd9; background: #eaf2f8; }
+.urea66-organs h4 { margin: 0 0 .7em; color: var(--green-dark); font-size: 1.05em; line-height: 1.4; }
+.urea66-organs p { margin: .6em 0; }
+.urea66-qualification { margin: 1.2em 0; padding: .8em 1em; border-left: .25em solid #a7782d; border-radius: .2em; background: #fff4df; overflow-wrap: anywhere; }
+.urea66-qualification p { margin: 0; }
+@media (max-width: 680px) { .urea66-organs { grid-template-columns: minmax(0, 1fr); } }
+
+/* Question 67: native, countable cell-doubling diagram. */
+.mitosis67-growth { min-width: 0; margin: 1.2em 0; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); overflow-wrap: anywhere; }
+.mitosis67-growth > figcaption { margin-bottom: .8em; color: var(--green-dark); font-weight: 800; }
+.mitosis67-stages { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; min-width: 0; }
+.mitosis67-stage { min-width: 0; padding: .8em .5em; border: 1px solid #c6d6c1; border-radius: .45em; background: #f3f6ee; text-align: center; }
+.mitosis67-stage h4 { margin: 0 0 .35em; color: var(--green-dark); font-size: 1em; line-height: 1.4; }
+.mitosis67-stage p { margin: .35em 0; }
+.mitosis67-time { color: var(--muted); font-size: .9em; }
+.mitosis67-cells { display: flex; flex-wrap: wrap; align-content: start; justify-content: center; gap: .4em; max-width: 5.6em; min-height: 2.6em; margin: .8em auto; }
+.mitosis67-cell { position: relative; display: block; flex: 0 0 1.1em; width: 1.1em; height: 1.1em; border: 2px solid #47733e; border-radius: 50%; background: #dcead4; }
+.mitosis67-cell::after { position: absolute; inset: 31%; border-radius: 50%; background: #47733e; content: ""; }
+.mitosis67-count { font-weight: 800; }
+.mitosis67-stage.mitosis67-final { border-color: var(--green); background: var(--green-pale); box-shadow: inset 0 0 0 1px var(--green); }
+.mitosis67-interval { margin: .8em 0 0; font-size: .9em; color: var(--muted); }
+@media (max-width: 1000px) { .mitosis67-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .mitosis67-stages { grid-template-columns: minmax(0, 1fr); } }
+
+/* Question 68: original raster pedigree, six numbered annotations and a Punnett square. */
+.cat68-question { min-width: 0; }
+.cat68-pedigree { min-width: 0; max-width: 100%; margin: 1.2em auto; }
+.cat68-pedigree figcaption { margin-top: .5em; font-size: .9em; color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }
+.cat68-pedigree a { color: inherit; }
+.cat68-image-scroll { min-width: 0; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.cat68-image-scroll:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.cat68-image-wrap { position: relative; min-width: calc(580px * var(--quiz-scale, 1)); width: 100%; }
+.cat68-image-wrap img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.cat68-marker { position: absolute; display: grid; place-items: center; width: 1.55em; height: 1.55em; padding: 0; transform: translate(-50%, -50%); border: 2px solid white; border-radius: 50%; color: white; background: var(--green); font-size: clamp(12px, .85em, 20px); font-weight: 800; line-height: 1; pointer-events: none; }
+.cat68-reasons { padding-left: 1.6em; }
+.cat68-reasons li { margin-bottom: .85em; }
+.cat68-reasons li::marker { color: var(--green-dark); font-weight: 800; }
+.cat68-count { padding: .85em; border-left: .25em solid var(--green); background: var(--green-pale); }
+.cat68-square { position: relative; min-width: 0; max-width: 100%; margin: 1.2em 0; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); }
+.cat68-square > figcaption { font-weight: 800; color: var(--green-dark); }
+.cat68-square > p { font-size: .9em; }
+.cat68-scroll { min-width: 0; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+.cat68-scroll:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.cat68-square table { min-width: 16em; width: 100%; border-collapse: collapse; table-layout: fixed; }
+.cat68-square th, .cat68-square td { padding: .65em .3em; border: 1px solid #91a88c; text-align: center; overflow-wrap: anywhere; }
+.cat68-square th { background: #e7efdf; }
+.cat68-square td strong { display: block; font-size: 1.15em; white-space: nowrap; }
+.cat68-square td span { display: block; margin-top: .2em; font-size: .9em; }
+.cat68-square .cat68-recessive { background: #e4f2df; box-shadow: inset 0 0 0 2px #527c43; }
+
+.cat68-highlight { position: absolute; width: 5.3%; height: 12.05%; transform: translate(-50%, -50%); border: 2px solid var(--green); border-radius: 50%; pointer-events: none; }
+.cat68-highlight.cat68-male { border-radius: 3px; }
+.cat68-highlight .cat68-marker { left: calc(100% + .15em); top: 0; transform: none; }
+
+.cat68-highlight .cat68-marker4 { left: auto; right: calc(100% + .15em); top: calc(100% + .15em); }
+
+/* Question 69: two labelled native Punnett squares and a downloaded fruit-fly photograph. */
+.fruit69-question { min-width: 0; }
+.fruit69-genotype { display: inline-block; white-space: nowrap; font-weight: 800; }
+.fruit69-square { position: relative; width: min(100%, 42em); min-width: 0; max-width: 100%; margin: 1.2em auto; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); overflow-wrap: anywhere; }
+.fruit69-square > figcaption { color: var(--green-dark); font-weight: 800; }
+.fruit69-square > p { font-size: .94em; }
+.fruit69-scroll { min-width: 0; max-width: 100%; margin: .8em 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.fruit69-scroll:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.fruit69-scroll table { min-width: 16em; width: 100%; border-collapse: collapse; table-layout: fixed; }
+.fruit69-scroll th, .fruit69-scroll td { padding: .7em .3em; border: 1px solid #91a88c; text-align: center; vertical-align: middle; overflow-wrap: anywhere; }
+.fruit69-scroll th { color: var(--green-dark); background: #e7efdf; }
+.fruit69-scroll th:first-child { font-size: .9em; }
+.fruit69-scroll td > strong { display: block; font-size: 1.15em; }
+.fruit69-scroll td > span { display: block; margin-top: .25em; font-size: .92em; }
+.fruit69-scroll .fruit69-red { background: #fcebec; }
+.fruit69-scroll .fruit69-orange { background: #fff0cf; }
+.fruit69-probability { font-weight: 800; font-variant-numeric: tabular-nums; }
+.fruit69-square .fruit69-summary { margin: .8em 0 0; padding: .75em; border-left: .25em solid var(--green); background: var(--green-pale); }
+.explanation-photo.fruit69-photo { max-width: 546px; }
+@media (max-width: 520px) { .fruit69-square { padding: .7em .5em; } }
+
+/* Question 70: qualitative genetic/environmental influences on phenotype. */
+.variation70-flow { min-width: 0; margin: 1.2em 0; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); overflow-wrap: anywhere; }
+.variation70-flow > figcaption { margin-bottom: .8em; color: var(--green-dark); font-weight: 800; }
+.variation70-inputs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; min-width: 0; }
+.variation70-inputs section, .variation70-output { min-width: 0; padding: .9em; border: 1px solid #b9cdb1; border-radius: .5em; background: var(--green-pale); }
+.variation70-inputs .variation70-environment { border-color: #d4c3a0; background: #fff3dc; }
+.variation70-flow h4 { margin: 0 0 .6em; color: var(--green-dark); font-size: 1em; line-height: 1.4; }
+.variation70-flow section p { margin: .5em 0; }
+.variation70-arrow { margin: .2em 0; color: var(--green); font-size: 1.8em; font-weight: 800; text-align: center; }
+.variation70-output { border-color: var(--green); text-align: center; box-shadow: inset 0 0 0 1px var(--green); }
+.variation70-examples th, .variation70-examples td { overflow-wrap: anywhere; }
+@media (max-width: 680px) { .variation70-inputs { grid-template-columns: minmax(0, 1fr); } }
+
+/* One compact row: live question count, paper source and a fixed panel toggle. */
+.question-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 0 12px;
+    padding: 4px 6px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--muted);
+    background: rgba(255, 254, 250, .82);
+    font-size: .8125em;
+    line-height: 1.5;
+}
+.question-header .question-info-row {
+    flex: 1 1 auto;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    font-size: inherit;
+    line-height: inherit;
+}
+.question-header .question-info-row:focus-visible { outline: 2px solid #91a944; outline-offset: 0; }
+.question-header #question-count { flex: 0 0 auto; white-space: nowrap; font-weight: 750; }
+.question-header .question-info-row .question-paper { gap: 8px; padding-left: 6px; }
+.question-header .panel-toggle { flex: 0 0 36px; margin-left: 0; align-self: center; }
+
+/* Question 71: published graph choices and qualitative day/night process guide. */
+.daynight71-question { min-width: 0; }
+.daynight71-key { display: flex; flex-wrap: wrap; gap: .6em 1.5em; margin: .5em 0 1em; font-size: .94em; }
+.daynight71-key > span { display: inline-flex; align-items: center; gap: .5em; min-width: 0; }
+.daynight71-key-line { display: inline-block; flex: 0 0 2.7em; width: 2.7em; height: 0; border-top: 2px solid var(--green-dark); }
+.daynight71-key-dashed { border-top-style: dashed; }
+.daynight71-instruction { color: var(--muted); font-size: .9em; line-height: 1.5; }
+.daynight71-option { display: block; width: 100%; min-width: 0; }
+.daynight71-option-scroll { display: block; width: 100%; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; border-radius: 4px; }
+.daynight71-option-scroll:focus-visible { outline: 2px solid #91a944; outline-offset: -2px; }
+.daynight71-option img { display: block; width: 100%; min-width: calc(320px * var(--quiz-scale, 1)); max-width: none; height: auto; }
+.quiz:has(.daynight71-question) #answer-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.quiz:has(.daynight71-question) .answer { align-items: flex-start; min-width: 0; }
+.quiz:has(.daynight71-question) .answer .letter { margin-top: 5px; }
+.daynight71-cycle { min-width: 0; margin: 1.2em 0; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); overflow-wrap: anywhere; }
+.daynight71-cycle > figcaption { margin-bottom: .8em; color: var(--green-dark); font-weight: 800; }
+.daynight71-periods { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; min-width: 0; }
+.daynight71-periods section { min-width: 0; padding: .9em; border: 1px solid #d4c3a0; border-radius: .5em; background: #fff3dc; }
+.daynight71-periods .daynight71-night { border-color: #becadb; background: #ecf0f8; }
+.daynight71-periods h4 { margin: 0 0 .6em; color: var(--green-dark); font-size: 1em; line-height: 1.4; }
+.daynight71-periods p { margin: .6em 0; }
+.daynight71-table-scroll { position: relative; min-width: 0; max-width: 100%; margin: 1em 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.daynight71-table-scroll:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.daynight71-comparison { width: 100%; min-width: 22em; margin: 0; table-layout: fixed; }
+.daynight71-comparison th, .daynight71-comparison td { overflow-wrap: anywhere; }
+.daynight71-feedback-graph { width: min(100%, 760px); min-width: 0; margin: 1.2em auto; }
+.daynight71-feedback-graph img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.daynight71-feedback-graph figcaption { margin-top: .5em; color: var(--muted); font-size: .9em; line-height: 1.5; overflow-wrap: anywhere; }
+@media (max-width: 1100px) { .quiz:has(.daynight71-question) #answer-options { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 680px) { .daynight71-periods { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) {
+    .quiz:has(.daynight71-question) .answer { flex-wrap: wrap; gap: 8px; }
+    .quiz:has(.daynight71-question) .answer-body { flex-basis: 100%; }
+}
+
+/* Question 72: DNA mass per cell and an explicitly illustrative distribution model. */
+.dna72-question { min-width: 0; }
+.dna72-table-scroll { position: relative; min-width: 0; max-width: 100%; margin: 1em 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.dna72-table-scroll:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.dna72-table-scroll table { width: 100%; min-width: 22em; margin: 0; table-layout: fixed; }
+.dna72-table-scroll th, .dna72-table-scroll td { overflow-wrap: anywhere; }
+.dna72-points .dna72-correct-row { background: var(--green-pale); }
+.dna72-distribution { position: relative; min-width: 0; max-width: 100%; margin: 1.2em 0; padding: 1em; border: 1px solid var(--line); border-radius: .6em; background: var(--white); overflow-wrap: anywhere; }
+.dna72-distribution > figcaption { margin-bottom: .8em; color: var(--green-dark); font-weight: 800; }
+.dna72-stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; min-width: 0; }
+.dna72-stage { min-width: 0; padding: .8em .6em; border: 1px solid #c6d6c1; border-radius: .5em; background: #f3f6ee; text-align: center; }
+.dna72-stage h4 { margin: 0 0 .5em; color: var(--green-dark); font-size: 1em; line-height: 1.4; }
+.dna72-stage p { margin: .6em 0 0; }
+.dna72-cells { display: flex; flex-wrap: wrap; justify-content: center; gap: .5em; min-width: 0; margin: .8em 0; }
+.dna72-cell { display: flex; flex: 0 0 4.8em; align-items: center; justify-content: center; gap: .3em; width: 4.8em; height: 4.8em; border: 2px solid #6d8b62; border-radius: 50%; background: var(--white); }
+.dna72-unit { display: block; flex: 0 0 .3em; width: .3em; height: 1.5em; border-radius: .1em; background: #5f4387; }
+.dna72-stage.dna72-daughters { border-color: var(--green); background: var(--green-pale); box-shadow: inset 0 0 0 1px var(--green); }
+.dna72-marker-key { margin: .8em 0 0; color: var(--muted); font-size: .9em; }
+@media (max-width: 1000px) { .dna72-stages { grid-template-columns: minmax(0, 1fr); } }
+
+.dna72-graph { width: min(100%, 900px); min-width: 0; margin: 1.2em auto; }
+.dna72-graph img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.dna72-graph figcaption { margin-top: .5em; color: var(--muted); font-size: .9em; line-height: 1.5; overflow-wrap: anywhere; }
+.dna72-graph a { color: inherit; }

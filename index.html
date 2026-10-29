@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f4f6ef">
+	<title>Characteristics of living organisms | Biology quiz</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="page">
+		<header class="topbar">
+			<div class="brand">
+				<img class="brand-logo" src="images/dr-king-wunna-logo.png" alt="Dr King Wunna logo">
+				<span>IGCSE Biology 0610</span>
+			</div>
+			<span class="topic">Paper 2 Practice</span>
+		</header>
+
+		<main>
+			<div class="quiz-layout" id="quiz-layout">
+				<aside class="question-navigator" id="question-navigator" aria-label="Question navigator">
+					<div class="text-size-controls" role="group" aria-label="Quiz text size">
+						<span>Text size</span>
+						<button id="decrease-text" type="button" aria-label="Decrease quiz text size">A−</button>
+						<output id="text-size-value" aria-live="polite">100%</output>
+						<button id="increase-text" type="button" aria-label="Increase quiz text size">A+</button>
+						<button id="reset-text" type="button">Reset</button>
+					</div>
+					<button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="true" aria-label="Turn answer sounds off">Sound: On</button>
+					<nav aria-label="Quiz questions" tabindex="0">
+						<div class="question-nav-list" id="question-nav-list"></div>
+					</nav>
+				</aside>
+
+				<section class="quiz" aria-labelledby="question-title">
+				<div class="question-header">
+					<div class="question-info-row" tabindex="0" role="group" aria-label="Question number and past-paper source">
+						<span id="question-count">Question 1 of 76</span>
+						<div class="question-paper" id="question-paper" hidden>
+							<span class="paper-label visually-hidden">Past paper</span>
+							<code class="paper-code" id="paper-code"></code>
+							<span class="paper-session" id="paper-session"></span>
+						</div>
+					</div>
+					<button class="panel-toggle" id="toggle-navigator" type="button" aria-label="Hide questions" title="Hide questions" aria-controls="question-navigator" aria-expanded="true">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+					</button>
+				</div>
+				<div class="progress-track" id="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="1" aria-valuemax="76" aria-valuenow="1">
+					<div class="progress-value" id="progress-value" style="width: 1.32%"></div>
+				</div>
+				<h2 id="question-title" tabindex="-1"></h2>
+				<div id="question-context" class="question-context"></div>
+
+				<form id="quiz-form">
+					<fieldset>
+						<legend id="question-legend"></legend>
+						<div id="answer-options" class="answer-options"></div>
+					</fieldset>
+
+					<div class="actions">
+						<button id="check-button" type="submit" disabled>Check answer</button>
+						<span class="hint" id="selection-hint">Select an option to continue</span>
+						<button id="next-question-button" type="button" hidden>Next question</button>
+					</div>
+					<p class="visually-hidden" id="answer-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+					<div class="feedback" id="feedback" role="region" aria-label="Answer explanation"></div>
+				</form>
+				</section>
+			</div>
+		</main>
+	</div>
+	<div class="answer-cue" id="answer-cue" hidden aria-hidden="true">
+		<span class="answer-cue-icon" id="answer-cue-icon">✓</span>
+		<strong id="answer-cue-label">Correct!</strong>
+	</div>
+	<div class="teacher-badge" role="note" aria-label="Dr King Wunna">
+		<span class="teacher-badge-dot" aria-hidden="true"></span>
+		<span>Dr King Wunna</span>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
