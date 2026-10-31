@@ -1758,3 +1758,40 @@
 .paper-opt-row .answer-status[hidden]{display:none}
 .paper-answer-table th .answer:hover{transform:none;}
 @media (max-width:560px){.paper-answer-table{min-width:460px}.paper-answer-table th,.paper-answer-table td{padding:10px 8px}.question-original-figure img{padding:4px}}
+
+/* New question 21–30 compact exam-tables, figure clarity */
+.paper-data-table{max-width:820px}
+.paper-answer-table td{overflow-wrap:anywhere}
+.question-original-figure{max-width:1000px}
+
+/* Original user-provided paper wording and visual structure for questions 31–40. */
+.exam-question-line { margin: 14px 0 22px; color: var(--ink); font-size: 1.05em; line-height: 1.55; }
+.source-statements { counter-reset: statement; list-style: none; max-width: 850px; margin: 16px auto 25px; padding: 0; display: grid; gap: 12px; }
+.source-statements li { counter-increment:statement; display:grid; grid-template-columns: 44px minmax(0,1fr); align-items:start; gap: 15px; line-height:1.5; font-size: 1em; }
+.source-statements li::before { content: counter(statement); font-weight: 650; text-align:right; }
+.chemistry-test-table { max-width:100%; text-align:left; }
+.chemistry-test-table th, .chemistry-test-table td{ padding:10px 12px; }
+.chemistry-test-table th:first-child { width:50%; }
+.protein-question-figure { max-width:680px; }
+.protein-question-figure img { border:0; background:#fff; padding:0; }
+@media (max-width:560px){.source-statements li{grid-template-columns:28px minmax(0,1fr);gap:10px}.chemistry-test-table{min-width:500px}}
+
+
+/* Quick periodic table reference beside navigation toggle */
+.question-header-actions { display:flex;align-items:center;gap:6px;flex:0 0 auto; }
+.question-header .question-header-actions .panel-toggle { margin-left:0; }
+.question-header .periodic-table-toggle { display:inline-flex;gap:8px;align-items:center;justify-content:center;min-height:35px;padding:0 10px;border:1px solid #bad0c5;border-radius:7px;color:#19583e;background:#eef8f1;font:700 12px/1.2 inherit;white-space:nowrap;cursor:pointer; }
+.question-header .periodic-table-toggle svg { width:19px;height:19px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round; }
+.question-header .periodic-table-toggle:hover { background:#e2f1e8; }
+.question-header .periodic-table-toggle:focus-visible,.periodic-modal button:focus-visible,.periodic-modal a:focus-visible{outline:3px solid #71bfa7;outline-offset:2px;}
+.periodic-modal[hidden]{display:none!important}
+.periodic-modal{position:fixed;z-index:10000;inset:0;display:flex;justify-content:center;align-items:center;padding:clamp(8px,2vw,24px);background:rgba(12,30,27,.76);backdrop-filter:blur(5px)}
+.periodic-modal-panel{display:flex;flex-direction:column;width:min(98vw,1720px);height:min(94dvh,1080px);min-height:300px;border:1px solid #d5e3db;border-radius:15px;overflow:hidden;background:#fcfefc;box-shadow:0 18px 60px #0b251b99;}
+.periodic-modal-header{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid #dae5dd;background:#f5f9f6;}
+.periodic-title-group{display:grid;gap:3px}.periodic-title-group strong{font-size:19px;color:#163b32}.periodic-title-group span{font-size:12px;color:#61776b}
+.periodic-controls{display:flex;align-items:center;gap:6px}.periodic-controls button{min-height:34px;min-width:34px;padding:0 9px;background:#fff;border:1px solid #bdd4c6;color:#1a513f;border-radius:6px;font:700 14px Arial,sans-serif;cursor:pointer}.periodic-controls button:hover{background:#e6f3eb}.periodic-controls #periodic-close{background:#eaf1ec;font-size:17px}
+.periodic-controls output{min-width:47px;text-align:center;color:#2b5f4c;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.periodic-table-viewer{flex:1 1 auto;min-height:0;overflow:auto;background:#fff;overscroll-behavior:contain;scrollbar-color:#b7c7be #f6f9f6}
+.periodic-table-viewer img{display:block;max-width:none;height:auto;margin:12px auto;user-select:none;object-fit:contain;}
+.periodic-modal-footer{padding:9px 16px;border-top:1px solid #dce7df;font-size:12px;color:#60766b;line-height:1.4}.periodic-modal-footer a{color:#1b6c51;font-weight:700}
+@media(max-width:760px){.periodic-button-label{display:none}.question-header .periodic-table-toggle{padding:0;min-width:37px}.periodic-modal-panel{width:100%;height:98dvh}.periodic-modal-header{padding:9px;gap:7px}.periodic-title-group strong{font-size:16px}.periodic-title-group span{font-size:10px}.periodic-controls{gap:3px}.periodic-controls button{padding:0 6px;min-width:29px}.periodic-controls #periodic-zoom-reset{font-size:11px}}

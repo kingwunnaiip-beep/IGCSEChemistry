@@ -14,11 +14,9 @@
 				<img class="brand-logo" src="images/chemistry-logo.svg" alt="Dr King Wunna logo">
 				<span>IGCSE Chemistry 0620</span>
 			</div>
-			<span class="topic">Paper 22 · Feb/Mar 2026 · Q1–20 · Paper-style diagrams</span>
+			<span class="topic">Paper 22 · Feb/Mar 2026 · Q1–40 · Paper-style diagrams</span>
 		</header>
-        <p class="paper-notice">Adapted practice based on Cambridge 0620/22/F/M/26 questions 1–20. Question content is adapted; Question 2 contains the user-provided original diagram. Questions 4 and 10 have schematic redrawn figures, and explanations use original teaching illustrations.</p>
-
-		<main>
+<main>
 			<div class="quiz-layout" id="quiz-layout">
 				<aside class="question-navigator" id="question-navigator" aria-label="Question navigator">
 					<div class="text-size-controls" role="group" aria-label="Quiz text size">
@@ -37,7 +35,7 @@
 				<section class="quiz" aria-labelledby="question-title">
 				<div class="question-header">
 					<div class="question-info-row" tabindex="0" role="group" aria-label="Question number and past-paper source">
-						<span id="question-count">Question 1 of 20</span>
+						<span id="question-count">Question 1 of 40</span>
 						<span class="chapter-chip" id="chapter-tag">Chapter 1 · States of Matter</span>
 						<div class="question-paper" id="question-paper" hidden>
 							<span class="paper-label visually-hidden">Past paper</span>
@@ -45,12 +43,17 @@
 							<span class="paper-session" id="paper-session"></span>
 						</div>
 					</div>
+<div class="question-header-actions" role="group" aria-label="Quiz reference and navigation">
+                    <button class="periodic-table-toggle" id="open-periodic-table" type="button" aria-label="Open periodic table" title="Open periodic table" aria-haspopup="dialog" aria-controls="periodic-modal">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="3.5" width="19" height="17" rx="2"/><path d="M2.5 9h19M9 3.5v17M15 9v11"/><path d="M3 14.5h18"/></svg><span class="periodic-button-label">Periodic Table</span>
+                    </button>
 					<button class="panel-toggle" id="toggle-navigator" type="button" aria-label="Hide questions" title="Hide questions" aria-controls="question-navigator" aria-expanded="true">
 						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
 					</button>
+                    </div>
 				</div>
-				<div class="progress-track" id="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="1" aria-valuemax="20" aria-valuenow="1">
-					<div class="progress-value" id="progress-value" style="width: 5%"></div>
+				<div class="progress-track" id="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="1" aria-valuemax="40" aria-valuenow="1">
+					<div class="progress-value" id="progress-value" style="width: 2.50%"></div>
 				</div>
 				<h2 id="question-title" tabindex="-1"></h2>
 				<div id="question-context" class="question-context"></div>
@@ -74,6 +77,25 @@
 			</div>
 		</main>
 	</div>
+	<div class="periodic-modal" id="periodic-modal" role="dialog" aria-modal="true" aria-labelledby="periodic-title" hidden>
+    <div class="periodic-modal-panel">
+      <div class="periodic-modal-header">
+        <div class="periodic-title-group"><strong id="periodic-title">Periodic Table</strong><span>Quick reference · zoom and pan</span></div>
+        <div class="periodic-controls" role="group" aria-label="Periodic table controls">
+          <button id="periodic-zoom-out" type="button" aria-label="Zoom out">−</button>
+          <output id="periodic-zoom-level" aria-live="polite">100%</output>
+          <button id="periodic-zoom-in" type="button" aria-label="Zoom in">+</button>
+          <button id="periodic-zoom-reset" type="button" aria-label="Reset zoom">Reset</button>
+          <button id="periodic-close" type="button" aria-label="Close periodic table" title="Close periodic table">✕</button>
+        </div>
+      </div>
+      <div class="periodic-table-viewer" id="periodic-table-viewer" tabindex="0" aria-label="Scroll to explore the periodic table">
+        <img id="periodic-reference-image" src="images/periodic-table-reference.svg" alt="Periodic table of elements showing symbols, atomic numbers and relative atomic masses" draggable="false" />
+      </div>
+      <div class="periodic-modal-footer">Use +/− to zoom, scroll to pan, or press Esc to return to your question. <a href="images/periodic-table-reference.svg" target="_blank" rel="noopener noreferrer">Open full size</a></div>
+    </div>
+  </div>
+
 	<div class="answer-cue" id="answer-cue" hidden aria-hidden="true">
 		<span class="answer-cue-icon" id="answer-cue-icon">✓</span>
 		<strong id="answer-cue-label">Correct!</strong>

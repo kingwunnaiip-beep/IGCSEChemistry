@@ -1,18 +1,18 @@
 [
   {
     "chapter": "States of Matter · Gas behaviour",
-    "title": "A piston can slide freely inside a syringe containing helium. The gas is heated while the external pressure stays constant. What happens to its volume and the spacing of its atoms?",
-    "legend": "Apply the kinetic particle model",
-    "context": "<p class=\"scenario\">A free-moving piston allows the helium to expand at constant pressure.</p>",
+    "title": "A sample of helium gas is placed in a free-moving gas syringe.",
+    "legend": "",
+    "context": "<p class=\"scenario\">The temperature of the helium is increased. The pressure of the helium does not change.</p><p class=\"scenario\"><strong>Which statement is correct?</strong></p>",
     "options": [
-      "Smaller volume; atoms become closer",
-      "Smaller volume; atoms spread out",
-      "Larger volume; atoms become closer",
-      "Larger volume; atoms spread out"
+      "The volume of helium decreases, and the helium atoms get closer together.",
+      "The volume of helium decreases, and the helium atoms get further apart.",
+      "The volume of helium increases, and the helium atoms get closer together.",
+      "The volume of helium increases, and the helium atoms get further apart."
     ],
     "correct": "D",
-    "answer": "D. Larger volume; atoms spread out",
-    "explanation": "<p class=\"definition\"><strong>Charles’s law:</strong> at constant pressure, the volume of a fixed mass of gas rises as its absolute temperature increases.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Heating gives helium atoms greater average kinetic energy.</li><li>More energetic collisions push the freely moving piston outwards.</li><li>The volume increases while the number of atoms stays the same, so their average separation increases.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q01-fm26.svg\" alt=\"Before and after gas syringe heating at constant pressure with a movable piston\" loading=\"lazy\"><figcaption>Original teaching diagram drawn for this practice edition; not the Cambridge exam illustration.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Both volume and spacing go the wrong way.</li><li><strong>B.</strong> If the gas occupies less space, its average spacing cannot increase in this situation.</li><li><strong>C.</strong> Expansion does not make the average spacing smaller.</li><li><strong>D.</strong> Correct: expansion creates more space per gas atom.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> At constant pressure: higher temperature → greater gas volume → atoms farther apart.</p>",
+    "answer": "D. The volume of helium increases, and the helium atoms get further apart.",
+    "explanation": "<p class=\"definition\"><strong>Charles’s law:</strong> at constant pressure, the volume of a gas increases as its temperature increases.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Heating gives helium atoms greater average kinetic energy.</li><li>More energetic collisions push the freely moving piston outwards.</li><li>The volume increases while the number of atoms stays the same, so their average separation increases.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q01-fm26.svg\" alt=\"Before and after gas syringe heating at constant pressure with a movable piston\" loading=\"lazy\"><figcaption>Original teaching diagram drawn for this practice edition; not the Cambridge exam illustration.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Both volume and spacing go the wrong way.</li><li><strong>B.</strong> If the gas occupies less space, its average spacing cannot increase in this situation.</li><li><strong>C.</strong> Expansion does not make the average spacing smaller.</li><li><strong>D.</strong> Correct: expansion creates more space per gas atom.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> At constant pressure: higher temperature → greater gas volume → atoms farther apart.</p>",
     "paperNumber": 1
   },
   {
@@ -458,5 +458,425 @@
     "answer": "C. The number of electrons in the outermost occupied shell",
     "explanation": "<p class=\"definition\"><strong>Across a period, proton number and outer-shell electron count generally increase</strong> for the main-group elements.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Sodium starts with electron configuration <strong>2,8,1</strong> (one valence electron).</li><li>Magnesium is <strong>2,8,2</strong>; chlorine is <strong>2,8,7</strong>; argon is <strong>2,8,8</strong>.</li><li>The shell count stays <strong>three</strong> across Period 3.</li><li>Metallic character tends to decrease and non-metallic character tends to increase.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q20-fm26.svg\" alt=\"Period 3 sodium magnesium aluminium silicon phosphorus sulfur chlorine argon increasing outer shell electrons\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching diagram created for this adapted practice quiz; not a reproduction of the Cambridge diagram.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Metallic character falls rather than rises.</li><li><strong>B.</strong> The number of occupied shells stays constant within one period.</li><li><strong>C.</strong> Correct: valence electron count increases across the main-group sequence.</li><li><strong>D.</strong> The tendency to lose electrons and make positive ions generally decreases.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Period = number of occupied shells. For main-group elements, group position indicates outer electrons.</p>",
     "paperNumber": 20
+  },
+  {
+    "chapter": "Acids, Bases and Salts · Precipitation",
+    "title": "Which pair of compounds could be mixed as aqueous solutions to produce insoluble lead(II) chloride?",
+    "legend": "Choose soluble reactants to make a precipitate",
+    "context": "<p class=\"scenario\">The table gives water solubilities of four possible reactants. Choose the pair that can be mixed as solutions to produce a precipitate.</p><table class=\"paper-data-table\"><caption>Possible reactants and their solubility in water</caption><thead><tr><th>No.</th><th>Compound</th><th>Soluble in water?</th></tr></thead><tbody><tr><td>1</td><td>lead(II) nitrate</td><td>yes</td></tr><tr><td>2</td><td>lead(II) sulfate</td><td>no</td></tr><tr><td>3</td><td>silver chloride</td><td>no</td></tr><tr><td>4</td><td>sodium chloride</td><td>yes</td></tr></tbody></table>",
+    "options": [
+      "1 and 3",
+      "1 and 4",
+      "2 and 3",
+      "2 and 4"
+    ],
+    "correct": "B",
+    "answer": "B. 1 and 4",
+    "explanation": "<p class=\"definition\">A precipitation reaction uses <strong>two soluble aqueous reactants</strong> to form an <strong>insoluble solid</strong>.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Lead(II) nitrate dissolves in water, providing Pb²⁺ ions.</li><li>Sodium chloride dissolves in water, providing Cl⁻ ions.</li><li>The ions combine: <strong>Pb²⁺(aq) + 2Cl⁻(aq) → PbCl₂(s)</strong>.</li><li>The suitable soluble reactants are <strong>1 and 4</strong>.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q21-fm26.svg\" alt=\"Visual teaching diagram for Question 21: Acids, Bases and Salts · Precipitation\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Silver chloride (3) is insoluble, so it is not an appropriate dissolved reactant.</li><li><strong>B.</strong> Correct: both 1 and 4 are soluble and supply Pb²⁺ and Cl⁻.</li><li><strong>C.</strong> Both substances are insoluble, so they cannot be mixed as aqueous solutions.</li><li><strong>D.</strong> Lead(II) sulfate is insoluble and unsuitable as an aqueous reagent.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> For precipitation, start with soluble salts and obtain an insoluble product.</p>",
+    "paperNumber": 21
+  },
+  {
+    "chapter": "The Periodic Table · Transition elements",
+    "title": "Which combination of statements describes transition elements?",
+    "legend": "Identify the true physical properties",
+    "context": "<ol class=\"exam-statements\"><li>They form only white compounds.</li><li>They can be drawn into wires.</li><li>They generally have high densities.</li><li>They form positive ions by gaining electrons.</li></ol>",
+    "options": [
+      "1 and 2",
+      "1 and 4",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correct": "C",
+    "answer": "C. 2 and 3",
+    "explanation": "<p class=\"definition\">Transition elements are generally <strong>ductile</strong> and have <strong>high densities</strong>; many of their compounds are coloured.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Statement 1 is false: transition-metal ions commonly form coloured compounds.</li><li>Statement 2 is true: ductile means able to be drawn into wires.</li><li>Statement 3 is true: transition elements are generally high-density metals.</li><li>Statement 4 is false: metal atoms form positive ions by <strong>losing</strong> electrons.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q22-fm26.svg\" alt=\"Visual teaching diagram for Question 22: The Periodic Table · Transition elements\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Statement 1 is false; statement 2 is true.</li><li><strong>B.</strong> Both statements are false.</li><li><strong>C.</strong> Correct: statements 2 and 3 are true.</li><li><strong>D.</strong> Statement 3 is true but statement 4 is false.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Metals make cations by electron loss, not electron gain.</p>",
+    "paperNumber": 22
+  },
+  {
+    "chapter": "Metals · Resistance to corrosion",
+    "title": "Why does aluminium resist further corrosion even though it reacts readily with oxygen?",
+    "legend": "Explain the protective oxide coating",
+    "context": "<p class=\"scenario\">Think about what happens to the metal surface when aluminium first comes into contact with air.</p>",
+    "options": [
+      "Its high chemical reactivity automatically prevents corrosion",
+      "A thin protective oxide film forms on its surface",
+      "It can react only when heated to a high temperature",
+      "It is chemically inert under all conditions"
+    ],
+    "correct": "B",
+    "answer": "B. A thin protective oxide film forms on its surface",
+    "explanation": "<p class=\"definition\">Aluminium rapidly forms a <strong>thin, tightly attached layer of aluminium oxide (Al₂O₃)</strong> that prevents further attack.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Aluminium does react with oxygen in air.</li><li>Its oxide layer is adherent and helps block water and oxygen from the metal.</li><li>Because the layer is protective, the underlying metal shows excellent corrosion resistance.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q23-fm26.svg\" alt=\"Visual teaching diagram for Question 23: Metals · Resistance to corrosion\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Reactivity alone does not prevent corrosion; it contributes to oxide formation.</li><li><strong>B.</strong> Correct: the protective Al₂O₃ film is a barrier.</li><li><strong>C.</strong> Aluminium can react at ordinary temperatures; it is not protected solely by high heat requirements.</li><li><strong>D.</strong> Aluminium is not inert; it reacts readily but develops passivation.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Passivation = a thin protective oxide layer forms on a metal surface.</p>",
+    "paperNumber": 23
+  },
+  {
+    "chapter": "Metals · Rust prevention",
+    "title": "Which protective coating will continue to protect iron if it becomes scratched or damaged?",
+    "legend": "Find the sacrificial coating",
+    "context": "<p class=\"scenario\">A damaged coating may expose the iron to water and oxygen. Which coating is a more reactive metal than iron?</p>",
+    "options": [
+      "Copper metal",
+      "Paint",
+      "Plastic",
+      "Zinc metal"
+    ],
+    "correct": "D",
+    "answer": "D. Zinc metal",
+    "explanation": "<p class=\"definition\">Zinc is <strong>more reactive than iron</strong>, so it can provide <strong>sacrificial protection</strong> even when the coating is scratched.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Paint and plastic act only as physical barriers and cannot protect exposed iron after damage.</li><li>Copper is less reactive than iron; in an electrolyte, contact with copper may accelerate corrosion of the iron.</li><li>Zinc preferentially oxidises and protects nearby iron.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q24-fm26.svg\" alt=\"Visual teaching diagram for Question 24: Metals · Rust prevention\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Copper is less reactive than iron and does not give sacrificial protection.</li><li><strong>B.</strong> Paint protects only while its coating remains intact.</li><li><strong>C.</strong> Plastic is a physical barrier and fails to protect exposed regions.</li><li><strong>D.</strong> Correct: zinc is the sacrificial metal used in galvanising.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Galvanising iron with zinc provides both barrier and sacrificial protection.</p>",
+    "paperNumber": 24
+  },
+  {
+    "chapter": "Environmental Chemistry · Water pollution",
+    "title": "Which pair of statements about contaminants in water from natural sources is correct?",
+    "legend": "Identify harmful water contaminants",
+    "context": "<ol class=\"exam-statements\"><li>Detergents contain nitrates that always cause disease.</li><li>Untreated sewage can contain disease-causing microorganisms.</li><li>All metal compounds are toxic.</li><li>Fertilisers can add nitrates and phosphates that damage aquatic ecosystems.</li></ol>",
+    "options": [
+      "1 and 3",
+      "1 and 4",
+      "2 and 3",
+      "2 and 4"
+    ],
+    "correct": "D",
+    "answer": "D. 2 and 4",
+    "explanation": "<p class=\"definition\">Sewage may contain <strong>pathogens</strong> and fertiliser runoff may cause <strong>eutrophication</strong>.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Statement 1 is false: it confuses typical detergent pollutants with nitrates and wrongly claims disease in all cases.</li><li>Statement 2 is true: sewage can contain bacteria and other pathogens.</li><li>Statement 3 is false: not every metal-containing compound is toxic.</li><li>Statement 4 is true: extra nitrates and phosphates can cause algal blooms and oxygen depletion.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q25-fm26.svg\" alt=\"Visual teaching diagram for Question 25: Environmental Chemistry · Water pollution\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Statements 1 and 3 are not both true.</li><li><strong>B.</strong> Statement 1 is false, although 4 is true.</li><li><strong>C.</strong> Statement 3 is false, although 2 is true.</li><li><strong>D.</strong> Correct: sewage pathogens and fertiliser nutrient pollution are both important.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Nitrates and phosphates cause eutrophication; untreated sewage can spread disease.</p>",
+    "paperNumber": 25
+  },
+  {
+    "chapter": "Environmental Chemistry · Global warming",
+    "title": "The flow diagram represents the greenhouse effect. Which row correctly identifies stages X, Y and Z?",
+    "legend": "Identify greenhouse energy-transfer stages",
+    "context": "<p class=\"scenario\">Follow the three labels in the question diagram and choose the matching row.</p>",
+    "options": [
+      "A. absorption → emission to Earth → less heat escapes",
+      "B. emission → emission to space → less heat escapes",
+      "C. absorption → emission to Earth → more heat escapes",
+      "D. emission → emission to space → more heat escapes"
+    ],
+    "correct": "A",
+    "answer": "A. A. absorption → emission to Earth → less heat escapes",
+    "explanation": "<p class=\"definition\">Greenhouse gases <strong>absorb infrared radiation</strong> emitted by Earth and <strong>re-emit thermal energy in all directions</strong>, including back toward Earth.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Earth emits long-wave infrared radiation.</li><li>Greenhouse gases absorb some of this outgoing radiation (X).</li><li>These gases re-emit some infrared towards Earth (Y).</li><li>This reduces the net heat lost to space (Z), contributing to warming.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q26-fm26.svg\" alt=\"Visual teaching diagram for Question 26: Environmental Chemistry · Global warming\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: absorption, re-emission toward Earth, and reduced net loss to space.</li><li><strong>B.</strong> The gases absorb Earth’s radiation before re-emitting it; the row misidentifies the first stage.</li><li><strong>C.</strong> The first two descriptions are right, but increased energy loss would tend to cool Earth.</li><li><strong>D.</strong> This reverses the absorption step and wrongly increases loss to space.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Absorption + re-emission toward Earth → reduced net energy escape.</p>",
+    "paperNumber": 26,
+    "questionVisual": "<figure class=\"question-original-figure\"><a href=\"images/question-26-paper-redraw.svg\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Open diagram full size\"><img src=\"images/question-26-paper-redraw.svg\" alt=\"Black-and-white X Y Z process flow for greenhouse gases\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Paper-style redrawn question diagram (not the original Cambridge graphic). <a href=\"https://www.papersdaddy.com/cambridge/igcse/chemistry-0620/2026-march/0620_m26_qp_22.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Source paper</a> · <a href=\"images/question-26-paper-redraw.svg\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure>",
+    "tableHeaders": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "tableRows": [
+      [
+        "Absorption of thermal energy by greenhouse gases",
+        "Emission of thermal energy towards Earth",
+        "Reduced thermal energy loss to space"
+      ],
+      [
+        "Emission of thermal energy by greenhouse gases",
+        "Emission of thermal energy to space",
+        "Reduced thermal energy loss to space"
+      ],
+      [
+        "Absorption of thermal energy by greenhouse gases",
+        "Emission of thermal energy towards Earth",
+        "Increased thermal energy loss to space"
+      ],
+      [
+        "Emission of thermal energy by greenhouse gases",
+        "Emission of thermal energy to space",
+        "Increased thermal energy loss to space"
+      ]
+    ]
+  },
+  {
+    "chapter": "Environmental Chemistry · Air pollutants",
+    "title": "Which combustion equation produces two pollutants that are not normal constituents of clean air?",
+    "legend": "Recognise carbon monoxide and soot",
+    "context": "<p class=\"scenario\">Look for two separate harmful products: carbon monoxide (CO) and solid carbon particles (soot).</p>",
+    "options": [
+      "2C₆H₁₄ + 19O₂ → 12CO₂ + 14H₂O",
+      "2C₇H₁₄ + 18O₂ → 8CO₂ + 6CO + 14H₂O",
+      "2C₈H₁₈ + 19O₂ → 10CO₂ + 6C + 18H₂O",
+      "2C₉H₁₈ + 16O₂ → 14CO + 4C + 18H₂O"
+    ],
+    "correct": "D",
+    "answer": "D. 2C₉H₁₈ + 16O₂ → 14CO + 4C + 18H₂O",
+    "explanation": "<p class=\"definition\">Incomplete combustion can form <strong>carbon monoxide (CO)</strong> and <strong>particulate carbon (C)</strong>, both important air pollutants.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Option A gives CO₂ and water, not the two target pollutants.</li><li>Option B gives CO but no carbon particulates.</li><li>Option C gives carbon particulates but no carbon monoxide.</li><li>Option D gives both 14CO and 4C, meaning carbon monoxide and soot are produced.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q27-fm26.svg\" alt=\"Visual teaching diagram for Question 27: Environmental Chemistry · Air pollutants\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> CO₂ is present at low levels in clean air and water is not the target pollutant here.</li><li><strong>B.</strong> Only CO is one of the two pollutants requested.</li><li><strong>C.</strong> Only soot is one of the two pollutants requested.</li><li><strong>D.</strong> Correct: CO and C are produced together.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Incomplete hydrocarbon combustion can generate carbon monoxide and soot.</p>",
+    "paperNumber": 27
+  },
+  {
+    "chapter": "Organic Chemistry · Crude oil fractions",
+    "title": "Which pair of petroleum fractions can both be used as fuels for vehicles?",
+    "legend": "Match fractions to their uses",
+    "context": "<p class=\"scenario\">Consider road vehicles and aircraft as types of vehicles.</p>",
+    "options": [
+      "Bitumen and gasoline",
+      "Bitumen and naphtha",
+      "Gasoline and kerosene",
+      "Kerosene and lubricating fraction"
+    ],
+    "correct": "C",
+    "answer": "C. Gasoline and kerosene",
+    "explanation": "<p class=\"definition\"><strong>Gasoline (petrol)</strong> is used for many road vehicles; <strong>kerosene</strong> is used as aviation fuel.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Fractional distillation separates crude oil into fractions with different boiling-point ranges.</li><li>Gasoline is used to run many petrol engines.</li><li>Kerosene is used in jet aircraft.</li><li>Bitumen is mainly used for road surfacing; lubricating fractions for lubricants; naphtha is often chemical feedstock.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q28-fm26.svg\" alt=\"Visual teaching diagram for Question 28: Organic Chemistry · Crude oil fractions\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Bitumen is not normally a vehicle fuel.</li><li><strong>B.</strong> Neither bitumen nor naphtha is the intended vehicle-fuel pair.</li><li><strong>C.</strong> Correct: gasoline for vehicles and kerosene for aircraft.</li><li><strong>D.</strong> Lubricating fractions are not principally vehicle fuels.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Fuel uses: gasoline → cars; kerosene → aircraft; diesel → engines.</p>",
+    "paperNumber": 28
+  },
+  {
+    "chapter": "Organic Chemistry · Esters",
+    "title": "Butanoic acid reacts with ethanol. Which row correctly identifies the ester structural formula and its empirical formula?",
+    "legend": "Identify ester linkages and simplify atom ratios",
+    "context": "<p class=\"scenario\">Use the displayed formula above to identify the acid chain before combining it with ethanol.</p>",
+    "options": [
+      "C₃H₇COOC₂H₅ ; C₆H₁₂O₂",
+      "C₃H₇COOC₂H₅ ; C₃H₆O",
+      "CH₃COOC₄H₉ ; C₆H₁₂O₂",
+      "CH₃COOC₄H₉ ; C₃H₆O"
+    ],
+    "correct": "B",
+    "answer": "B. C₃H₇COOC₂H₅ ; C₃H₆O",
+    "explanation": "<p class=\"definition\">Ethanol + butanoic acid forms <strong>ethyl butanoate</strong> with structural formula <strong>C₃H₇COOC₂H₅</strong> and empirical formula <strong>C₃H₆O</strong>.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>The reaction is butanoic acid + ethanol ⇌ ethyl butanoate + water.</li><li>Ethyl butanoate has formula C₃H₇COOC₂H₅, which totals C₆H₁₂O₂.</li><li>Divide all molecular subscripts by 2: C₆H₁₂O₂ → C₃H₆O.</li><li>Choose the row containing the correct structural and empirical formulae.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q29-fm26.svg\" alt=\"Visual teaching diagram for Question 29: Organic Chemistry · Esters\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> The structural formula is right, but C₆H₁₂O₂ is the molecular formula, not the simplest ratio.</li><li><strong>B.</strong> Correct: both the ester structure and empirical ratio match.</li><li><strong>C.</strong> CH₃COOC₄H₉ is a different ester (butyl ethanoate) and the empirical formula is also not simplified.</li><li><strong>D.</strong> The empirical formula is correct but the structural formula describes a different ester.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> The acid supplies the -COO- part of the ester; simplify molecular formula to get the empirical formula.</p>",
+    "paperNumber": 29,
+    "questionVisual": "<figure class=\"question-original-figure\"><a href=\"images/question-29-paper-redraw.svg\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Open diagram full size\"><img src=\"images/question-29-paper-redraw.svg\" alt=\"Displayed structural formula of butanoic acid CH3 CH2 CH2 COOH\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Paper-style redrawn question diagram (not the original Cambridge graphic). <a href=\"https://www.papersdaddy.com/cambridge/igcse/chemistry-0620/2026-march/0620_m26_qp_22.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Source paper</a> · <a href=\"images/question-29-paper-redraw.svg\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure>",
+    "tableHeaders": [
+      "Structural formula of ester",
+      "Empirical formula"
+    ],
+    "tableRows": [
+      [
+        "C₃H₇COOC₂H₅",
+        "C₆H₁₂O₂"
+      ],
+      [
+        "C₃H₇COOC₂H₅",
+        "C₃H₆O"
+      ],
+      [
+        "CH₃COOC₄H₉",
+        "C₆H₁₂O₂"
+      ],
+      [
+        "CH₃COOC₄H₉",
+        "C₃H₆O"
+      ]
+    ]
+  },
+  {
+    "chapter": "Organic Chemistry · Alcohol formulae",
+    "title": "Which formula explicitly shows the structural arrangement of propan-1-ol?",
+    "legend": "Distinguish molecular, structural and general formulae",
+    "context": "<p class=\"scenario\">A structural formula must show how the groups are joined, including the location of the alcohol functional group.</p>",
+    "options": [
+      "C₃H₇OH",
+      "CH₃CH₂CH₂OH",
+      "C₃H₈O",
+      "CₙH₂ₙ₊₁OH"
+    ],
+    "correct": "B",
+    "answer": "B. CH₃CH₂CH₂OH",
+    "explanation": "<p class=\"definition\">Propan-1-ol has three carbon atoms in a straight chain, with the <strong>–OH group on the first carbon</strong>: CH₃CH₂CH₂OH.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Propan- means a 3-carbon chain.</li><li>The ending -ol indicates an alcohol containing the –OH functional group.</li><li>The number 1 says –OH is on an end carbon, so CH₃–CH₂–CH₂–OH.</li><li>C₃H₈O is the molecular formula, while CₙH₂ₙ₊₁OH is the general formula.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q30-fm26.svg\" alt=\"Visual teaching diagram for Question 30: Organic Chemistry · Alcohol formulae\" loading=\"lazy\" decoding=\"async\"><figcaption>Original SVG teaching illustration for this adapted quiz; shown after checking an answer.</figcaption></figure><h3>Check every answer</h3><ul class=\"option-explanations\"><li><strong>A.</strong> C₃H₇OH gives its composition but does not clearly specify the carbon bonding arrangement or hydroxyl position.</li><li><strong>B.</strong> Correct: this condensed structural formula identifies the chain and –OH position.</li><li><strong>C.</strong> C₃H₈O is a molecular formula, not a structural formula.</li><li><strong>D.</strong> CₙH₂ₙ₊₁OH is the general formula for monohydric alcohols.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Structural formula shows atom connectivity, not merely overall atom counts.</p>",
+    "paperNumber": 30
+  },
+  {
+    "chapter": "Organic Chemistry · Addition reactions",
+    "title": "Alkenes can undergo addition reactions with aqueous bromine, hydrogen or steam.",
+    "legend": "Select one answer",
+    "context": "<p class=\"exam-question-line\">Which reactions of ethene need a catalyst?</p><ol class=\"source-statements\"><li>with aqueous bromine</li><li>with steam</li><li>with hydrogen</li></ol>",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "1 only",
+      "2 and 3 only"
+    ],
+    "correct": "D",
+    "answer": "D. 2 and 3 only",
+    "explanation": "<p class=\"definition\"><strong>Ethene requires a catalyst for its reactions with steam and hydrogen, but not for its reaction with bromine water.</strong></p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Reaction 1: ethene decolourises aqueous bromine by addition without a catalyst.</li><li>Reaction 2: hydration of ethene with steam uses a phosphoric acid catalyst, producing ethanol.</li><li>Reaction 3: hydrogenation of ethene uses a nickel catalyst, producing ethane.</li><li>Therefore statements <strong>2 and 3 only</strong> need catalysts.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q31-fm26.svg\" alt=\"Question 31 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 31.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: bromine water reacts without a catalyst.</li><li><strong>B.</strong> Incorrect: steam needs a catalyst, but bromine does not.</li><li><strong>C.</strong> Incorrect: both steam and hydrogen need catalysts.</li><li><strong>D.</strong> Correct: steam uses H₃PO₄; hydrogen uses Ni.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Bromine water: no catalyst. Steam: H₃PO₄. Hydrogen: Ni.</p>",
+    "paperNumber": 31
+  },
+  {
+    "chapter": "Organic Chemistry · Fermentation",
+    "title": "Which conditions are used to manufacture ethanol by fermentation?",
+    "legend": "Select one answer",
+    "context": "",
+    "options": [
+      "300 °C; yeast",
+      "30 °C; acid",
+      "300 °C; acid",
+      "30 °C; yeast"
+    ],
+    "correct": "D",
+    "answer": "D. 30 °C; yeast",
+    "explanation": "<p class=\"definition\"><strong>Fermentation uses yeast and warm conditions, commonly around 30 °C.</strong> Yeast enzymes catalyse the breakdown of sugars.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Glucose solution is mixed with yeast.</li><li>A temperature of approximately 30 °C allows yeast enzymes to work efficiently.</li><li>Oxygen is excluded or limited; glucose is converted into ethanol and carbon dioxide.</li><li>At 300 °C the enzymes would be denatured and the yeast would not survive.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q32-fm26.svg\" alt=\"Question 32 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 32.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> 300 °C would kill the yeast and denature its enzymes.</li><li><strong>B.</strong> 30 °C is suitable, but acid is not the fermentation catalyst.</li><li><strong>C.</strong> 300 °C and an acid catalyst describe neither normal fermentation nor workable yeast conditions.</li><li><strong>D.</strong> Correct: 30 °C with yeast.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Fermentation: glucose → ethanol + carbon dioxide, using yeast at about 30 °C without oxygen.</p>",
+    "paperNumber": 32,
+    "tableHeaders": [
+      "temperature / °C",
+      "catalyst"
+    ],
+    "tableRows": [
+      [
+        "300",
+        "yeast"
+      ],
+      [
+        "30",
+        "acid"
+      ],
+      [
+        "300",
+        "acid"
+      ],
+      [
+        "30",
+        "yeast"
+      ]
+    ]
+  },
+  {
+    "chapter": "Organic Chemistry · Carboxylic acids",
+    "title": "Which statement about an aqueous solution of ethanoic acid is correct?",
+    "legend": "Select one answer",
+    "context": "",
+    "options": [
+      "It reacts with magnesium to form water as one of the products.",
+      "It reacts with sodium carbonate to form carbon dioxide.",
+      "It reacts with sodium hydroxide to form hydrogen.",
+      "It turns red litmus paper blue."
+    ],
+    "correct": "B",
+    "answer": "B. It reacts with sodium carbonate to form carbon dioxide.",
+    "explanation": "<p class=\"definition\"><strong>Ethanoic acid reacts with a carbonate to produce salt, water, and carbon dioxide.</strong></p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Ethanoic acid is a weak acid, but it still shows the usual reactions of acids.</li><li>Acid + carbonate → salt + water + carbon dioxide.</li><li>With sodium carbonate: 2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂.</li><li>Acids turn blue litmus red; they do not turn red litmus blue.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q33-fm26.svg\" alt=\"Question 33 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 33.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Acid + magnesium produces hydrogen gas, not water.</li><li><strong>B.</strong> Correct: a carbonate reacts with the acid to release CO₂.</li><li><strong>C.</strong> Acid + sodium hydroxide produces a salt and water, not hydrogen.</li><li><strong>D.</strong> Acidic solutions turn blue litmus red (red stays red).</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Acid + carbonate → salt + H₂O + CO₂.</p>",
+    "paperNumber": 33
+  },
+  {
+    "chapter": "Organic Chemistry · Plastics and environment",
+    "title": "Which statements explain why plastics should be recycled?",
+    "legend": "Select one answer",
+    "context": "<ol class=\"source-statements\"><li>Most do <strong>not</strong> decompose when they are added to landfill.</li><li>They pollute rivers and the ocean where they harm wildlife.</li><li>They can produce toxic gases when they are burned.</li></ol>",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only"
+    ],
+    "correct": "A",
+    "answer": "A. 1, 2 and 3",
+    "explanation": "<p class=\"definition\"><strong>All three statements are valid reasons for recycling plastics.</strong></p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Many common plastics break down extremely slowly in landfill.</li><li>Plastic waste can enter rivers and oceans, harming organisms through entanglement and ingestion.</li><li>Some plastics emit hazardous gases when burned, especially under uncontrolled conditions.</li><li>Recycling can reduce waste and the need to produce new plastic.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q34-fm26.svg\" alt=\"Question 34 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 34.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: all three concerns are valid.</li><li><strong>B.</strong> Incomplete: statement 3 is also correct.</li><li><strong>C.</strong> Incomplete: statement 2 is also correct.</li><li><strong>D.</strong> Incomplete: statement 1 is also correct.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Recycling reduces persistent waste, wildlife harm, and pollution from disposal.</p>",
+    "paperNumber": 34
+  },
+  {
+    "chapter": "Organic Chemistry · Polymers",
+    "title": "Which statements about the plastic PET are correct?",
+    "legend": "Select one answer",
+    "context": "<ol class=\"source-statements\"><li>PET is a condensation polymer.</li><li>PET is a polyamide.</li><li>PET can be converted into monomers and re-polymerised.</li></ol>",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only"
+    ],
+    "correct": "C",
+    "answer": "C. 1 and 3 only",
+    "explanation": "<p class=\"definition\"><strong>PET is a condensation polyester, not a polyamide, and it can be chemically recycled.</strong></p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>PET is formed by condensation polymerisation, linking appropriate monomers to make a polyester.</li><li>Its links are <strong>ester (–COO–)</strong> bonds, not amide (–CONH–) bonds.</li><li>Chemical recycling can break PET into suitable monomers or intermediates for re-polymerisation.</li><li>Statements 1 and 3 are true.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q35-fm26.svg\" alt=\"Question 35 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 35.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Includes incorrect statement 2.</li><li><strong>B.</strong> Statement 3 is true, while 2 is false.</li><li><strong>C.</strong> Correct: statements 1 and 3 only.</li><li><strong>D.</strong> Incorrect because statement 2 is false and statement 1 is true.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> PET is a polyester (ester links), not a polyamide (amide links).</p>",
+    "paperNumber": 35
+  },
+  {
+    "chapter": "Organic Chemistry · Protein structure",
+    "title": "The diagram represents part of the structure of a protein.",
+    "legend": "Select one answer",
+    "context": "<p class=\"exam-question-line\">Three atoms have been labelled X, Y and Z.</p><figure class=\"question-original-figure protein-question-figure\"><a href=\"images/question-36-protein-original-user.png\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"View original protein structure diagram full size\"><img src=\"images/question-36-protein-original-user.png\" alt=\"Protein chain diagram showing a carbonyl double bonded to X, an atom Y attached to N, and the atom Z bonded to carbon and hydrogen\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Diagram from your supplied Question 36 image · <a href=\"images/question-36-protein-original-user.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure><p class=\"exam-question-line\">Which elements are X, Y and Z?</p>",
+    "options": [
+      "carbon, hydrogen, oxygen",
+      "hydrogen, oxygen, nitrogen",
+      "oxygen, hydrogen, nitrogen",
+      "oxygen, hydrogen, carbon"
+    ],
+    "correct": "C",
+    "answer": "C. oxygen, hydrogen, nitrogen",
+    "explanation": "<p class=\"definition\"><strong>X is oxygen, Y is hydrogen and Z is nitrogen.</strong> Use the typical bonding of each element.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>X is double-bonded to carbon (C=O), indicating oxygen.</li><li>Y is bonded once to N in the group –NH–, indicating hydrogen.</li><li>Z is bonded to carbon on both sides and a hydrogen, making three covalent bonds; it is nitrogen.</li><li>Thus X = O; Y = H; Z = N.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q36-fm26.svg\" alt=\"Question 36 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 36.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> X is not carbon and Z is not oxygen.</li><li><strong>B.</strong> X cannot be hydrogen when it makes a double bond to carbon; Y is not oxygen.</li><li><strong>C.</strong> Correct: O, H, N.</li><li><strong>D.</strong> Z is nitrogen (three bonds), not carbon (typically four bonds).</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> C makes 4 bonds; N makes 3; O makes 2; H makes 1.</p>",
+    "paperNumber": 36,
+    "tableHeaders": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "tableRows": [
+      [
+        "carbon",
+        "hydrogen",
+        "oxygen"
+      ],
+      [
+        "hydrogen",
+        "oxygen",
+        "nitrogen"
+      ],
+      [
+        "oxygen",
+        "hydrogen",
+        "nitrogen"
+      ],
+      [
+        "oxygen",
+        "hydrogen",
+        "carbon"
+      ]
+    ]
+  },
+  {
+    "chapter": "Experimental Chemistry · Chromatography",
+    "title": "Locating agents are often used in paper chromatography.",
+    "legend": "Select one answer",
+    "context": "<p class=\"exam-question-line\">Which mixture requires a locating agent?</p>",
+    "options": [
+      "a mixture of two colourless substances",
+      "a mixture of two insoluble substances",
+      "a mixture of two different-coloured substances with the same R<sub>f</sub> value",
+      "a mixture of two substances that are the same colour"
+    ],
+    "correct": "A",
+    "answer": "A. a mixture of two colourless substances",
+    "explanation": "<p class=\"definition\"><strong>Colourless substances cannot be seen on the paper; a locating agent reveals their spots.</strong></p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Separate the mixture by chromatography using an appropriate solvent.</li><li>Allow the paper to dry, then apply a locating agent (for example, ninhydrin for amino acids).</li><li>The agent makes initially invisible spots appear coloured, sometimes after warming.</li><li>Visible dyes do not normally need a locating agent.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q37-fm26.svg\" alt=\"Question 37 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 37.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: colourless spots need a locating agent to be seen.</li><li><strong>B.</strong> Insolubility does not itself indicate a locating agent is needed; the sample may not move with the solvent.</li><li><strong>C.</strong> Different-coloured substances are already visible, whether or not they have matching Rf values.</li><li><strong>D.</strong> Same colour does not make spots invisible; a locating agent is not required simply for that reason.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Locating agents are used to reveal colourless chromatogram spots.</p>",
+    "paperNumber": 37
+  },
+  {
+    "chapter": "Experimental Chemistry · Crystallisation",
+    "title": "A blue solid, Q, is soluble in water.",
+    "legend": "Select one answer",
+    "context": "<p class=\"exam-question-line\">Which method is used to obtain pure solid Q from aqueous solution?</p>",
+    "options": [
+      "chromatography",
+      "crystallisation",
+      "filtration",
+      "neutralisation"
+    ],
+    "correct": "B",
+    "answer": "B. crystallisation",
+    "explanation": "<p class=\"definition\"><strong>Crystallisation recovers a dissolved solid as purified crystals.</strong></p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Gently evaporate some water until the solution is nearly saturated.</li><li>Allow the concentrated solution to cool to grow crystals.</li><li>Filter the crystals and dry them carefully.</li><li>Filtration alone cannot separate a dissolved solute from its aqueous solution.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q38-fm26.svg\" alt=\"Question 38 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 38.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Chromatography is principally used to separate dissolved components in mixtures.</li><li><strong>B.</strong> Correct: crystallisation yields pure crystals of Q.</li><li><strong>C.</strong> The dissolved solid would pass through filter paper.</li><li><strong>D.</strong> Neutralisation is a reaction between an acid and base, not a separation method for this solution.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Dissolved solid → concentrate solution → cool → crystals.</p>",
+    "paperNumber": 38
+  },
+  {
+    "chapter": "Experimental Chemistry · Water purity",
+    "title": "Two test-tubes each contain a sample of water. One test-tube contains pure water, but the other test-tube contains water and dissolved sodium chloride as an impurity.",
+    "legend": "Select one answer",
+    "context": "<p class=\"exam-question-line\">Which tests may be used to identify the test-tube that contains pure water?</p><ol class=\"source-statements\"><li>Measure the boiling point of each water sample.</li><li>Test each sample with acidified aqueous silver nitrate.</li><li>Test each sample with anhydrous copper(II) sulfate.</li></ol>",
+    "options": [
+      "1 and 2",
+      "1 only",
+      "2 and 3",
+      "3 only"
+    ],
+    "correct": "A",
+    "answer": "A. 1 and 2",
+    "explanation": "<p class=\"definition\"><strong>Boiling point and the chloride ion test can distinguish pure water from salt water.</strong> Anhydrous copper(II) sulfate detects water in either sample.</p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Pure water boils sharply at 100 °C at standard atmospheric pressure; dissolved sodium chloride raises its boiling point.</li><li>Acidified silver nitrate forms a white AgCl precipitate with chloride ions in the sodium chloride solution.</li><li>Anhydrous CuSO₄ changes from white to blue with both samples, because both contain water.</li><li>Therefore tests 1 and 2 can distinguish the samples, but test 3 cannot.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q39-fm26.svg\" alt=\"Question 39 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 39.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: boiling-point comparison and AgNO₃ distinguish pure and salty water.</li><li><strong>B.</strong> Incomplete: the chloride test also works.</li><li><strong>C.</strong> Incorrect: CuSO₄ detects water in both, so 3 does not distinguish purity.</li><li><strong>D.</strong> Incorrect: test 3 is the same positive water test for both samples.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Testing for the presence of water does not prove water is pure.</p>",
+    "paperNumber": 39
+  },
+  {
+    "chapter": "Experimental Chemistry · Cation tests",
+    "title": "The results of some tests on dilute aqueous solution X are shown.",
+    "legend": "Select one answer",
+    "context": "<div class=\"paper-table-scroll\"><table class=\"paper-data-table chemistry-test-table\"><thead><tr><th scope=\"col\">test</th><th scope=\"col\">observation</th></tr></thead><tbody>\n<tr><td>add aqueous ammonia dropwise</td><td>white precipitate</td></tr>\n<tr><td>then add aqueous ammonia in excess</td><td>precipitate dissolves to form colourless solution</td></tr>\n<tr><td>add aqueous sodium hydroxide dropwise</td><td>white precipitate</td></tr>\n<tr><td>then add aqueous sodium hydroxide in excess</td><td>precipitate dissolves to form colourless solution</td></tr>\n</tbody></table></div><p class=\"exam-question-line\">Which cation is present in X?</p>",
+    "options": [
+      "Al<sup>3+</sup>",
+      "Ca<sup>2+</sup>",
+      "Cr<sup>3+</sup>",
+      "Zn<sup>2+</sup>"
+    ],
+    "correct": "D",
+    "answer": "D. Zn<sup>2+</sup>",
+    "explanation": "<p class=\"definition\"><strong>Zn²⁺ forms a white precipitate that dissolves in excess aqueous ammonia and also in excess sodium hydroxide.</strong></p><h3>Step-by-step reasoning</h3><ol class=\"chem-steps\"><li>Adding either alkali dropwise produces a white precipitate of zinc hydroxide, Zn(OH)₂.</li><li>Excess sodium hydroxide dissolves Zn(OH)₂ to form colourless zincate complexes.</li><li>Excess aqueous ammonia also dissolves the precipitate, forming a colourless ammine complex.</li><li>This behaviour is characteristic of Zn²⁺ among the four choices.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q40-fm26.svg\" alt=\"Question 40 teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Visual summary of the Chemistry concept tested in Question 40.</figcaption></figure><h3>Why each option is right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Al³⁺ gives a white precipitate soluble in excess NaOH but insoluble in excess ammonia.</li><li><strong>B.</strong> Ca²⁺ does not show a white precipitate soluble in excess of both reagents.</li><li><strong>C.</strong> Cr³⁺ typically forms a grey-green precipitate, not the observed white one.</li><li><strong>D.</strong> Correct: Zn²⁺ dissolves in excess ammonia and excess NaOH.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Zn²⁺: white precipitate, soluble in excess NH₃ and in excess NaOH.</p>",
+    "paperNumber": 40
   }
 ]
