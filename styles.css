@@ -1731,7 +1731,7 @@
 
 /* Exam-paper figures and genuine interactive MCQ row tables */
 .question-original-figure { margin: 20px auto 22px; width: min(100%, 950px); }
-.question-original-figure img { width: 100%; height: auto; display: block; object-fit: contain; background: #fff; border: 1px solid #dce2d7; border-radius: 8px; padding: clamp(8px,1.8vw,18px); mix-blend-mode: normal; }
+.question-original-figure img { width: 100%; height: auto; display: block; object-fit: contain; background: transparent; border: 0; border-radius: 0; padding: 0; mix-blend-mode: normal; }
 .question-original-figure figcaption { font-size: .72em; line-height: 1.55; padding: 7px 2px 0; color: #596d64; }
 .question-original-figure figcaption a {color: #186954; text-underline-offset: 3px;}
 .exam-statements{margin: 16px 0 21px; padding: 18px 18px 18px 44px; border-left: 3px solid #308d75; background: #f5faf6; line-height:1.75}
@@ -1757,7 +1757,7 @@
 .paper-opt-row.answer-correct .letter{background:#217847;color:#fff}
 .paper-opt-row .answer-status[hidden]{display:none}
 .paper-answer-table th .answer:hover{transform:none;}
-@media (max-width:560px){.paper-answer-table{min-width:460px}.paper-answer-table th,.paper-answer-table td{padding:10px 8px}.question-original-figure img{padding:4px}}
+@media (max-width:560px){.paper-answer-table{min-width:460px}.paper-answer-table th,.paper-answer-table td{padding:10px 8px}.question-original-figure img{padding:0}}
 
 /* New question 21–30 compact exam-tables, figure clarity */
 .paper-data-table{max-width:820px}
@@ -1795,3 +1795,28 @@
 .periodic-table-viewer img{display:block;max-width:none;height:auto;margin:12px auto;user-select:none;object-fit:contain;}
 .periodic-modal-footer{padding:9px 16px;border-top:1px solid #dce7df;font-size:12px;color:#60766b;line-height:1.4}.periodic-modal-footer a{color:#1b6c51;font-weight:700}
 @media(max-width:760px){.periodic-button-label{display:none}.question-header .periodic-table-toggle{padding:0;min-width:37px}.periodic-modal-panel{width:100%;height:98dvh}.periodic-modal-header{padding:9px;gap:7px}.periodic-title-group strong{font-size:16px}.periodic-title-group span{font-size:10px}.periodic-controls{gap:3px}.periodic-controls button{padding:0 6px;min-width:29px}.periodic-controls #periodic-zoom-reset{font-size:11px}}
+
+/* Source screenshots: questions 51–62. User-provided wording, responsive answer tables. */
+.source-equation { font-size:1.15em;font-weight:600;text-align:center;margin:12px 0 20px;line-height:1.55; }
+.question-nav-gap { grid-column:1/-1;text-align:center;font-size:10px;line-height:1.3;padding:10px 1px;border-top:1px solid #d2ddd5;color:#718277; }
+.paper-answer-table thead th[colspan] { text-align:center;font-size:.93em; }
+.paper-answer-table thead th[rowspan] { vertical-align:middle; }
+.paper-answer-table td { overflow-wrap:break-word; }
+@media (max-width:600px){.paper-answer-table:has(th[colspan]){min-width:690px}.paper-answer-table:has(th[colspan]) th,.paper-answer-table:has(th[colspan]) td{padding:9px 8px;}}
+
+/* Question diagrams from uploaded screenshots (41,44) */
+.electrolytic-options{max-width:1000px}
+.electrolytic-options img{display:block;object-fit:contain}
+.energy-profile-question{max-width:760px}
+.energy-profile-question img{display:block;object-fit:contain}
+
+.exam-question-bullets{max-width:850px;margin:10px auto 20px;padding-left:2rem;line-height:1.55;}
+.exam-question-bullets li{margin:.35rem 0;}
+
+/* Updated Dr King Wunna identity (provided by the user). */
+.brand-logo { mix-blend-mode: normal; background: #fff; object-fit: contain; border: 1px solid #e0dfd4; box-shadow: 0 3px 10px rgba(9,27,51,.10); }
+.teacher-badge { background:#f7f9fc; border-color:#be963f; color:#0b264f; }
+.teacher-badge-logo { display:block; width:44px; height:44px; object-fit:cover; border-radius:50%; flex-shrink:0; border:1px solid #e5d6b5; }
+.question-user-diagram { background:transparent; }
+.question-user-diagram img { display:block; background:transparent; border:0; padding:0; width:100%; height:auto; object-fit:contain; }
+@media (max-width: 560px) { .teacher-badge-logo { width:33px; height:33px; } }
