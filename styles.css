@@ -1820,3 +1820,8 @@
 .question-user-diagram { background:transparent; }
 .question-user-diagram img { display:block; background:transparent; border:0; padding:0; width:100%; height:auto; object-fit:contain; }
 @media (max-width: 560px) { .teacher-badge-logo { width:33px; height:33px; } }
+
+/* Q01-100 branding adjustments */
+.brand-logo { background: transparent !important; border: 0 !important; box-shadow: none !important; object-fit: contain; }
+.teacher-badge { gap: 10px; }
+.teacher-badge-logo { display: none !important; }

@@ -2240,6 +2240,244 @@ const questions = [
         "aqueous copper(II) nitrate"
       ]
     ]
+  },
+  {
+    "paperNumber": 92,
+    "sourceNumber": 12,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Electrochemistry · Electrolysis of dilute sulfuric acid",
+    "title": "Dilute sulfuric acid is electrolysed using inert electrodes.",
+    "context": "<p class=\"exam-question-line\">What is produced at the anode?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "hydrogen",
+      "oxygen",
+      "sulfur",
+      "sulfur dioxide"
+    ],
+    "correct": "B",
+    "answer": "B. oxygen",
+    "explanation": "<p class=\"definition\"><strong>Oxygen is produced at the anode.</strong> In dilute sulfuric acid with inert electrodes, water is discharged to make oxygen at the positive electrode.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>In electrolysis, the anode is the positive electrode where oxidation occurs.</li><li>In dilute sulfuric acid, sulfate ions are not discharged under these conditions; water / hydroxide is oxidised instead.</li><li>This produces oxygen gas at the anode.</li><li>Hydrogen is produced at the cathode, not the anode.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q92-teaching.svg\" alt=\"Teaching visual for question 92\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: hydrogen is formed at the cathode.</li><li><strong>B.</strong> Correct: oxygen is released at the anode.</li><li><strong>C.</strong> Incorrect: sulfur is not formed.</li><li><strong>D.</strong> Incorrect: sulfur dioxide is not the anode product in this electrolysis.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> For dilute sulfuric acid with inert electrodes: cathode → hydrogen, anode → oxygen.</p>"
+  },
+  {
+    "paperNumber": 93,
+    "sourceNumber": 13,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Electrochemistry · Copper(II) sulfate with copper electrodes",
+    "title": "Aqueous copper(II) sulfate is a blue solution. The solution is electrolysed using copper electrodes.",
+    "context": "<p class=\"exam-question-line\">Which row describes the changes that take place during the electrolysis?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "decreases; increases; becomes paler",
+      "decreases; increases; stays the same",
+      "increases; decreases; becomes paler",
+      "increases; decreases; stays the same"
+    ],
+    "correct": "D",
+    "answer": "D. increases; decreases; stays the same",
+    "explanation": "<p class=\"definition\"><strong>The cathode gains mass, the anode loses mass, and the blue colour stays the same.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>At the cathode, Cu²⁺ ions gain electrons and plate out as copper metal, so the cathode mass increases.</li><li>At the anode, copper atoms lose electrons and enter solution as Cu²⁺ ions, so the anode mass decreases.</li><li>Because Cu²⁺ ions removed at the cathode are replaced by Cu²⁺ from the anode, the solution concentration stays nearly constant.</li><li>Therefore the blue colour remains the same and row D is correct.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q93-teaching.svg\" alt=\"Teaching visual for question 93\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: the cathode should gain mass, not lose it, and the solution colour stays the same.</li><li><strong>B.</strong> Incorrect: the cathode does not decrease in mass.</li><li><strong>C.</strong> Incorrect: the colour does not become paler because Cu²⁺ ions are replenished.</li><li><strong>D.</strong> Correct: cathode increases, anode decreases, colour stays the same.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> With copper electrodes in CuSO₄(aq), copper simply transfers from anode to cathode.</p>",
+    "tableHeaders": [
+      "mass of cathode",
+      "mass of anode",
+      "colour of solution"
+    ],
+    "tableRows": [
+      [
+        "decreases",
+        "increases",
+        "becomes paler"
+      ],
+      [
+        "decreases",
+        "increases",
+        "stays the same"
+      ],
+      [
+        "increases",
+        "decreases",
+        "becomes paler"
+      ],
+      [
+        "increases",
+        "decreases",
+        "stays the same"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 94,
+    "sourceNumber": 14,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Energetics · Bond energies",
+    "title": "Nitrogen trifluoride, NF₃, is used in the manufacture of certain types of solar panels. The equation for the formation of nitrogen trifluoride is shown.",
+    "context": "<p class=\"exam-question-line\"><strong>N<sub>2</sub> + 3F<sub>2</sub> → 2NF<sub>3</sub></strong></p><p class=\"exam-question-line\">Using the table of bond energies, what is the energy change for this reaction?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "−560 kJ / mol",
+      "−280 kJ / mol",
+      "+280 kJ / mol",
+      "+3080 kJ / mol"
+    ],
+    "correct": "B",
+    "answer": "B. −280 kJ / mol",
+    "explanation": "<p class=\"definition\"><strong>The reaction energy change is −280 kJ/mol.</strong> Use ΔH = bonds broken − bonds formed.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Break one N≡N bond: 950 kJ/mol.</li><li>Break three F–F bonds: 3 × 150 = 450 kJ/mol. Total energy in = 1400 kJ/mol.</li><li>Form six N–F bonds in 2NF₃: 6 × 280 = 1680 kJ/mol.</li><li>ΔH = 1400 − 1680 = −280 kJ/mol, so option B is correct.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q94-teaching.svg\" alt=\"Teaching visual for question 94\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: this value is too negative.</li><li><strong>B.</strong> Correct: broken 1400 minus formed 1680 equals −280.</li><li><strong>C.</strong> Incorrect: sign is wrong; the reaction is exothermic.</li><li><strong>D.</strong> Incorrect: this is close to the total bond energies involved, not the net change.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Bond energy calculation: ΔH = Σ(bonds broken) − Σ(bonds formed).</p>",
+    "tableHeaders": [
+      "type of bond",
+      "bond energy in kJ / mol"
+    ],
+    "tableRows": [
+      [
+        "N≡N",
+        "+950"
+      ],
+      [
+        "F–F",
+        "+150"
+      ],
+      [
+        "N–F",
+        "+280"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 95,
+    "sourceNumber": 15,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Organic Chemistry · Esterification",
+    "title": "Ethanol and ethanoic acid react to form ethyl ethanoate and water.",
+    "context": "<p class=\"exam-question-line\"><strong>CH<sub>3</sub>CH<sub>2</sub>OH + CH<sub>3</sub>CO<sub>2</sub>H ⇌ CH<sub>3</sub>CO<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> + H<sub>2</sub>O</strong></p><p class=\"exam-question-line\">Which statement explains why concentrated sulfuric acid is added to the reaction mixture?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "The position of equilibrium moves to the left-hand side.",
+      "Sulfuric acid is a weaker acid than ethanoic acid.",
+      "The total frequency of collisions decreases.",
+      "Sulfuric acid acts as a catalyst for the reaction."
+    ],
+    "correct": "D",
+    "answer": "D. Sulfuric acid acts as a catalyst for the reaction.",
+    "explanation": "<p class=\"definition\"><strong>Concentrated sulfuric acid acts as a catalyst for esterification.</strong> It can also help remove water, but among these options the correct reason is catalysis.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Esterification is slow at room conditions, so an acid catalyst is used.</li><li>Concentrated sulfuric acid provides an acidic medium and speeds up the reaction pathway.</li><li>A catalyst increases the rate without being used up.</li><li>Therefore option D is the correct statement.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q95-teaching.svg\" alt=\"Teaching visual for question 95\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: if water is removed, equilibrium tends to move right, not left.</li><li><strong>B.</strong> Incorrect: sulfuric acid is stronger, not weaker, than ethanoic acid.</li><li><strong>C.</strong> Incorrect: a catalyst does not reduce collision frequency.</li><li><strong>D.</strong> Correct: sulfuric acid acts as a catalyst.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> In esterification, concentrated sulfuric acid is commonly used as the acid catalyst.</p>"
+  },
+  {
+    "paperNumber": 96,
+    "sourceNumber": 16,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Rates of Reaction · Effect of concentration",
+    "title": "Which statement explains why increasing the concentration of a reactant increases the rate of reaction?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "There is a higher percentage of successful collisions between particles.",
+      "The activation energy of the reaction decreases.",
+      "There is a higher percentage of collisions involving particles with energy greater than the activation energy.",
+      "There are more collisions per second between particles."
+    ],
+    "correct": "D",
+    "answer": "D. There are more collisions per second between particles.",
+    "explanation": "<p class=\"definition\"><strong>Increasing concentration increases the number of collisions per second.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Higher concentration means more reacting particles in the same volume.</li><li>Particles are closer together and collide more often.</li><li>The activation energy is unchanged, and the fraction with energy above Eₐ is mainly affected by temperature, not concentration.</li><li>So the rate rises because there are more collisions per second.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q96-teaching.svg\" alt=\"Teaching visual for question 96\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: concentration mainly changes collision frequency, not the percentage that succeed.</li><li><strong>B.</strong> Incorrect: activation energy only changes with a catalyst.</li><li><strong>C.</strong> Incorrect: this percentage is not increased by concentration alone.</li><li><strong>D.</strong> Correct: more frequent collisions increase reaction rate.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Concentration affects collision frequency; temperature affects the fraction above activation energy.</p>"
+  },
+  {
+    "paperNumber": 97,
+    "sourceNumber": 17,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Industrial Chemistry · Haber process",
+    "title": "The Haber process is used to make ammonia.",
+    "context": "<p class=\"exam-question-line\"><strong>N<sub>2</sub> + 3H<sub>2</sub> ⇌ 2NH<sub>3</sub></strong></p><p class=\"exam-question-line\">Which statements about the Haber process are correct?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "1 and 2",
+      "1 and 4",
+      "2, 3 and 4",
+      "2 and 3 only"
+    ],
+    "correct": "D",
+    "answer": "D. 2 and 3 only",
+    "explanation": "<p class=\"definition\"><strong>Statements 2 and 3 only are correct.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Nitrogen is obtained from the air, so statement 2 is true.</li><li>Industrial hydrogen is obtained mainly from methane / natural gas, so statement 3 is true.</li><li>Statement 1 is not the usual industrial source of hydrogen.</li><li>Statement 4 is false because the pressure is high (about 200 atm), not 1 atm, although iron is the catalyst.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q97-teaching.svg\" alt=\"Teaching visual for question 97\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: statement 1 is false.</li><li><strong>B.</strong> Incorrect: statement 4 is false because the pressure is wrong.</li><li><strong>C.</strong> Incorrect: statement 4 is still false, so this option is not fully correct.</li><li><strong>D.</strong> Correct: only statements 2 and 3 are correct.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Haber process: N₂ from air, H₂ from methane, iron catalyst, high pressure.</p>"
+  },
+  {
+    "paperNumber": 98,
+    "sourceNumber": 18,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Redox · Oxidation and oxidising agents",
+    "title": "The equation represents the reaction between sulfur dioxide and acidified potassium dichromate(VI).",
+    "context": "<p class=\"exam-question-line\"><strong>3SO<sub>2</sub> + Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup> + 2H<sup>+</sup> → 3SO<sub>4</sub><sup>2−</sup> + 2Cr<sup>3+</sup> + H<sub>2</sub>O</strong></p><p class=\"exam-question-line\">What is oxidised and what is the oxidising agent in this reaction?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>; H<sup>+</sup>",
+      "Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>; Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>",
+      "SO<sub>2</sub>; Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>",
+      "SO<sub>2</sub>; H<sup>+</sup>"
+    ],
+    "correct": "C",
+    "answer": "C. SO<sub>2</sub>; Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>",
+    "explanation": "<p class=\"definition\"><strong>SO₂ is oxidised, and dichromate(VI) ions are the oxidising agent.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Sulfur in SO₂ increases in oxidation state as it becomes sulfate, so SO₂ is oxidised.</li><li>Dichromate(VI), Cr₂O₇²⁻, is reduced to Cr³⁺.</li><li>A species that is reduced causes oxidation of the other species, so it is the oxidising agent.</li><li>Therefore the correct pair is SO₂ and Cr₂O₇²⁻.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q98-teaching.svg\" alt=\"Teaching visual for question 98\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: dichromate is reduced, not oxidised, and H⁺ is not the oxidising agent.</li><li><strong>B.</strong> Incorrect: dichromate is the oxidising agent but it is not oxidised.</li><li><strong>C.</strong> Correct: SO₂ is oxidised and Cr₂O₇²⁻ is the oxidising agent.</li><li><strong>D.</strong> Incorrect: H⁺ is not the oxidising agent here.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Oxidising agent = species that gets reduced while oxidising the other substance.</p>"
+  },
+  {
+    "paperNumber": 99,
+    "sourceNumber": 19,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Rates of Reaction · Strong and weak acids",
+    "title": "A known mass of magnesium is added to excess dilute hydrochloric acid.",
+    "context": "<p class=\"exam-question-line\">The total volume of hydrogen produced is 70 cm<sup>3</sup>.</p><p class=\"exam-question-line\">The experiment is repeated using dilute ethanoic acid in place of dilute hydrochloric acid.</p><p class=\"exam-question-line\">All other conditions are the same.</p><p class=\"exam-question-line\">Which row gives the relative rate of the reaction and the total volume of hydrogen produced in the second experiment?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "faster; 35",
+      "faster; 70",
+      "slower; 35",
+      "slower; 70"
+    ],
+    "correct": "D",
+    "answer": "D. slower; 70",
+    "explanation": "<p class=\"definition\"><strong>The reaction is slower, but the total volume of hydrogen stays 70 cm³.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Hydrochloric acid is a strong acid, while ethanoic acid is a weak acid.</li><li>A weak acid provides a lower concentration of H⁺ ions, so the reaction with magnesium is slower.</li><li>The same mass of magnesium is used, and the acid is still in excess, so the same total moles of hydrogen are produced.</li><li>Therefore the total gas volume remains 70 cm³, but the rate is slower.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q99-teaching.svg\" alt=\"Teaching visual for question 99\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: the reaction is not faster in a weaker acid.</li><li><strong>B.</strong> Incorrect: the rate is slower, not faster.</li><li><strong>C.</strong> Incorrect: the total volume is not halved because the same amount of magnesium reacts.</li><li><strong>D.</strong> Correct: slower rate, same total hydrogen volume.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Weak acids react more slowly than strong acids of similar concentration, but excess acid still gives the same total gas if the metal amount is unchanged.</p>",
+    "tableHeaders": [
+      "relative rate of reaction",
+      "total volume of hydrogen / cm<sup>3</sup>"
+    ],
+    "tableRows": [
+      [
+        "faster",
+        "35"
+      ],
+      [
+        "faster",
+        "70"
+      ],
+      [
+        "slower",
+        "35"
+      ],
+      [
+        "slower",
+        "70"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 100,
+    "sourceNumber": 20,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Acids, Bases and Salts · Carbonates with acids",
+    "title": "Which products are formed when magnesium carbonate reacts with dilute hydrochloric acid?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "carbon dioxide, hydrogen and magnesium chloride",
+      "carbon dioxide and magnesium chloride only",
+      "carbon dioxide, water and magnesium chloride",
+      "water and magnesium chloride only"
+    ],
+    "correct": "C",
+    "answer": "C. carbon dioxide, water and magnesium chloride",
+    "explanation": "<p class=\"definition\"><strong>Carbon dioxide, water and magnesium chloride are formed.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Carbonates react with acids to form a salt, water and carbon dioxide.</li><li>Here the metal carbonate is magnesium carbonate, and the acid is hydrochloric acid.</li><li>The salt formed is magnesium chloride.</li><li>So the products are carbon dioxide, water and magnesium chloride.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q100-teaching.svg\" alt=\"Teaching visual for question 100\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: hydrogen is not produced when a carbonate reacts with an acid.</li><li><strong>B.</strong> Incorrect: water is missing.</li><li><strong>C.</strong> Correct: acid + carbonate → salt + water + carbon dioxide.</li><li><strong>D.</strong> Incorrect: carbon dioxide is also formed.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> General reaction: acid + carbonate → salt + water + carbon dioxide.</p>"
   }
 ];
 const questionStates = questions.map(() => ({ selected: null, checked: false }));

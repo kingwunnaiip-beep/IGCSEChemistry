@@ -19,3 +19,9 @@ Paper references were verified using the May/June 2026 variant 21 past paper lis
 - The Dr King Wunna logo is replaced with the image supplied by the user, in both the header and lower-right badge.
 - Question 83 and Question 91 use cropped user-supplied diagram images with transparent backgrounds.
 - New questions use original teaching diagrams and detailed answer explanations.
+
+## Questions 92–100 and branding updates
+- Questions 92–100 reproduce user-provided screenshot Questions 12–20 from **0620/22/M/J/26**.
+- The header subtitle now reads **Paper 2 Practice.**
+- The top Dr King Wunna logo now uses a transparent-background PNG.
+- The floating badge no longer includes the logo image.
