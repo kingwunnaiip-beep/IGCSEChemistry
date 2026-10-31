@@ -1674,3 +1674,87 @@
 .dna72-graph img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
 .dna72-graph figcaption { margin-top: .5em; color: var(--muted); font-size: .9em; line-height: 1.5; overflow-wrap: anywhere; }
 .dna72-graph a { color: inherit; }
+
+/* Q80: independent four-question practice inside answer feedback. */
+.practice80 { min-width: 0; margin-top: 26px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,254,250,.75); }
+.practice80 fieldset { min-width: 0; margin: 0 0 22px; padding: 0; border: 0; }
+.practice80 legend { position: static; width: auto; height: auto; max-width: 100%; margin-bottom: 10px; padding: 0; overflow: visible; clip: auto; font-size: 1em; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+.practice80-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+.practice80-choice { display: flex; align-items: flex-start; gap: .6em; min-width: 0; padding: .65em; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--white); line-height: 1.5; overflow-wrap: anywhere; cursor: pointer; }
+.practice80-choice input { flex: 0 0 auto; width: 1.1em; height: 1.1em; margin: .2em 0 0; accent-color: var(--green); }
+.practice80-choice span { min-width: 0; }
+.practice80-choice:focus-within { outline: 3px solid #357ca2; outline-offset: 2px; }
+.practice80-choice[data-result="correct"] { border-color: #1e654f; background: #eaf4e8; }
+.practice80-choice[data-result="incorrect"] { border-color: #a63d38; background: #fff0ed; }
+.practice80-result { margin: 8px 0 0; font-size: .9em; line-height: 1.5; overflow-wrap: anywhere; }
+.practice80-result[hidden] { display: none; }
+.practice80-score { font-weight: 700; }
+@media (max-width: 680px) { .practice80 { padding: 12px; } .practice80-options { grid-template-columns: minmax(0,1fr); } }
+
+
+/* Keep the paper question number visible in the compact header on narrow phones. */
+@media (max-width: 360px) {
+    .question-header { gap: 2px; padding-left: 2px; padding-right: 2px; }
+    .question-header .question-info-row { gap: 2px; }
+    .question-header .question-info-row .question-paper { padding-left: 2px; }
+}
+
+
+/* Keep three-digit quiz counters and source question numbers on one row. */
+@media (max-width: 360px) {
+    .question-header .question-count-prefix {
+        position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+        overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+}
+
+/* Chemistry 0620 starter-specific presentation */
+.chapter-chip{flex:0 0 auto;display:inline-flex;align-items:center;max-width:100%;border-left:1px solid var(--line);padding:2px 0 2px 10px;color:#126958;font-size:1em;font-weight:800;white-space:nowrap;}
+.chemistry-visual{max-width:980px;margin:18px auto 22px;padding:8px;border:1px solid #cfe4d9;border-radius:14px;background:#fffefa;box-shadow:0 5px 19px rgba(26,87,67,.08);}
+.chemistry-visual img{display:block;width:100%;max-width:100%;height:auto;mix-blend-mode:normal;border-radius:10px;}
+.chemistry-visual figcaption{margin:8px 5px 3px;color:#61766c;font-size:.83em;line-height:1.5;}
+.chem-steps{margin:.5em 0 1.1em;padding-left:1.5em;color:var(--ink);}
+.chem-steps li{margin:.35em 0;line-height:1.65;}
+.scenario{margin:0 0 1.2em;padding:12px 16px;border-left:4px solid #319e80;background:#eef7f2;color:#24584d;border-radius:0 8px 8px 0;font-size:.94em;}
+.score-summary[hidden]{display:none;}
+.score-summary{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:22px;padding:15px 18px;border:1px solid #adcfbf;border-radius:12px;background:#edf8ee;color:#185b42;line-height:1.55;}
+.answer-status[hidden]{display:none;}
+.answer.answer-correct{border-color:#2c9365;background:#e8f7e9;}
+.answer.answer-incorrect{border-color:#bf6b63;background:#ffeded;}
+.answer-correct .answer-status{background:#d2ebd6;color:#1b633c;}
+.answer-incorrect .answer-status{background:#f8d9d5;color:#943932;}
+.teacher-badge-dot{background:#27c565;box-shadow:0 0 0 0 rgba(39,197,101,.55);animation:chem-dot-pulse 1.2s ease-in-out infinite;}
+@keyframes chem-dot-pulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(39,197,101,.45)}50%{opacity:.65;transform:scale(.89);box-shadow:0 0 0 9px rgba(39,197,101,0)}}
+@media(prefers-reduced-motion:reduce){.teacher-badge-dot{animation:none;}}
+
+.paper-notice{max-width:1000px;font-size:13px;color:#506d66;background:#f3faf5;border-left:3px solid #2ca180;padding:9px 13px;line-height:1.55;margin:16px 0 4px}.paper-notice a{color:#157764}@media(max-width:600px){.paper-notice{font-size:12px;margin-top:12px}.chapter-chip{font-size:.79em;white-space:normal}}
+
+/* Exam-paper figures and genuine interactive MCQ row tables */
+.question-original-figure { margin: 20px auto 22px; width: min(100%, 950px); }
+.question-original-figure img { width: 100%; height: auto; display: block; object-fit: contain; background: #fff; border: 1px solid #dce2d7; border-radius: 8px; padding: clamp(8px,1.8vw,18px); mix-blend-mode: normal; }
+.question-original-figure figcaption { font-size: .72em; line-height: 1.55; padding: 7px 2px 0; color: #596d64; }
+.question-original-figure figcaption a {color: #186954; text-underline-offset: 3px;}
+.exam-statements{margin: 16px 0 21px; padding: 18px 18px 18px 44px; border-left: 3px solid #308d75; background: #f5faf6; line-height:1.75}
+.exam-equation{padding:18px 16px;background:#fff;border:1px solid #dce4d8;text-align:center;font-size:1.1em;font-weight:700;line-height:1.85}
+.paper-data-table{border-collapse:collapse;max-width:550px;width:100%;margin:18px auto 24px;background:#fff;text-align:center;font-size:.91em}
+.paper-data-table caption{margin-bottom:9px;color:#566d63;text-align:left}
+.paper-data-table th,.paper-data-table td{border:1px solid #a3aea6;padding:11px}
+.paper-table-scroll { overflow-x:auto; max-width:100%; margin:8px 0 24px; border-radius:10px; }
+.paper-answer-table {border-collapse:collapse;width:100%;min-width:510px;font-size:.97em;color:#183a31;background:#fff;text-align:left;}
+.paper-answer-table th,.paper-answer-table td{border:1px solid #ccd6cc;padding:14px 12px;line-height:1.45;vertical-align:middle;}
+.paper-answer-table thead{background:#eff4ec;}
+.paper-answer-table thead th:first-child{width:76px;}
+.paper-answer-table tbody th{width:76px;padding:8px 10px}
+.paper-opt-row{cursor:pointer;transition:background .15s ease;}
+.paper-opt-row:hover{background:#f3f8f2}
+.paper-opt-row:has(input:checked){background:#eaf3e8;outline:2px solid #337a5e;outline-offset:-2px}
+.paper-opt-row.answer-correct{background:#e2f3e4;outline:2px solid #217847;outline-offset:-2px}
+.paper-opt-row.answer-incorrect{background:#fff0ee;outline:2px solid #b9453e;outline-offset:-2px}
+.paper-table-choice.answer{display:flex;flex-direction:column;align-items:center;gap:4px;min-height:45px;margin:0;padding:0;border:0;background:transparent;box-shadow:none;width:100%;}
+.paper-table-choice .answer-status{font-size:.72em;line-height:1.2;text-align:center;white-space:nowrap}
+.paper-table-choice .letter{font-size:.85em}
+.paper-opt-row.answer-incorrect .letter{background:#af403b;color:#fff}
+.paper-opt-row.answer-correct .letter{background:#217847;color:#fff}
+.paper-opt-row .answer-status[hidden]{display:none}
+.paper-answer-table th .answer:hover{transform:none;}
+@media (max-width:560px){.paper-answer-table{min-width:460px}.paper-answer-table th,.paper-answer-table td{padding:10px 8px}.question-original-figure img{padding:4px}}
