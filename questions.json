@@ -2313,5 +2313,1011 @@
     "correct": "C",
     "answer": "C. carbon dioxide, water and magnesium chloride",
     "explanation": "<p class=\"definition\"><strong>Carbon dioxide, water and magnesium chloride are formed.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Carbonates react with acids to form a salt, water and carbon dioxide.</li><li>Here the metal carbonate is magnesium carbonate, and the acid is hydrochloric acid.</li><li>The salt formed is magnesium chloride.</li><li>So the products are carbon dioxide, water and magnesium chloride.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q100-teaching.svg\" alt=\"Teaching visual for question 100\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: hydrogen is not produced when a carbonate reacts with an acid.</li><li><strong>B.</strong> Incorrect: water is missing.</li><li><strong>C.</strong> Correct: acid + carbonate → salt + water + carbon dioxide.</li><li><strong>D.</strong> Incorrect: carbon dioxide is also formed.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> General reaction: acid + carbonate → salt + water + carbon dioxide.</p>"
+  },
+  {
+    "paperNumber": 101,
+    "sourceNumber": 21,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Acids and Bases · Titration technique",
+    "title": "Dilute hydrochloric acid is titrated against aqueous sodium hydroxide.",
+    "context": "<p class=\"exam-question-line\">At the start of the titration, dilute hydrochloric acid is added to a conical flask using a .......1.......</p><p class=\"exam-question-line\">A few drops of methyl orange indicator are added to the dilute hydrochloric acid in the conical flask.</p><p class=\"exam-question-line\">Aqueous sodium hydroxide is added .......2....... until the colour of the indicator just .......3.......</p><p class=\"exam-question-line\">Which row completes the gaps 1, 2 and 3?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "burette; dropwise; disappears",
+      "burette; 1 cm<sup>3</sup> at a time; changes",
+      "volumetric pipette; dropwise; changes",
+      "volumetric pipette; 1 cm<sup>3</sup> at a time; disappears"
+    ],
+    "correct": "C",
+    "answer": "C. volumetric pipette; dropwise; changes",
+    "explanation": "<p class=\"definition\"><strong>Use a volumetric pipette to transfer the acid, then add alkali dropwise until the indicator just changes colour.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>A titration starts with a measured volume of one solution in the conical flask. A volumetric pipette is used for this accurate transfer.</li><li>The other solution is run from a burette into the flask. Near the end-point it must be added slowly, dropwise.</li><li>Methyl orange does not disappear; it changes colour at the end-point.</li><li>So the correct row is: volumetric pipette, dropwise, changes.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q101-teaching.svg\" alt=\"Teaching visual for question 101\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: this gives the right apparatus and end-point technique.</li><li><strong>B.</strong> Incorrect: titrations are not done by adding 1 cm³ at a time near the endpoint, and the colour does not disappear.</li><li><strong>C.</strong> Incorrect: the acid is not added to the flask using a burette in this setup.</li><li><strong>D.</strong> Incorrect: a burette is not used for the initial measured acid in the flask.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> In titration: pipette into flask, burette above, add dropwise until the indicator just changes colour.</p>",
+    "tableHeaders": [
+      "1",
+      "2",
+      "3"
+    ],
+    "tableRows": [
+      [
+        "burette",
+        "dropwise",
+        "disappears"
+      ],
+      [
+        "burette",
+        "1 cm<sup>3</sup> at a time",
+        "changes"
+      ],
+      [
+        "volumetric pipette",
+        "dropwise",
+        "changes"
+      ],
+      [
+        "volumetric pipette",
+        "1 cm<sup>3</sup> at a time",
+        "disappears"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 102,
+    "sourceNumber": 22,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Salts and Solubility · Precipitation",
+    "title": "Four aqueous substances are listed.",
+    "context": "<p class=\"exam-question-line\">1 &nbsp;&nbsp;&nbsp; ammonium carbonate</p><p class=\"exam-question-line\">2 &nbsp;&nbsp;&nbsp; calcium sulfate</p><p class=\"exam-question-line\">3 &nbsp;&nbsp;&nbsp; potassium chloride</p><p class=\"exam-question-line\">4 &nbsp;&nbsp;&nbsp; sodium nitrate</p><p class=\"exam-question-line\">Which two substances, when added together, will give a precipitate?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "correct": "A",
+    "answer": "A. 1 and 2",
+    "explanation": "<p class=\"definition\"><strong>Ammonium carbonate and calcium sulfate form a precipitate of calcium carbonate.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Look for a pair that can swap ions to make an insoluble salt.</li><li>Ammonium carbonate provides CO₃²⁻ ions and calcium sulfate provides Ca²⁺ ions.</li><li>Calcium carbonate is insoluble, so a precipitate forms. The other possible products remain soluble.</li><li>Therefore substances 1 and 2 give a precipitate.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q102-teaching.svg\" alt=\"Teaching visual for question 102\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: CaCO₃ precipitates when 1 and 2 are mixed.</li><li><strong>B.</strong> Incorrect: ammonium and potassium salts remain soluble.</li><li><strong>C.</strong> Incorrect: calcium nitrate and sodium sulfate are soluble.</li><li><strong>D.</strong> Incorrect: potassium and sodium salts are usually soluble and no precipitate forms.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> A precipitate forms when two aqueous solutions produce an insoluble salt.</p>"
+  },
+  {
+    "paperNumber": 103,
+    "sourceNumber": 23,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Periodic Table · Structure and trends",
+    "title": "Which statements about the Periodic Table are correct?",
+    "context": "<p class=\"exam-question-line\">1 &nbsp;&nbsp;&nbsp; The horizontal rows of the Periodic Table are called groups.</p><p class=\"exam-question-line\">2 &nbsp;&nbsp;&nbsp; The Periodic Table is arranged in order of increasing proton number.</p><p class=\"exam-question-line\">3 &nbsp;&nbsp;&nbsp; The elements in the second column from the left of the Periodic Table form ions with a charge of 2+.</p><p class=\"exam-question-line\">4 &nbsp;&nbsp;&nbsp; Elements in a horizontal row of the Periodic Table become more metallic going from left to right.</p>",
+    "legend": "Select one answer",
+    "options": [
+      "1 and 2",
+      "1 and 4",
+      "2 and 3",
+      "3 and 4"
+    ],
+    "correct": "C",
+    "answer": "C. 2 and 3",
+    "explanation": "<p class=\"definition\"><strong>Statements 2 and 3 are correct.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Horizontal rows are called periods, not groups, so statement 1 is false.</li><li>The modern Periodic Table is arranged by increasing proton (atomic) number, so statement 2 is true.</li><li>The second column from the left is Group 2; these metals form 2+ ions, so statement 3 is true.</li><li>Metallic character decreases across a period from left to right, so statement 4 is false.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q103-teaching.svg\" alt=\"Teaching visual for question 103\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: statement 1 is false.</li><li><strong>B.</strong> Incorrect: both 1 and 4 are false.</li><li><strong>C.</strong> Correct: statements 2 and 3 are true.</li><li><strong>D.</strong> Incorrect: statement 4 is false.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Rows are periods, columns are groups, and Group 2 elements form 2+ ions.</p>"
+  },
+  {
+    "paperNumber": 104,
+    "sourceNumber": 24,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Periodic Table · Group I properties",
+    "title": "Which statement about alkali metals is correct?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "Lithium is denser than sodium.",
+      "Sodium is more reactive than potassium.",
+      "Sodium has a higher melting point than potassium.",
+      "Potassium has more outer-shell electrons than sodium."
+    ],
+    "correct": "C",
+    "answer": "C. Sodium has a higher melting point than potassium.",
+    "explanation": "<p class=\"definition\"><strong>Sodium has a higher melting point than potassium.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Down Group 1, melting points decrease, so sodium has a higher melting point than potassium.</li><li>Lithium is less dense than sodium, so option A is wrong.</li><li>Reactivity increases down the group, so potassium is more reactive than sodium.</li><li>All Group 1 metals have one outer-shell electron, so potassium does not have more than sodium.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q104-teaching.svg\" alt=\"Teaching visual for question 104\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: lithium is less dense than sodium.</li><li><strong>B.</strong> Incorrect: potassium is more reactive than sodium.</li><li><strong>C.</strong> Correct: melting point decreases down the group, so Na > K.</li><li><strong>D.</strong> Incorrect: both have one outer-shell electron.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> In Group 1, reactivity increases down the group while melting point decreases.</p>"
+  },
+  {
+    "paperNumber": 105,
+    "sourceNumber": 25,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Metals · Alloys and malleability",
+    "title": "Which row describes the difference in malleability between alloys and pure metals and explains the difference?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "less malleable; different-sized atoms slide more easily over each other",
+      "less malleable; different-sized atoms slide less easily over each other",
+      "more malleable; different-sized atoms slide more easily over each other",
+      "more malleable; different-sized atoms slide less easily over each other"
+    ],
+    "correct": "B",
+    "answer": "B. less malleable; different-sized atoms slide less easily over each other",
+    "explanation": "<p class=\"definition\"><strong>Alloys are less malleable because different-sized atoms slide less easily over each other.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>In a pure metal, layers of atoms can slide over each other fairly easily.</li><li>In an alloy, atoms of different sizes distort the regular arrangement.</li><li>This makes the layers harder to slide, so the alloy is less malleable.</li><li>Therefore the correct row is B.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q105-teaching.svg\" alt=\"Teaching visual for question 105\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: different-sized atoms do not slide more easily.</li><li><strong>B.</strong> Correct: alloys are less malleable because the layers slide less easily.</li><li><strong>C.</strong> Incorrect: alloys are usually less, not more, malleable than pure metals.</li><li><strong>D.</strong> Incorrect: if sliding is less easy, the metal becomes less malleable, not more.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Alloys are harder and less malleable because their layers are distorted by atoms of different sizes.</p>",
+    "tableHeaders": [
+      "malleability of an alloy compared with pure metal",
+      "explanation"
+    ],
+    "tableRows": [
+      [
+        "less malleable",
+        "different-sized atoms slide more easily over each other"
+      ],
+      [
+        "less malleable",
+        "different-sized atoms slide less easily over each other"
+      ],
+      [
+        "more malleable",
+        "different-sized atoms slide more easily over each other"
+      ],
+      [
+        "more malleable",
+        "different-sized atoms slide less easily over each other"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 106,
+    "sourceNumber": 26,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Metals · Reactivity and oxide layers",
+    "title": "Aluminium does not react with dilute hydrochloric acid.",
+    "context": "<p class=\"exam-question-line\">Zinc reacts with dilute hydrochloric acid to produce hydrogen gas.</p><p class=\"exam-question-line\">Which statement explains these observations?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "Aluminium has a greater tendency than zinc to form positive ions.",
+      "Only aluminium is coated with a layer of its oxide.",
+      "Aluminium is above zinc in the reactivity series.",
+      "Zinc has a greater tendency than aluminium to form positive ions."
+    ],
+    "correct": "B",
+    "answer": "B. Only aluminium is coated with a layer of its oxide.",
+    "explanation": "<p class=\"definition\"><strong>Aluminium is protected by a coating of aluminium oxide, which prevents the acid from reacting with the metal underneath.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Although aluminium is reactive, it quickly forms a thin protective oxide layer.</li><li>This oxide layer prevents dilute hydrochloric acid from reaching much of the metal.</li><li>Zinc does not have such a protective layer in the same way, so it reacts with dilute acid to make hydrogen gas.</li><li>Therefore the observation is best explained by the oxide coating on aluminium.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q106-teaching.svg\" alt=\"Teaching visual for question 106\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: this does not explain why aluminium appears unreactive in the experiment.</li><li><strong>B.</strong> Correct: the protective aluminium oxide layer prevents reaction.</li><li><strong>C.</strong> Incorrect: this is true about reactivity, but not the reason for the observed lack of reaction.</li><li><strong>D.</strong> Incorrect: aluminium is actually more reactive than zinc.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Aluminium may appear less reactive because its oxide layer protects it.</p>"
+  },
+  {
+    "paperNumber": 107,
+    "sourceNumber": 27,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Extraction of Metals · Blast furnace",
+    "title": "Which equation represents the extraction of iron from hematite in a blast furnace?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "Fe<sub>2</sub>O<sub>3</sub> + 3CO → 2Fe + 3CO<sub>2</sub>",
+      "FeO + CO → Fe + CO<sub>2</sub>",
+      "2Fe<sub>2</sub>O<sub>3</sub> → 2Fe + 3O<sub>2</sub>",
+      "FeO + SiO<sub>2</sub> → Fe + SiO<sub>3</sub>"
+    ],
+    "correct": "A",
+    "answer": "A. Fe<sub>2</sub>O<sub>3</sub> + 3CO → 2Fe + 3CO<sub>2</sub>",
+    "explanation": "<p class=\"definition\"><strong>Hematite, Fe₂O₃, is reduced by carbon monoxide in the blast furnace to form iron.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>The iron ore hematite is iron(III) oxide, Fe₂O₃.</li><li>In the blast furnace, carbon monoxide acts as the reducing agent.</li><li>The overall reduction can be represented as Fe₂O₃ + 3CO → 2Fe + 3CO₂.</li><li>So option A is the correct extraction equation.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q107-teaching.svg\" alt=\"Teaching visual for question 107\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: this shows hematite reduced by carbon monoxide.</li><li><strong>B.</strong> Incorrect: FeO is not hematite.</li><li><strong>C.</strong> Incorrect: hematite is not extracted simply by thermal decomposition like this.</li><li><strong>D.</strong> Incorrect: silicon dioxide reacts with calcium oxide to help remove impurities, not to produce iron this way.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Blast furnace extraction uses carbon monoxide to reduce iron(III) oxide to iron.</p>"
+  },
+  {
+    "paperNumber": 108,
+    "sourceNumber": 28,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Extraction of Metals · Aluminium electrolysis",
+    "title": "Aluminium is extracted from its ore by electrolysis using carbon electrodes.",
+    "context": "<p class=\"exam-question-line\">Aluminium, oxygen and carbon dioxide are all produced during this process.</p><p class=\"exam-question-line\">Which statement about this process is correct?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "Reduction of oxide ions happens at the carbon anode.",
+      "Reduction of oxygen gas happens at the carbon anode.",
+      "Reduction of aluminium ions happens at the carbon cathode.",
+      "Reduction of oxygen gas happens at the carbon cathode."
+    ],
+    "correct": "C",
+    "answer": "C. Reduction of aluminium ions happens at the carbon cathode.",
+    "explanation": "<p class=\"definition\"><strong>Aluminium ions are reduced at the carbon cathode.</strong> This is the correct chemistry idea tested by the question.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>In aluminium extraction, positive aluminium ions move to the negative cathode.</li><li>At the cathode, Al³⁺ gains electrons and is reduced to aluminium metal.</li><li>At the anode, oxide ions are oxidised to oxygen, and some oxygen reacts with the carbon anode to form carbon dioxide.</li><li>Therefore the correct statement is that reduction of aluminium ions happens at the carbon cathode.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q108-teaching.svg\" alt=\"Teaching visual for question 108\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: oxide ions are oxidised at the anode, not reduced.</li><li><strong>B.</strong> Incorrect: oxygen gas is not reduced at the anode.</li><li><strong>C.</strong> Correct: aluminium ions are reduced at the cathode to form aluminium.</li><li><strong>D.</strong> Incorrect: oxygen gas is not reduced at the cathode.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> In aluminium electrolysis: cathode → aluminium, anode → oxygen / carbon dioxide.</p>"
+  },
+  {
+    "paperNumber": 109,
+    "sourceNumber": 29,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Plants and the Environment · Photosynthesis",
+    "title": "What is the equation for photosynthesis?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "CO<sub>2</sub> + 3H<sub>2</sub> → CH<sub>3</sub>OH + H<sub>2</sub>O",
+      "6CO<sub>2</sub> + 6H<sub>2</sub>O → C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub>",
+      "C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> → 2C<sub>2</sub>H<sub>5</sub>OH + CO<sub>2</sub>",
+      "C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub> → 6CO<sub>2</sub> + 6H<sub>2</sub>O"
+    ],
+    "correct": "B",
+    "answer": "B. 6CO<sub>2</sub> + 6H<sub>2</sub>O → C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub>",
+    "explanation": "<p class=\"definition\"><strong>Photosynthesis is 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Photosynthesis makes glucose and oxygen from carbon dioxide and water.</li><li>The process uses light energy in chloroplasts.</li><li>Option B shows the balanced photosynthesis equation.</li><li>Option D is actually the reverse process, aerobic respiration.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q109-teaching.svg\" alt=\"Teaching visual for question 109\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: this is not photosynthesis.</li><li><strong>B.</strong> Correct: this is the balanced photosynthesis equation.</li><li><strong>C.</strong> Incorrect: this describes fermentation.</li><li><strong>D.</strong> Incorrect: this is respiration, not photosynthesis.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Photosynthesis uses CO₂ and H₂O to make glucose and O₂.</p>"
+  },
+  {
+    "paperNumber": 110,
+    "sourceNumber": 30,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Air and Water · Catalytic converters",
+    "title": "Modern cars are fitted with catalytic converters.",
+    "context": "<p class=\"exam-question-line\">Which statement about the catalysts in catalytic converters is correct?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "They remove nitrogen from the car’s exhaust so that it cannot combine with oxygen.",
+      "They combine with oxygen from the engine to prevent the formation of oxides of nitrogen.",
+      "They remove oxides of nitrogen that are produced in the car engine.",
+      "They are replaced regularly because they are used up."
+    ],
+    "correct": "C",
+    "answer": "C. They remove oxides of nitrogen that are produced in the car engine.",
+    "explanation": "<p class=\"definition\"><strong>Catalytic converters remove harmful nitrogen oxides produced in the engine.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Catalytic converters convert harmful gases such as nitrogen oxides, carbon monoxide and unburnt hydrocarbons into less harmful products.</li><li>They do not work by being used up, because catalysts are not consumed in the reaction.</li><li>They help remove NOₓ already formed in the engine exhaust.</li><li>Therefore option C is correct.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q110-teaching.svg\" alt=\"Teaching visual for question 110\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: they do not remove elemental nitrogen from the exhaust.</li><li><strong>B.</strong> Incorrect: the catalyst does not combine with oxygen in this way.</li><li><strong>C.</strong> Correct: catalytic converters reduce harmful nitrogen oxides from exhaust gases.</li><li><strong>D.</strong> Incorrect: catalysts are not used up during the reaction.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Catalytic converters reduce pollution by converting NOx, CO and hydrocarbons into safer substances.</p>"
+  },
+  {
+    "paperNumber": 111,
+    "sourceNumber": 31,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Environment · Global warming and acid rain",
+    "title": "Which row describes a strategy for reducing global warming and a strategy for reducing acid rain?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "burning more wood; flue gas desulfurisation",
+      "decrease use of petroleum; increase use of coal for electricity generation",
+      "reduce livestock farming; use catalytic converters in vehicles",
+      "use low-sulfur fuels; reduce livestock farming"
+    ],
+    "correct": "C",
+    "answer": "C. reduce livestock farming; use catalytic converters in vehicles",
+    "explanation": "<p class=\"definition\"><strong>Reducing livestock farming helps reduce global warming, and catalytic converters help reduce acid rain.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Livestock farming contributes methane, a greenhouse gas, so reducing it helps limit global warming.</li><li>Catalytic converters reduce nitrogen oxides in vehicle exhaust, helping reduce acid rain.</li><li>Burning more wood or using more coal does not help the environment overall in the ways stated.</li><li>So row C correctly pairs one method for global warming and one for acid rain.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q111-teaching.svg\" alt=\"Teaching visual for question 111\" loading=\"lazy\" decoding=\"async\"><figcaption>Concept summary for revision.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: flue gas desulfurisation helps acid rain, but burning more wood is not a clear strategy for reducing global warming.</li><li><strong>B.</strong> Incorrect: increasing coal use worsens acid rain and emissions.</li><li><strong>C.</strong> Correct: reducing livestock farming lowers methane, and catalytic converters reduce NOx.</li><li><strong>D.</strong> Incorrect: low-sulfur fuels help acid rain more directly, while reducing livestock farming is for global warming; the pair is in the wrong roles.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Global warming is linked to greenhouse gases; acid rain is linked mainly to sulfur dioxide and nitrogen oxides.</p>",
+    "tableHeaders": [
+      "strategy for reducing global warming",
+      "strategy for reducing acid rain"
+    ],
+    "tableRows": [
+      [
+        "burning more wood",
+        "flue gas desulfurisation"
+      ],
+      [
+        "decrease use of petroleum",
+        "increase use of coal for electricity generation"
+      ],
+      [
+        "reduce livestock farming",
+        "use catalytic converters in vehicles"
+      ],
+      [
+        "use low-sulfur fuels",
+        "reduce livestock farming"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 112,
+    "sourceNumber": 32,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Organic Chemistry · Hydrocarbons and combustion",
+    "title": "The formulas of two hydrocarbons are shown.",
+    "context": "<figure class=\"question-original-figure\"><a href=\"images/q112-hydrocarbon-structures.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q112-hydrocarbon-structures.png\" alt=\"Displayed structural formulas for a branched alkane and a six-carbon alkene\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Question diagram · <a href=\"images/q112-hydrocarbon-structures.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure><p class=\"exam-question-line\">Which statement about these hydrocarbons is correct?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "They are both saturated.",
+      "They are structural isomers of each other.",
+      "They have the same general formula.",
+      "They produce the same volume of carbon dioxide during complete combustion."
+    ],
+    "correct": "D",
+    "answer": "D. They produce the same volume of carbon dioxide during complete combustion.",
+    "explanation": "<p class=\"definition\"><strong>Both hydrocarbons contain six carbon atoms.</strong> Equal amounts in moles produce equal amounts of CO₂ on complete combustion.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>The first structure is an alkane with six carbon atoms (C₆H₁₄); the second is an alkene with six carbon atoms (C₆H₁₂).</li><li>The alkene contains C=C and is unsaturated. The formulas differ, so they are not isomers and are not in the same homologous series.</li><li>Each mole of either six-carbon hydrocarbon forms six moles of CO₂ in complete combustion.</li><li>Thus equal molar amounts give the same volume of CO₂ at the same temperature and pressure.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q112-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> False: the right-hand hydrocarbon has a C=C bond.</li><li><strong>B.</strong> False: structural isomers have the same molecular formula, but these do not.</li><li><strong>C.</strong> False: alkanes follow CₙH₂ₙ₊₂ and alkenes CₙH₂ₙ.</li><li><strong>D.</strong> Correct for equal amounts in moles: both contain six carbon atoms.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> For complete combustion, each carbon atom yields one CO₂ molecule; compare carbon counts for equal mole samples.</p>"
+  },
+  {
+    "paperNumber": 113,
+    "sourceNumber": 33,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Organic Chemistry · Structural formulae",
+    "title": "The names and structures of four organic compounds are shown.",
+    "context": "<figure class=\"question-original-figure\"><a href=\"images/q113-names-formulae.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q113-names-formulae.png\" alt=\"Named compounds propanoic acid, propene, propan-1-ol and propan-2-ol with their supplied formulae\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Question diagram · <a href=\"images/q113-names-formulae.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure><p class=\"exam-question-line\">Which compound has the correct structure?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "propanoic acid",
+      "propene",
+      "propan-1-ol",
+      "propan-2-ol"
+    ],
+    "correct": "C",
+    "answer": "C. propan-1-ol",
+    "explanation": "<p class=\"definition\"><strong>Propan-1-ol is correctly shown as CH₃CH₂CH₂OH.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Propanoic acid should be CH₃CH₂COOH; the shown formula omits part of the correct chain.</li><li>Propene should be CH₂=CHCH₃; the displayed expression is not the correct structure.</li><li>Propan-1-ol has three carbons and its –OH group is on carbon 1: CH₃CH₂CH₂OH.</li><li>Propan-2-ol should be CH₃CH(OH)CH₃, with only one hydroxyl group.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q113-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: propanoic acid requires CH₃CH₂COOH.</li><li><strong>B.</strong> Incorrect: propene must have the correct C=C arrangement.</li><li><strong>C.</strong> Correct: CH₃CH₂CH₂OH is propan-1-ol.</li><li><strong>D.</strong> Incorrect: propan-2-ol has one –OH group, not two.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Identify carbon chain length and the positions of bonds and functional groups.</p>"
+  },
+  {
+    "paperNumber": 114,
+    "sourceNumber": 34,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Organic Chemistry · Substitution reactions",
+    "title": "Which equation represents a substitution reaction?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "CH<sub>3</sub>CH<sub>2</sub>Cl + Cl<sub>2</sub> → CH<sub>3</sub>CHCl<sub>3</sub> + HCl",
+      "CH<sub>3</sub>CH<sub>2</sub>OH → CH<sub>2</sub>CH<sub>2</sub> + H<sub>2</sub>O",
+      "C<sub>2</sub>H<sub>5</sub>OH + 3O<sub>2</sub> → 2CO<sub>2</sub> + 3H<sub>2</sub>O",
+      "CH<sub>2</sub>CH<sub>2</sub> + HBr → CH<sub>3</sub>CH<sub>2</sub>Br"
+    ],
+    "correct": "A",
+    "answer": "A. CH<sub>3</sub>CH<sub>2</sub>Cl + Cl<sub>2</sub> → CH<sub>3</sub>CHCl<sub>3</sub> + HCl",
+    "explanation": "<p class=\"definition\"><strong>Option A is the intended substitution reaction.</strong> It depicts chlorine replacing hydrogen in a haloalkane, whereas the other options show elimination, combustion, and addition.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>A substitution reaction replaces one atom or group with another.</li><li>Option A depicts chlorine replacing hydrogen in chloroethane and producing hydrogen chloride.</li><li>Option B eliminates water from ethanol. Option C is combustion. Option D adds HBr across a carbon–carbon double bond.</li><li><strong>Source note:</strong> The formula in option A, as supplied, is not atom-balanced. The corresponding one-step balanced substitution is CH₃CH₂Cl + Cl₂ → CH₃CHCl₂ + HCl. The option is kept as shown in the screenshot.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q114-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct reaction type (substitution), despite the apparent formula/balancing error in the supplied option.</li><li><strong>B.</strong> Incorrect: dehydration of ethanol is elimination.</li><li><strong>C.</strong> Incorrect: this is complete combustion of ethanol.</li><li><strong>D.</strong> Incorrect: this is an addition reaction.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Substitution replaces an atom/group; addition adds across a double bond.</p>"
+  },
+  {
+    "paperNumber": 115,
+    "sourceNumber": 35,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Organic Chemistry · Bromine addition",
+    "title": "Which compound reacts rapidly with bromine to produce CH₃CHBrCHBrCH₃?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "CH<sub>3</sub>CH<sub>2</sub>Br",
+      "CH<sub>2</sub>=CHCH<sub>2</sub>CH<sub>3</sub>",
+      "CH<sub>3</sub>CH=CHCH<sub>3</sub>",
+      "CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>"
+    ],
+    "correct": "C",
+    "answer": "C. CH<sub>3</sub>CH=CHCH<sub>3</sub>",
+    "explanation": "<p class=\"definition\"><strong>But-2-ene adds bromine across its double bond</strong>, forming 2,3-dibromobutane.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>The product CH₃CHBrCHBrCH₃ has bromine bonded to carbon 2 and carbon 3.</li><li>To form that product by addition, the original molecule needs a double bond between carbons 2 and 3.</li><li>CH₃CH=CHCH₃ is but-2-ene; Br₂ adds across that C=C bond.</li><li>Thus option C is the correct reactant.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q115-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: bromoethane lacks the required four-carbon double bond.</li><li><strong>B.</strong> Incorrect: but-1-ene would form 1,2-dibromobutane.</li><li><strong>C.</strong> Correct: but-2-ene forms 2,3-dibromobutane.</li><li><strong>D.</strong> Incorrect: butane has no C=C and does not rapidly add bromine.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Halogen addition occurs across C=C; bromine attaches to both double-bond carbons.</p>"
+  },
+  {
+    "paperNumber": 116,
+    "sourceNumber": 36,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Polymers · PET polyester",
+    "title": "Which structure represents the polymer PET?",
+    "context": "<figure class=\"question-original-figure\"><a href=\"images/q116-pet-structures.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q116-pet-structures.png\" alt=\"Four polymer structural diagrams A through D as supplied in the original question\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Question diagram · <a href=\"images/q116-pet-structures.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure>",
+    "legend": "Select one answer",
+    "options": [
+      "Diagram A",
+      "Diagram B",
+      "Diagram C",
+      "Diagram D"
+    ],
+    "correct": "A",
+    "answer": "A. Diagram A",
+    "explanation": "<p class=\"definition\"><strong>PET is a polyester</strong> and its repeating backbone contains ester links (–COO–).</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>PET stands for poly(ethylene terephthalate). It forms by condensation polymerisation.</li><li>Its repeat chain contains alternating dicarboxylic-acid and diol residues joined through –C(=O)–O– ester bonds.</li><li>Diagram A shows those ester links.</li><li>The nitrogen-containing diagrams show amide-type links and diagram D omits the needed oxygen ester connections.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q116-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: it contains repeating ester (–COO–) links.</li><li><strong>B.</strong> Incorrect: nitrogen amide links correspond to polyamides, not PET.</li><li><strong>C.</strong> Incorrect: nitrogen indicates an amide-containing polymer.</li><li><strong>D.</strong> Incorrect: this backbone lacks ester –O– links.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> PET is a polyester. Look for –COO– links, not –CONH–.</p>"
+  },
+  {
+    "paperNumber": 117,
+    "sourceNumber": 37,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Polymers · Nylon polyamide",
+    "title": "Which diagram shows the structure of nylon?",
+    "context": "<figure class=\"question-original-figure\"><a href=\"images/q117-nylon-structures.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q117-nylon-structures.png\" alt=\"Four chemical polymer structures labelled A through D from the supplied screenshot\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Question diagram · <a href=\"images/q117-nylon-structures.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure>",
+    "legend": "Select one answer",
+    "options": [
+      "Diagram A",
+      "Diagram B",
+      "Diagram C",
+      "Diagram D"
+    ],
+    "correct": "D",
+    "answer": "D. Diagram D",
+    "explanation": "<p class=\"definition\"><strong>Nylon is a polyamide</strong>, whose repeating chain contains amide (–CONH–) links.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Look for the carbonyl group C=O connected directly to nitrogen: –CO–NH–.</li><li>Diagram D contains those repeated amide links linking the two structural blocks.</li><li>Diagram B shows ester links (–CO–O–), which is polyester chemistry.</li><li>The other diagrams do not show the correct repeated nylon amide links.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q117-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: no repeated amide linkage in the correct nylon position.</li><li><strong>B.</strong> Incorrect: polyester ester link is –COO–.</li><li><strong>C.</strong> Incorrect: the sequence of groups is not the correct polyamide repeat.</li><li><strong>D.</strong> Correct: contains the repeated –CONH– amide linkage.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Nylon is a polyamide formed by condensation polymerisation.</p>"
+  },
+  {
+    "paperNumber": 118,
+    "sourceNumber": 38,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Experimental Chemistry · Paper chromatography",
+    "title": "The colours in an ink can be separated by chromatography.",
+    "context": "<p class=\"exam-question-line\">Which diagram shows the correct way to set up the apparatus?</p><figure class=\"question-original-figure\"><a href=\"images/q118-chromatography-setups.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q118-chromatography-setups.png\" alt=\"Four labelled beakers containing chromatography paper, ink spots and solvent levels\" loading=\"lazy\" decoding=\"async\"></a><figcaption>Question diagram · <a href=\"images/q118-chromatography-setups.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure>",
+    "legend": "Select one answer",
+    "options": [
+      "Diagram A",
+      "Diagram B",
+      "Diagram C",
+      "Diagram D"
+    ],
+    "correct": "C",
+    "answer": "C. Diagram C",
+    "explanation": "<p class=\"definition\"><strong>Diagram C is the correct setup:</strong> the bottom of the paper dips into the solvent, while the ink spot begins above the solvent level.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>The solvent must contact the paper at the bottom so it rises by capillary action.</li><li>The ink spot must be above the solvent so the ink does not dissolve directly into the solvent reservoir.</li><li>Only diagram C has both the paper end immersed and the ink spot above the liquid.</li><li>The solvent carries dissolved ink components up the paper at different rates.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q118-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: the paper does not dip into the solvent.</li><li><strong>B.</strong> Incorrect: the ink spot is on the solvent level.</li><li><strong>C.</strong> Correct: paper dips in solvent; spot stays above solvent.</li><li><strong>D.</strong> Incorrect: the ink spot lies below the solvent level.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Keep the sample spot above solvent level and the paper below it.</p>"
+  },
+  {
+    "paperNumber": 119,
+    "sourceNumber": 39,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Experimental Chemistry · Desalination",
+    "title": "Which process is used to produce drinking water from sea water?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "crystallisation",
+      "distillation",
+      "filtration",
+      "chlorination"
+    ],
+    "correct": "B",
+    "answer": "B. distillation",
+    "explanation": "<p class=\"definition\"><strong>Distillation</strong> separates water from dissolved salts by evaporation followed by condensation.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Sea water contains dissolved salt, which cannot be removed by ordinary filtration.</li><li>On heating, water evaporates while most dissolved salts remain behind.</li><li>The water vapour is cooled and condensed to collect fresh water.</li><li>That process is distillation.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q119-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: crystallisation recovers solid salt.</li><li><strong>B.</strong> Correct: distillation produces fresh water from sea water.</li><li><strong>C.</strong> Incorrect: filtration removes insoluble solids, not dissolved salt.</li><li><strong>D.</strong> Incorrect: chlorination disinfects water but does not desalinate it.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Distillation separates a volatile liquid from dissolved non-volatile solutes.</p>"
+  },
+  {
+    "paperNumber": 120,
+    "sourceNumber": 40,
+    "sourcePaper": "0620/22/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-22-may-june",
+    "chapter": "Qualitative Analysis · Flame tests",
+    "title": "A sample of an ionic compound produces an orange-red flame test colour.",
+    "context": "<p class=\"exam-question-line\">Which metal ion is present in the compound?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "Li<sup>+</sup>",
+      "Cu<sup>2+</sup>",
+      "K<sup>+</sup>",
+      "Ca<sup>2+</sup>"
+    ],
+    "correct": "D",
+    "answer": "D. Ca<sup>2+</sup>",
+    "explanation": "<p class=\"definition\"><strong>Calcium ions give an orange-red (brick-red) flame.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Flame tests identify certain metal ions by the colours they produce.</li><li>Lithium gives crimson red, copper(II) gives blue-green and potassium gives lilac.</li><li>Calcium gives orange-red / brick-red.</li><li>Therefore option D (Ca²⁺) is correct.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q120-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Check each option</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: lithium gives crimson red.</li><li><strong>B.</strong> Incorrect: copper gives blue-green.</li><li><strong>C.</strong> Incorrect: potassium gives lilac.</li><li><strong>D.</strong> Correct: calcium gives an orange-red/brick-red flame.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Calcium = orange-red, lithium = crimson, copper = blue-green, potassium = lilac.</p>"
+  },
+  {
+    "paperNumber": 121,
+    "sourceNumber": 1,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "States of Matter · Gas particles and exothermic changes",
+    "title": "Gaseous ammonia reacts with an excess of gaseous hydrogen chloride in a sealed flask.",
+    "context": "<p class=\"exam-question-line\">NH<sub>3</sub>(g) + HCl(g) → NH<sub>4</sub>Cl(s)</p><p class=\"exam-question-line\">The reaction is exothermic.</p><p class=\"exam-question-line\">Which statements about the reaction are correct?</p><div class=\"source-statements\"><p class=\"exam-question-line\">1 &nbsp;&nbsp; The number of gas particles in the flask decreases.</p><p class=\"exam-question-line\">2 &nbsp;&nbsp; The average kinetic energy of the gas particles increases.</p><p class=\"exam-question-line\">3 &nbsp;&nbsp; The activation energy of the reaction increases.</p></div>",
+    "legend": "Select one answer",
+    "options": [
+      "1, 2 and 3",
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only"
+    ],
+    "correct": "B",
+    "answer": "B. 1 and 2 only",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>The reactants are gases but NH₄Cl is a solid. Gas particles are consumed, so the number of gas particles in the sealed flask decreases.</li><li>An exothermic reaction transfers energy to its surroundings. In the sealed flask, the gas mixture may warm up, increasing the average kinetic energy of the remaining gas particles.</li><li>Activation energy is a property of the reaction pathway; simply having an exothermic reaction does not make it increase.</li><li>Therefore statements 1 and 2 are correct.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q121-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: statement 3 is false.</li><li><strong>B.</strong> Correct: gas particles decrease and the average kinetic energy increases as the flask warms.</li><li><strong>C.</strong> Incorrect: activation energy does not increase as stated.</li><li><strong>D.</strong> Incorrect: statement 1 is also true and statement 3 is false.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Exothermic means energy is released; it does not mean activation energy increases.</p>"
+  },
+  {
+    "paperNumber": 122,
+    "sourceNumber": 2,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "States of Matter · Changes of state",
+    "title": "X and Y are changes of state of water.",
+    "context": "<figure class=\"question-original-figure\"><a href=\"images/q122-state-change-original.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q122-state-change-original.png\" alt=\"Ice, liquid water and water vapour, with forward arrow X and reverse arrow Y\" loading=\"lazy\" decoding=\"async\"></a><figcaption> <a href=\"images/q122-state-change-original.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure><p class=\"exam-question-line\">Which row identifies X and Y?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "freezing; boiling",
+      "freezing; condensing",
+      "melting; boiling",
+      "melting; condensing"
+    ],
+    "correct": "D",
+    "answer": "D. melting; condensing",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Read the direction of the upper arrow X: ice changes to liquid water. This is melting.</li><li>Read the direction of the lower arrow Y: water vapour changes back to liquid water. This is condensing.</li><li>Thus X is melting and Y is condensing.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q122-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: X is not freezing, and Y is not boiling.</li><li><strong>B.</strong> Incorrect: X is melting, not freezing.</li><li><strong>C.</strong> Incorrect: Y is condensing, not boiling.</li><li><strong>D.</strong> Correct: X = melting; Y = condensing.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Melting: solid → liquid. Condensing: gas → liquid.</p>",
+    "tableHeaders": [
+      "X",
+      "Y"
+    ],
+    "tableRows": [
+      [
+        "freezing",
+        "boiling"
+      ],
+      [
+        "freezing",
+        "condensing"
+      ],
+      [
+        "melting",
+        "boiling"
+      ],
+      [
+        "melting",
+        "condensing"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 123,
+    "sourceNumber": 3,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "States of Matter · Gas pressure and temperature",
+    "title": "A syringe contains a fixed mass of gas. The plunger of the syringe is free to move.",
+    "context": "<p class=\"exam-question-line\">Which row describes how the distance between the particles of the gas changes when the temperature or pressure is reduced?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "particles move closer together; particles move closer together",
+      "particles move closer together; particles move further apart",
+      "particles move further apart; particles move closer together",
+      "particles move further apart; particles move further apart"
+    ],
+    "correct": "B",
+    "answer": "B. particles move closer together; particles move further apart",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>At constant pressure, cooling a gas decreases its volume. Particles become closer together on average.</li><li>At constant temperature, reducing the external pressure allows the free plunger to move outward. Gas volume increases.</li><li>When gas volume increases with the same number of particles, their average separation increases.</li><li>Therefore the correct row is B.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q123-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: lower pressure makes particles farther apart, not closer.</li><li><strong>B.</strong> Correct: cooling → closer; reducing pressure → farther apart.</li><li><strong>C.</strong> Incorrect: cooling does not cause the gas to expand under the stated conditions.</li><li><strong>D.</strong> Incorrect: cooling makes particles closer, not farther apart.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> A gas expands when pressure decreases; it contracts when temperature decreases at constant pressure.</p>",
+    "tableHeaders": [
+      "reduced temperature",
+      "reduced pressure"
+    ],
+    "tableRows": [
+      [
+        "particles move closer together",
+        "particles move closer together"
+      ],
+      [
+        "particles move closer together",
+        "particles move further apart"
+      ],
+      [
+        "particles move further apart",
+        "particles move closer together"
+      ],
+      [
+        "particles move further apart",
+        "particles move further apart"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 124,
+    "sourceNumber": 4,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Atoms, Elements and Compounds · Pure substances",
+    "title": "Which substance is a pure compound?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "air",
+      "brass",
+      "ethanol",
+      "petroleum"
+    ],
+    "correct": "C",
+    "answer": "C. ethanol",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>A compound contains two or more different elements chemically bonded in a fixed ratio.</li><li>Ethanol, C₂H₅OH, is a chemical compound. A pure sample contains only ethanol.</li><li>Air is a mixture of gases, brass is an alloy (mixture), and petroleum is a mixture of hydrocarbons.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q124-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: air is a mixture.</li><li><strong>B.</strong> Incorrect: brass is a mixture of metals (an alloy).</li><li><strong>C.</strong> Correct: ethanol is a compound.</li><li><strong>D.</strong> Incorrect: petroleum contains many hydrocarbons.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> A pure compound has one chemical identity and a fixed composition.</p>"
+  },
+  {
+    "paperNumber": 125,
+    "sourceNumber": 5,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Atomic Structure · Proton number",
+    "title": "The diagram shows the structure of an atom of element J.",
+    "context": "<figure class=\"question-original-figure\"><a href=\"images/q125-atom-original.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q125-atom-original.png\" alt=\"Atom with 5 protons and 6 neutrons in nucleus and five electrons, plus key\" loading=\"lazy\" decoding=\"async\"></a><figcaption> <a href=\"images/q125-atom-original.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure><p class=\"exam-question-line\">What is element J?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "boron",
+      "carbon",
+      "sodium",
+      "sulfur"
+    ],
+    "correct": "A",
+    "answer": "A. boron",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>The diagram states the nucleus has 5 protons.</li><li>The atomic number (proton number) determines the identity of an element.</li><li>Atomic number 5 is boron, regardless of its neutron number.</li><li>The 6 neutrons make this boron-11, but they do not change its element identity.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q125-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: boron has proton number 5.</li><li><strong>B.</strong> Incorrect: carbon has proton number 6.</li><li><strong>C.</strong> Incorrect: sodium has proton number 11.</li><li><strong>D.</strong> Incorrect: sulfur has proton number 16.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Proton number = atomic number. Different neutrons mean isotopes, not different elements.</p>"
+  },
+  {
+    "paperNumber": 126,
+    "sourceNumber": 6,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Atomic Structure · Atoms and ions",
+    "title": "Which statement about an atom or an ion is correct?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "In an atom, the number of electrons is equal to the atomic number.",
+      "In an atom, the number of neutrons is equal to the atomic number.",
+      "In a sodium ion, Na<sup>+</sup>, the number of electrons is greater than the atomic number.",
+      "An atom of hydrogen that contains one neutron has an atomic number of two."
+    ],
+    "correct": "A",
+    "answer": "A. In an atom, the number of electrons is equal to the atomic number.",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>A neutral atom has equal numbers of protons and electrons.</li><li>Atomic number is the number of protons, so it is also the electron count in a neutral atom.</li><li>The neutron count can vary between isotopes.</li><li>Na⁺ has lost one electron and has fewer electrons than protons. Even hydrogen with one neutron still has atomic number 1.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q126-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Correct: neutral atoms have electrons = proton number.</li><li><strong>B.</strong> Incorrect: the neutron number is not necessarily the proton number.</li><li><strong>C.</strong> Incorrect: Na⁺ has 10 electrons but proton number 11.</li><li><strong>D.</strong> Incorrect: a hydrogen isotope with one neutron still has one proton.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Atomic number counts protons; ions gain or lose electrons, and isotopes vary in neutrons.</p>"
+  },
+  {
+    "paperNumber": 127,
+    "sourceNumber": 7,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Bonding · Ionic lattice",
+    "title": "Which statement explains the high melting point of potassium bromide?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "There is strong covalent bonding between the molecules.",
+      "There is strong ionic bonding between the ions.",
+      "There are strong intermolecular forces between the molecules.",
+      "There are strong intermolecular forces between the ions."
+    ],
+    "correct": "B",
+    "answer": "B. There is strong ionic bonding between the ions.",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Potassium bromide, KBr, is an ionic compound formed from K⁺ and Br⁻ ions.</li><li>The ions are arranged in a giant ionic lattice and held by strong electrostatic forces of attraction.</li><li>A large amount of energy is needed to overcome these attractions when it melts, so the melting point is high.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q127-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: potassium bromide is not molecular covalent.</li><li><strong>B.</strong> Correct: there are strong ionic bonds between oppositely charged ions.</li><li><strong>C.</strong> Incorrect: potassium bromide is not made of separate molecules.</li><li><strong>D.</strong> Incorrect: attractions in its giant structure are ionic bonds, not intermolecular forces.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Ionic solids have high melting points because of strong electrostatic attraction throughout a giant lattice.</p>"
+  },
+  {
+    "paperNumber": 128,
+    "sourceNumber": 8,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Bonding · Magnesium sulfide dot-and-cross",
+    "title": "Magnesium is in Group II and sulfur is in Group VI of the Periodic Table.",
+    "context": "<p class=\"exam-question-line\">They react to form magnesium sulfide.</p><p class=\"exam-question-line\">Which dot-and-cross diagram shows the outer electrons in magnesium sulfide?</p><figure class=\"question-original-figure\"><a href=\"images/q128-magnesium-sulfide-original.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"images/q128-magnesium-sulfide-original.png\" alt=\"Four original option diagrams A B C D for Mg and S electron transfer\" loading=\"lazy\" decoding=\"async\"></a><figcaption> <a href=\"images/q128-magnesium-sulfide-original.png\" target=\"_blank\" rel=\"noopener noreferrer\">Open full size</a></figcaption></figure>",
+    "legend": "Select one answer",
+    "options": [
+      "Diagram A",
+      "Diagram B",
+      "Diagram C",
+      "Diagram D"
+    ],
+    "correct": "D",
+    "answer": "D. Diagram D",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Magnesium loses two electrons to form Mg²⁺.</li><li>Sulfur gains these two electrons to form S²⁻.</li><li>Ionic dot-and-cross diagrams show separate ions in brackets with charges +2 and −2.</li><li>Diagram D correctly represents Mg²⁺ and S²⁻ and the filled outer shell of the sulfide ion.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q128-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: it shows electron sharing rather than ionic transfer.</li><li><strong>B.</strong> Incorrect: it shows one-positive and one-negative charges, not 2+ and 2−.</li><li><strong>C.</strong> Incorrect: it shows electron sharing involving three atoms.</li><li><strong>D.</strong> Correct: it shows Mg²⁺ and S²⁻ with charges 2+ and 2−.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Mg loses 2 electrons; S gains 2 electrons. The resulting ions are Mg²⁺ and S²⁻.</p>"
+  },
+  {
+    "paperNumber": 129,
+    "sourceNumber": 9,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Structure and Bonding · Graphite",
+    "title": "Graphite is a form of carbon.",
+    "context": "<p class=\"exam-question-line\">Why can graphite be used as a lubricant?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "Graphite contains unbonded electrons which move through the structure.",
+      "Graphite contains weak covalent bonds, so the atoms move easily.",
+      "Graphite has a low melting point, so it easily turns into a liquid.",
+      "Graphite has weak attractive forces between layers, so they can move."
+    ],
+    "correct": "D",
+    "answer": "D. Graphite has weak attractive forces between layers, so they can move.",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Graphite consists of layers of carbon atoms joined by strong covalent bonds within each layer.</li><li>The attractions between different layers are relatively weak.</li><li>The layers can slide over each other easily, which explains why graphite acts as a lubricant.</li><li>The free electrons explain graphite’s electrical conductivity, not its lubricating action.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q129-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: mobile electrons explain electrical conduction.</li><li><strong>B.</strong> Incorrect: covalent bonds within layers are strong.</li><li><strong>C.</strong> Incorrect: graphite has a very high melting point.</li><li><strong>D.</strong> Correct: weak interlayer forces allow the layers to slide.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Graphite lubricates because its layers slide; it conducts because of delocalised electrons.</p>"
+  },
+  {
+    "paperNumber": 130,
+    "sourceNumber": 10,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Stoichiometry · Forming ionic formulae",
+    "title": "The formula of an aluminium ion is Al<sup>3+</sup>.",
+    "context": "<p class=\"exam-question-line\">The formula of a nitrate ion is NO<sub>3</sub><sup>−</sup>.</p><p class=\"exam-question-line\">What is the formula of aluminium nitrate?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "AlNO<sub>3</sub>",
+      "Al(NO<sub>3</sub>)<sub>2</sub>",
+      "Al<sub>3</sub>NO<sub>3</sub>",
+      "Al(NO<sub>3</sub>)<sub>3</sub>"
+    ],
+    "correct": "D",
+    "answer": "D. Al(NO<sub>3</sub>)<sub>3</sub>",
+    "explanation": "<h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Aluminium forms Al³⁺ ions, and nitrate forms NO₃⁻ ions.</li><li>A neutral compound must balance the total positive and negative charges.</li><li>One Al³⁺ needs three NO₃⁻ ions, giving +3 + 3(−1) = 0.</li><li>Put brackets around the repeated polyatomic nitrate ion: Al(NO₃)₃.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q130-teaching-svg2.svg\" alt=\"SVG teaching diagram\" loading=\"lazy\" decoding=\"async\"><figcaption>Quick SVG summary for faster revision.</figcaption></figure><h3>Why the four answers are right or wrong</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: one nitrate leaves a net +2 charge.</li><li><strong>B.</strong> Incorrect: two nitrates give a net +1 charge.</li><li><strong>C.</strong> Incorrect: the Al to nitrate ratio is reversed.</li><li><strong>D.</strong> Correct: one Al³⁺ pairs with three NO₃⁻ ions.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Use brackets for polyatomic ions when more than one is present: Al(NO₃)₃.</p>"
+  },
+  {
+    "paperNumber": 131,
+    "sourceNumber": 11,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Stoichiometry · Empirical formula",
+    "title": "Organic compound X has the following percentage composition by mass.",
+    "context": "<p class=\"exam-question-line\">carbon 60%; hydrogen 8%; oxygen 32%</p><p class=\"exam-question-line\">What is the empirical formula of compound X?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "C<sub>5</sub>H<sub>4</sub>O",
+      "C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>",
+      "C<sub>10</sub>H<sub>8</sub>O<sub>4</sub>",
+      "C<sub>15</sub>H<sub>2</sub>O<sub>8</sub>"
+    ],
+    "correct": "B",
+    "answer": "B. C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>",
+    "explanation": "<p class=\"definition\"><strong>The empirical formula is C₅H₈O₂.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Assume 100 g of compound: 60 g carbon, 8 g hydrogen and 32 g oxygen.</li><li>Divide each mass by the atomic mass: C = 60/12 = 5; H = 8/1 = 8; O = 32/16 = 2.</li><li>The simplest whole-number ratio is 5 : 8 : 2.</li><li>Write C₅H₈O₂, which is option B.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q131-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 131\" loading=\"lazy\" decoding=\"async\"><figcaption>Convert percentage masses to moles before constructing the formula.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: hydrogen and oxygen are too low.</li><li><strong>B.</strong> Correct: the ratio of moles is C:H:O = 5:8:2.</li><li><strong>C.</strong> Incorrect: this is a multiple of the empirical formula, not simplest form.</li><li><strong>D.</strong> Incorrect: the numbers do not match the calculated ratio.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Percentage composition → assume 100 g → divide by Ar → simplest ratio.</p>"
+  },
+  {
+    "paperNumber": 132,
+    "sourceNumber": 12,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Stoichiometry · Acid–alkali titration",
+    "title": "The equation for the reaction of dilute sulfuric acid and aqueous sodium hydroxide is shown.",
+    "context": "<p class=\"exam-question-line\">H<sub>2</sub>SO<sub>4</sub> + 2NaOH → Na<sub>2</sub>SO<sub>4</sub> + 2H<sub>2</sub>O</p><p class=\"exam-question-line\">25.0 cm<sup>3</sup> of aqueous sodium hydroxide is measured into a conical flask.</p><p class=\"exam-question-line\">12.5 cm<sup>3</sup> of 0.100 mol / dm<sup>3</sup> sulfuric acid is needed to completely react with the aqueous sodium hydroxide.</p><p class=\"exam-question-line\">What is the concentration of the aqueous sodium hydroxide?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "0.0250 mol / dm<sup>3</sup>",
+      "0.0500 mol / dm<sup>3</sup>",
+      "0.100 mol / dm<sup>3</sup>",
+      "0.200 mol / dm<sup>3</sup>"
+    ],
+    "correct": "C",
+    "answer": "C. 0.100 mol / dm<sup>3</sup>",
+    "explanation": "<p class=\"definition\"><strong>The sodium hydroxide concentration is 0.100 mol/dm³.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Moles of H₂SO₄ = 0.100 × (12.5/1000) = 0.00125 mol.</li><li>Balanced equation shows 1 mol H₂SO₄ reacts with 2 mol NaOH, so NaOH = 2 × 0.00125 = 0.00250 mol.</li><li>Volume NaOH = 25.0/1000 = 0.0250 dm³.</li><li>Concentration = 0.00250/0.0250 = 0.100 mol/dm³.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q132-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 132\" loading=\"lazy\" decoding=\"async\"><figcaption>H₂SO₄ reacts with twice as many moles of NaOH.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: stoichiometric ratio and/or conversion is wrong.</li><li><strong>B.</strong> Incorrect: this ignores the 2:1 base-to-acid ratio.</li><li><strong>C.</strong> Correct: 0.100 mol/dm³.</li><li><strong>D.</strong> Incorrect: this is double the calculated result.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> n = cV (V in dm³), then apply the coefficients in the balanced equation.</p>"
+  },
+  {
+    "paperNumber": 133,
+    "sourceNumber": 13,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Moles · Avogadro constant",
+    "title": "What is the total number of atoms in 0.0100 mol of methane, CH<sub>4</sub>?",
+    "context": "<p class=\"exam-question-line\">(The value of the Avogadro constant is 6.02 × 10<sup>23</sup>.)</p>",
+    "legend": "Select one answer",
+    "options": [
+      "6.02 × 10<sup>21</sup>",
+      "6.02 × 10<sup>22</sup>",
+      "3.01 × 10<sup>22</sup>",
+      "3.01 × 10<sup>24</sup>"
+    ],
+    "correct": "C",
+    "answer": "C. 3.01 × 10<sup>22</sup>",
+    "explanation": "<p class=\"definition\"><strong>There are 3.01 × 10²² atoms.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>One methane molecule, CH₄, contains 1 carbon + 4 hydrogen = 5 atoms.</li><li>Number of molecules = 0.0100 × 6.02 × 10²³ = 6.02 × 10²¹.</li><li>Total atoms = 5 × 6.02 × 10²¹ = 3.01 × 10²².</li><li>Therefore option C.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q133-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 133\" loading=\"lazy\" decoding=\"async\"><figcaption>CH₄ contains five atoms per molecule: one C and four H.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: counts molecules, not atoms.</li><li><strong>B.</strong> Incorrect: incorrect power of ten for the total.</li><li><strong>C.</strong> Correct: multiply the molecule count by five.</li><li><strong>D.</strong> Incorrect: this overcounts by a factor of 100.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Number of atoms = moles × Avogadro constant × atoms per molecule.</p>"
+  },
+  {
+    "paperNumber": 134,
+    "sourceNumber": 14,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Electrochemistry · Electrolysis",
+    "title": "Dilute sulfuric acid is electrolysed using carbon electrodes.",
+    "context": "<p class=\"exam-question-line\">Which row shows the products that are formed at each electrode?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "hydrogen; oxygen",
+      "hydrogen; sulfur",
+      "oxygen; hydrogen",
+      "oxygen; sulfur"
+    ],
+    "correct": "C",
+    "answer": "C. oxygen; hydrogen",
+    "explanation": "<p class=\"definition\"><strong>Oxygen is formed at the anode and hydrogen at the cathode.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>In dilute sulfuric acid with inert carbon electrodes, hydrogen ions are reduced to H₂ at the negative cathode.</li><li>Water/hydroxide ions are oxidised at the positive anode to form O₂.</li><li>Sulfur is not produced under these conditions.</li><li>Row C matches anode = oxygen and cathode = hydrogen.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q134-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 134\" loading=\"lazy\" decoding=\"async\"><figcaption>The two gas products are oxygen and hydrogen.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: electrodes are reversed.</li><li><strong>B.</strong> Incorrect: hydrogen is not at the anode and sulfur is not produced.</li><li><strong>C.</strong> Correct: oxygen at anode; hydrogen at cathode.</li><li><strong>D.</strong> Incorrect: cathode product is hydrogen, not sulfur.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Remember: A-N-Ox (anode oxidation), cathode reduction.</p>",
+    "tableHeaders": [
+      "anode",
+      "cathode"
+    ],
+    "tableRows": [
+      [
+        "hydrogen",
+        "oxygen"
+      ],
+      [
+        "hydrogen",
+        "sulfur"
+      ],
+      [
+        "oxygen",
+        "hydrogen"
+      ],
+      [
+        "oxygen",
+        "sulfur"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 135,
+    "sourceNumber": 15,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Electrochemistry · Identify electrode products",
+    "title": "Substance Z is electrolysed with inert electrodes.",
+    "context": "<p class=\"exam-question-line\">The only product at the positive electrode is a gas which bleaches damp blue litmus paper.</p><p class=\"exam-question-line\">The only product at the negative electrode is a gas which gives a squeaky pop when it is tested with a lighted splint.</p><p class=\"exam-question-line\">What could substance Z be?</p><ol class=\"source-statements\"><li>concentrated aqueous copper(II)chloride</li><li>concentrated aqueous sodium chloride</li><li>dilute aqueous potassium chloride</li></ol>",
+    "legend": "Select one answer",
+    "options": [
+      "1 and 3",
+      "1 only",
+      "2 and 3",
+      "2 only"
+    ],
+    "correct": "D",
+    "answer": "D. 2 only",
+    "explanation": "<p class=\"definition\"><strong>Only concentrated aqueous sodium chloride gives chlorine at the anode and hydrogen at the cathode.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Bleaching damp blue litmus identifies chlorine gas. A squeaky pop identifies hydrogen gas.</li><li>Concentrated CuCl₂(aq) gives chlorine at the anode but copper metal at the cathode.</li><li>Concentrated NaCl(aq) gives chlorine at the anode and hydrogen at the cathode.</li><li>Dilute KCl(aq) typically gives oxygen at the anode rather than chlorine, so only substance 2 matches.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q135-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 135\" loading=\"lazy\" decoding=\"async\"><figcaption>Concentration and the metal ion determine electrode products.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: substance 1 produces copper at the cathode; dilute 3 gives oxygen at the anode.</li><li><strong>B.</strong> Incorrect: substance 1 does not produce hydrogen at the cathode.</li><li><strong>C.</strong> Incorrect: dilute 3 gives oxygen at the anode.</li><li><strong>D.</strong> Correct: substance 2 only.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Gas tests: chlorine bleaches damp litmus; hydrogen gives a squeaky pop.</p>"
+  },
+  {
+    "paperNumber": 136,
+    "sourceNumber": 16,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Electrochemistry · Aluminium extraction",
+    "title": "Aluminium is manufactured from aluminium oxide by electrolysis.",
+    "context": "<p class=\"exam-question-line\">Which row shows the ionic half-equations at each electrode and describes the role of cryolite in the process?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "anode: 2O²⁻ → O₂ + 4e⁻; cathode: Al³⁺ + 3e⁻ → Al; cryolite: catalyst",
+      "anode: Al³⁺ + 3e⁻ → Al; cathode: 2O²⁻ → O₂ + 4e⁻; cryolite: solvent for aluminium oxide",
+      "anode: 2O²⁻ → O₂ + 4e⁻; cathode: Al³⁺ + 3e⁻ → Al; cryolite: solvent for aluminium oxide",
+      "anode: Al³⁺ + 3e⁻ → 3Al; cathode: 2O²⁻ → O₂ + 4e⁻; cryolite: catalyst"
+    ],
+    "correct": "C",
+    "answer": "C. anode: 2O²⁻ → O₂ + 4e⁻; cathode: Al³⁺ + 3e⁻ → Al; cryolite: solvent for aluminium oxide",
+    "explanation": "<p class=\"definition\"><strong>Oxide ions are oxidised at the anode, aluminium ions are reduced at the cathode, and cryolite acts as a solvent for aluminium oxide.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Anode: 2O²⁻ → O₂ + 4e⁻ (oxidation).</li><li>Cathode: Al³⁺ + 3e⁻ → Al (reduction).</li><li>Cryolite dissolves Al₂O₃ and lowers the working temperature; it is not a catalyst.</li><li>So row C is correct.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q136-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 136\" loading=\"lazy\" decoding=\"async\"><figcaption>Molten aluminium is produced at the cathode.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: electrode equations match but cryolite is not a catalyst.</li><li><strong>B.</strong> Incorrect: reactions are assigned to the wrong electrodes.</li><li><strong>C.</strong> Correct: right half-equations and cryolite role.</li><li><strong>D.</strong> Incorrect: electrodes reversed, cryolite role wrong, and the aluminium half-equation is unbalanced.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Anode: oxidation; cathode: reduction; cryolite dissolves Al₂O₃.</p>",
+    "tableHeaders": [
+      "reaction at anode",
+      "reaction at cathode",
+      "role of cryolite"
+    ],
+    "tableRows": [
+      [
+        "2O<sup>2−</sup> → O<sub>2</sub> + 4e<sup>−</sup>",
+        "Al<sup>3+</sup> + 3e<sup>−</sup> → Al",
+        "catalyst"
+      ],
+      [
+        "Al<sup>3+</sup> + 3e<sup>−</sup> → Al",
+        "2O<sup>2−</sup> → O<sub>2</sub> + 4e<sup>−</sup>",
+        "solvent for aluminium oxide"
+      ],
+      [
+        "2O<sup>2−</sup> → O<sub>2</sub> + 4e<sup>−</sup>",
+        "Al<sup>3+</sup> + 3e<sup>−</sup> → Al",
+        "solvent for aluminium oxide"
+      ],
+      [
+        "Al<sup>3+</sup> + 3e<sup>−</sup> → 3Al",
+        "2O<sup>2−</sup> → O<sub>2</sub> + 4e<sup>−</sup>",
+        "catalyst"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 137,
+    "sourceNumber": 17,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Energetics · Bond energy calculations",
+    "title": "The equation for the reaction between hydrogen and chlorine is shown.",
+    "context": "<p class=\"exam-question-line\">H<sub>2</sub>(g) + Cl<sub>2</sub>(g) → 2HCl(g)</p><p class=\"exam-question-line\">The energy required to break the H–H bond is 436 kJ / mol.</p><p class=\"exam-question-line\">The energy required to break the Cl–Cl bond is 242 kJ / mol.</p><p class=\"exam-question-line\">The energy released when making the H–Cl bond is 431 kJ / mol.</p><p class=\"exam-question-line\">Which row shows the overall energy change in kJ / mol and identifies the type of reaction?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "184; endothermic",
+      "184; exothermic",
+      "247; endothermic",
+      "247; exothermic"
+    ],
+    "correct": "B",
+    "answer": "B. 184; exothermic",
+    "explanation": "<p class=\"definition\"><strong>The signed energy change is −184 kJ/mol, so the reaction is exothermic.</strong> The table gives the magnitude, 184, for option B.</p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Energy used to break bonds: 436 + 242 = 678 kJ/mol.</li><li>Energy released when forming two H–Cl bonds: 2 × 431 = 862 kJ/mol.</li><li>ΔH = bonds broken − bonds formed = 678 − 862 = −184 kJ/mol.</li><li>The energy change is negative, so the reaction is exothermic. Select the table row with 184 and exothermic.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q137-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 137\" loading=\"lazy\" decoding=\"async\"><figcaption>A negative enthalpy change means energy is released.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: reaction is exothermic, not endothermic.</li><li><strong>B.</strong> Correct: magnitude 184 kJ/mol, exothermic (ΔH = −184 kJ/mol).</li><li><strong>C.</strong> Incorrect: neither the value nor the type matches.</li><li><strong>D.</strong> Incorrect: exothermic type, but wrong magnitude.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> ΔH = total bond energies broken − total bond energies formed.</p>",
+    "tableHeaders": [
+      "energy change in kJ / mol",
+      "type of reaction"
+    ],
+    "tableRows": [
+      [
+        "184",
+        "endothermic"
+      ],
+      [
+        "184",
+        "exothermic"
+      ],
+      [
+        "247",
+        "endothermic"
+      ],
+      [
+        "247",
+        "exothermic"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 138,
+    "sourceNumber": 18,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Rates of Reaction · Surface area",
+    "title": "Magnesium reacts with hydrochloric acid to form magnesium chloride and hydrogen.",
+    "context": "<p class=\"exam-question-line\">Why does magnesium powder react faster than magnesium ribbon?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "The magnesium atoms in the powder have a lower activation energy.",
+      "The powder has a smaller surface area.",
+      "The magnesium atoms in the powder have more frequent collisions with acid particles.",
+      "The magnesium atoms in the powder have greater kinetic energy."
+    ],
+    "correct": "C",
+    "answer": "C. The magnesium atoms in the powder have more frequent collisions with acid particles.",
+    "explanation": "<p class=\"definition\"><strong>Powder has a larger surface area exposed to acid, increasing collision frequency.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>For equal masses, small pieces have a larger total exposed surface area.</li><li>More magnesium atoms are accessible to hydrochloric acid particles at any moment.</li><li>This increases the number of collisions per second, so reaction rate rises.</li><li>Activation energy and particle kinetic energy are not changed just by using powder.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q138-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 138\" loading=\"lazy\" decoding=\"async\"><figcaption>More exposed sites on powdered metal allow more frequent collisions.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: powder does not lower activation energy.</li><li><strong>B.</strong> Incorrect: powder has a larger, not smaller, surface area.</li><li><strong>C.</strong> Correct: increased surface area leads to more frequent collisions.</li><li><strong>D.</strong> Incorrect: powder has no greater kinetic energy under the same temperature.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Increasing surface area increases collision frequency.</p>"
+  },
+  {
+    "paperNumber": 139,
+    "sourceNumber": 19,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Equilibrium · Contact process",
+    "title": "The equation for one of the reactions in the Contact process is shown.",
+    "context": "<p class=\"exam-question-line\">2SO<sub>2</sub>(g) + O<sub>2</sub>(g) ⇌ 2SO<sub>3</sub>(g) &nbsp;&nbsp;&nbsp; ΔH = −196 kJ / mol</p><p class=\"exam-question-line\">Which statement about this reaction is correct?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "The typical conditions are a temperature of 450 °C and a pressure of 200 atm.",
+      "The raw materials for this reaction are obtained from air and methane.",
+      "Iron is normally used as the catalyst to increase the rate of reaction.",
+      "Increasing the temperature increases the rate of reaction, but decreases the yield of SO₃."
+    ],
+    "correct": "D",
+    "answer": "D. Increasing the temperature increases the rate of reaction, but decreases the yield of SO₃.",
+    "explanation": "<p class=\"definition\"><strong>Increasing the temperature increases the rate, but decreases the SO₃ equilibrium yield.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>The reaction is exothermic (ΔH is negative).</li><li>Raising temperature generally increases reaction rate.</li><li>By Le Châtelier’s principle, raising temperature favours the endothermic reverse reaction, reducing the SO₃ equilibrium yield.</li><li>The Contact process uses vanadium(V) oxide catalyst; typical pressure is not 200 atm.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q139-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 139\" loading=\"lazy\" decoding=\"async\"><figcaption>High temperature improves speed but opposes SO₃ formation at equilibrium.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: 200 atm is associated with the Haber process; Contact operates near atmospheric pressure.</li><li><strong>B.</strong> Incorrect: raw materials for this stage are sulfur dioxide and oxygen, not methane.</li><li><strong>C.</strong> Incorrect: V₂O₅ rather than iron is the catalyst.</li><li><strong>D.</strong> Correct: faster reaction but lower equilibrium yield of SO₃.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> For an exothermic forward reaction, higher temperature decreases equilibrium yield.</p>"
+  },
+  {
+    "paperNumber": 140,
+    "sourceNumber": 20,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Energetics · Catalysts",
+    "title": "Which row describes the effect of a catalyst on a reaction?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "decreases; decreases",
+      "decreases; no change",
+      "increases; decreases",
+      "increases; no change"
+    ],
+    "correct": "B",
+    "answer": "B. decreases; no change",
+    "explanation": "<p class=\"definition\"><strong>A catalyst decreases the activation energy without changing the enthalpy change (ΔH).</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Catalysts provide an alternative reaction pathway with a lower activation energy.</li><li>The energies of the reactants and products do not change.</li><li>Enthalpy change is the difference between product and reactant energies, so ΔH is unchanged.</li><li>Row B states activation energy decreases; enthalpy change no change.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q140-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 140\" loading=\"lazy\" decoding=\"async\"><figcaption>Both pathways have the same starting and ending energy levels.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: ΔH does not decrease.</li><li><strong>B.</strong> Correct: lower Eₐ and same ΔH.</li><li><strong>C.</strong> Incorrect: Eₐ does not increase; ΔH does not decrease.</li><li><strong>D.</strong> Incorrect: Eₐ decreases, not increases.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> A catalyst changes Eₐ (kinetics), not ΔH (thermodynamics).</p>",
+    "tableHeaders": [
+      "effect on activation energy, E<sub>a</sub>",
+      "effect on enthalpy change, ΔH"
+    ],
+    "tableRows": [
+      [
+        "decreases",
+        "decreases"
+      ],
+      [
+        "decreases",
+        "no change"
+      ],
+      [
+        "increases",
+        "decreases"
+      ],
+      [
+        "increases",
+        "no change"
+      ]
+    ]
+  },
+  {
+    "paperNumber": 141,
+    "sourceNumber": 21,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Redox · Iron(II) and manganate(VII)",
+    "title": "The ionic equation for the reaction of aqueous iron(II) sulfate with acidified aqueous potassium manganate(VII) is shown.",
+    "context": "<p class=\"exam-question-line\">5Fe<sup>2+</sup> + MnO<sub>4</sub><sup>−</sup> + 8H<sup>+</sup> → 5Fe<sup>3+</sup> + Mn<sup>2+</sup> + 4H<sub>2</sub>O</p><p class=\"exam-question-line\">Which statement about the reaction is correct?</p>",
+    "legend": "Select one answer",
+    "options": [
+      "The iron(II) ions gain electrons.",
+      "The iron(II) ions act as an oxidising agent.",
+      "The manganate(VII) ions are reduced.",
+      "The oxidation state of the iron(II) ions decreases."
+    ],
+    "correct": "C",
+    "answer": "C. The manganate(VII) ions are reduced.",
+    "explanation": "<p class=\"definition\"><strong>Manganate(VII) ions are reduced to Mn²⁺ ions.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Fe²⁺ becomes Fe³⁺, so iron loses an electron and is oxidised.</li><li>Manganese decreases in oxidation state from +7 in MnO₄⁻ to +2 in Mn²⁺.</li><li>A decrease in oxidation state corresponds to reduction (electron gain).</li><li>So the manganate(VII) ions are reduced; option C.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q141-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 141\" loading=\"lazy\" decoding=\"async\"><figcaption>The oxidation numbers reveal which ion is reduced.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: Fe²⁺ loses rather than gains electrons.</li><li><strong>B.</strong> Incorrect: Fe²⁺ is a reducing agent; it itself is oxidised.</li><li><strong>C.</strong> Correct: MnO₄⁻ is reduced to Mn²⁺.</li><li><strong>D.</strong> Incorrect: iron oxidation state rises from +2 to +3.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> OIL RIG: oxidation is loss, reduction is gain (of electrons).</p>"
+  },
+  {
+    "paperNumber": 142,
+    "sourceNumber": 22,
+    "sourcePaper": "0620/23/M/J/26",
+    "sourceUrl": "https://prepwithtee.com/yearly/igcse/chemistry-0620/2026/0620-23-may-june",
+    "chapter": "Acids and Bases · Ethanoic acid",
+    "title": "Which statement about ethanoic acid is correct?",
+    "context": "",
+    "legend": "Select one answer",
+    "options": [
+      "It is a weak acid that does not react with magnesium.",
+      "It is made by oxidising ethanol with aqueous sodium carbonate.",
+      "It reacts with an ester to form an alcohol.",
+      "It turns universal indicator orange."
+    ],
+    "correct": "D",
+    "answer": "D. It turns universal indicator orange.",
+    "explanation": "<p class=\"definition\"><strong>Ethanoic acid can turn universal indicator orange, showing an acidic solution.</strong></p><h3>Step-by-step explanation</h3><ol class=\"chem-steps\"><li>Ethanoic acid is a weak acid, so it partially ionises in water, but can still react with reactive metals such as magnesium.</li><li>Oxidation of ethanol to ethanoic acid typically uses an oxidising agent such as acidified potassium manganate(VII), not sodium carbonate.</li><li>Ethanoic acid reacts with an alcohol to form an ester; ester hydrolysis uses water, with acidic or alkaline conditions.</li><li>An acidic ethanoic acid solution can give an orange universal-indicator colour.</li></ol><figure class=\"explanation-photo chemistry-visual\"><img src=\"images/q142-explanation-visual.svg\" alt=\"Concept diagram illustrating the chemistry for question 142\" loading=\"lazy\" decoding=\"async\"><figcaption>The precise indicator colour depends on concentration; orange is the intended answer.</figcaption></figure><h3>Why each option is correct or incorrect</h3><ul class=\"option-explanations\"><li><strong>A.</strong> Incorrect: even a weak acid reacts with magnesium.</li><li><strong>B.</strong> Incorrect: sodium carbonate is not the oxidising reagent.</li><li><strong>C.</strong> Incorrect: the stated direction and reagent are wrong for ester chemistry.</li><li><strong>D.</strong> Correct: an acidic solution can turn universal indicator orange.</li></ul><p class=\"exam-tip\"><strong>Exam key idea:</strong> Weak acids partially ionise but still show acidic reactions.</p>"
   }
 ]

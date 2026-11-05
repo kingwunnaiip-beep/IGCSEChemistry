@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-label="Identify the element">
+    <rect width="1000" height="360" rx="22" fill="#fbfdfc"/>
+    <text x="500.0" y="36" text-anchor="middle" font-size="28" font-weight="700" font-family="Arial,sans-serif" fill="#143d35">Identify the element</text>
+    <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a7b65"/>
+    </marker>
+    </defs><rect x="70" y="90" width="290" height="210" rx="18" fill="#eef4ff" stroke="#bfd1ee" stroke-width="2"/><rect x="430" y="90" width="500" height="210" rx="18" fill="#eefaf1" stroke="#c3dec9" stroke-width="2"/><circle cx="215" cy="190" r="90" fill="#fff" stroke="#708898" stroke-width="3"/><text x="215" y="175" text-anchor="middle" font-size="34" font-weight="700" font-family="Arial,sans-serif" fill="#244a40">5p</text><text x="215" y="215" text-anchor="middle" font-size="34" font-weight="700" font-family="Arial,sans-serif" fill="#244a40">6n</text><text x="680" y="130" text-anchor="middle" font-size="26" font-weight="700" font-family="Arial,sans-serif" fill="#244a40">Key idea</text><text x="680" y="175" text-anchor="middle" font-size="28" font-weight="700" font-family="Arial,sans-serif" fill="#244a40">proton number = atomic number</text><text x="680" y="220" text-anchor="middle" font-size="28" font-weight="700" font-family="Arial,sans-serif" fill="#14624c">5 protons  →  element is boron</text><text x="500" y="325" text-anchor="middle" font-size="24" font-weight="700" font-family="Arial,sans-serif" fill="#1f6b55">Neutrons change the isotope, not the element.</text>
+</svg>

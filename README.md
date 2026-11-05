@@ -25,3 +25,19 @@ Paper references were verified using the May/June 2026 variant 21 past paper lis
 - The header subtitle now reads **Paper 2 Practice.**
 - The top Dr King Wunna logo now uses a transparent-background PNG.
 - The floating badge no longer includes the logo image.
+
+## Questions 101–111
+- Added from the latest uploaded screenshots, corresponding to original **0620/22/M/J/26 Q21–31**.
+- Full collection now contains **111** questions.
+
+- Newly added quiz Q112–Q120 correspond to the user-supplied 0620/22/M/J/26 original questions Q32–Q40, preserving their question figures and options.
+- Q114 retains the source substitution equation and notes its apparent atom-balance inconsistency in the explanation.
+
+### New batch Q121–130
+Corresponds to 0620/23/M/J/26 original Q1–10, supplied by the user. All question diagrams cropped from the supplied screenshots, saved with transparent backgrounds.
+
+### Superscript and paper-label fix
+Question title rendering now correctly formats <sup>/<sub> markup (e.g. Al³⁺, cm³), and source paper 23 is correctly labelled Paper 23. No question wording, answer choices, or explanation content has changed.
+
+### 2026 Paper 23 continuation (new)
+Questions 131–142 correspond to original 0620/23/M/J/26 Q11–Q22, transcribed from the uploaded question screenshots. New explanation diagrams are custom SVG science drawings rather than decorative cards. Fixed title superscript/subscript rendering is retained.
